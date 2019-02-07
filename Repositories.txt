@@ -1,0 +1,19 @@
+Core Extensions
+---------------
+<repo>https://github.com/ensoulsharp-io/EnsoulSharp.SDK</repo>
+<repo>https://github.com/ensoulsharp-io/EnsoulSharp.Assemblies</repo>
+
+Administrators
+--------------
+
+Trusted Groups
+--------------
+
+Developers
+----------
+
+Contributors
+------------
+
+Known Users
+-----------
