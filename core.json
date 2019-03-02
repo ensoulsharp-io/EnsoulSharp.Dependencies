@@ -9,6 +9,16 @@
         "35dc449655d3b642bad1a966dbd65411",
         "1591f652861fcd6298c933533d24b858"
       ]
+    },
+    {
+      "build": "2",
+      "changes": [
+        "updated for 9.4"
+      ],
+      "md5": [
+        "5c47a86e46c05303e76e2c6ca6dcace8",
+        "72c7c62727bb48e64d94808aa6de6235"
+      ]
     }
   ]
 }
