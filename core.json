@@ -13,7 +13,14 @@
     {
       "build": "2",
       "changes": [
-        "updated for 9.4"
+        "updated for 9.4",        
+        "fixed: PlayerIssueOrderEventArgs.Process => default true now",
+        "fixed: ProcessSpellCastEventArgs.Process => default true now",
+        "fixed: AIBaseClient.Path => start from Position now",
+        "fixed: AIBaseClient.IssueOrder.triggerEvent => trigger event as excepted",
+        "fixed: Drawing.DrawCircle => no more crash",
+        "fixed: NavMesh.GetCollisionFlags => will get proper result",
+        "added: EffectEmitter.Properties"
       ],
       "md5": [
         "5c47a86e46c05303e76e2c6ca6dcace8",
