@@ -20,11 +20,13 @@
         "fixed: AIBaseClient.IssueOrder.triggerEvent => trigger event as excepted",
         "fixed: Drawing.DrawCircle => no more crash",
         "fixed: NavMesh.GetCollisionFlags => will get proper result",
-        "added: EffectEmitter.Properties"
+        "added: EffectEmitter.Properties",
+        "added: Missile.Properties",
+        "deleted: Missile.UselessProperties"
       ],
       "md5": [
-        "5c47a86e46c05303e76e2c6ca6dcace8",
-        "72c7c62727bb48e64d94808aa6de6235"
+        "39502698d92de1ececfc2ffa405b1c6a",
+        "93447a520e28189fe5468ab63b4cd38c"
       ]
     }
   ]
