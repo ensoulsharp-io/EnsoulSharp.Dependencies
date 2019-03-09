@@ -25,11 +25,11 @@
     "1cd87140f4ac207bfaf65d20d0363e7c": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "39502698d92de1ececfc2ffa405b1c6a",
+          "MD5": "648cf38536203f8a603e3baf9796669e",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.4/EnsoulSharp.Core.dll"
         },
         "System\\EnsoulSharp.Wrapper.dll": {
-          "MD5": "93447a520e28189fe5468ab63b4cd38c",
+          "MD5": "0ae5732ef57e9387baeeaa13a407601d",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.4/EnsoulSharp.Wrapper.dll"
         }
       }
