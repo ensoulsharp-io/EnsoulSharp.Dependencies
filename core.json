@@ -22,11 +22,12 @@
         "fixed: NavMesh.GetCollisionFlags => will get proper result",
         "added: EffectEmitter.Properties",
         "added: Missile.Properties",
+        "added: AIBaseClient.PercentAttackSpeedMod => be used to calc spell cast delay such as JinxW etc",
         "deleted: Missile.UselessProperties"
       ],
       "md5": [
-        "39502698d92de1ececfc2ffa405b1c6a",
-        "93447a520e28189fe5468ab63b4cd38c"
+        "648cf38536203f8a603e3baf9796669e",
+        "0ae5732ef57e9387baeeaa13a407601d"
       ]
     }
   ]
