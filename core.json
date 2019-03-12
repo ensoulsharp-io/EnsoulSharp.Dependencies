@@ -29,6 +29,16 @@
         "648cf38536203f8a603e3baf9796669e",
         "0ae5732ef57e9387baeeaa13a407601d"
       ]
+    },
+    {
+      "build": "3",
+      "changes": [
+        "updated for 9.5"
+      ],
+      "md5": [
+        "779d80b37a931ae7cb9ee05cc91ce263",
+        "f52db1f1106c2fab64089d5ee198db1e"
+      ]
     }
   ]
 }
