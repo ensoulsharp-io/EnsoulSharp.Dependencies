@@ -33,11 +33,16 @@
     {
       "build": "3",
       "changes": [
-        "updated for 9.5"
+        "updated for 9.5",
+        "fixed: AIBaseClient.Buffs",
+        "fixed: AIBaseClient.GetBuff",
+        "fixed: AIBaseClient.GetBuffCount",
+        "fixed: AIBaseClient.HasBuff",
+        "fixed: AIBaseClient.HasBuffOfType"
       ],
       "md5": [
-        "779d80b37a931ae7cb9ee05cc91ce263",
-        "f52db1f1106c2fab64089d5ee198db1e"
+        "bae168fd79829ff4f5c0508f440269fa",
+        "196b0d3e7b16a09c53fca12c1617aab6"
       ]
     }
   ]
