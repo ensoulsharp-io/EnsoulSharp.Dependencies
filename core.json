@@ -44,6 +44,16 @@
         "bae168fd79829ff4f5c0508f440269fa",
         "196b0d3e7b16a09c53fca12c1617aab6"
       ]
+    },
+    {
+      "build": "4",
+      "changes": [
+        "updated for 9.6"
+      ],
+      "md5": [
+        "0f2e70ebf5565babae1b23675feadd00",
+        "fd63fe5593422701f56f9ba616f6c35e"
+      ]
     }
   ]
 }
