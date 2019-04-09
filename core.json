@@ -54,6 +54,20 @@
         "6a1bfc6a6db1975cac35b9e55924ee5d",
         "bd9b14d980ad00e3ae5e2a094d9246a7"
       ]
+    },
+    {
+      "build": "5",
+      "changes": [
+        "added: AIBaseClient.PercentLifeStealMod",
+        "added: AIHeroClient.OnLevelUp",
+        "added: Chat.PrintChat",
+        "added: MenuGUI.IsShopOpen",
+        "fixed: BuffInstance.Count"
+      ],
+      "md5": [
+        "e0c9d8282348e5bb7011fb17bd3bbfb8",
+        "3ce395b085ef803147e1584a9d82cc5c"
+      ]
     }
   ]
 }
