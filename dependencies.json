@@ -1,12 +1,16 @@
 {
   "System": {
     "System\\EnsoulSharp.Sandbox.dll": {
-      "MD5": "fc88ad1ed40c44d808d49f3e678b3587",
+      "MD5": "3463456e0d67fd7fad82adc02f15b1c0",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Sandbox.dll"
     },
     "System\\EnsoulSharp.Bootstrap.dll": {
       "MD5": "dbb989f40ccc8c9e77c2b79f88a1f2e3",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
+    },
+    "System\\EnsoulSharp.SDK.dll": {
+      "MD5": "99f2c390eb11f8f7a0a424309359085d",
+      "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll"
     },
     "System\\Newtonsoft.Json.dll": {
       "MD5": "d827dd8a8c4b2a2cfa23c7f90f3cce95",
@@ -36,7 +40,7 @@
     }
   },
   "Loader": {
-    "Version": "1.0.0.0",
+    "Version": "1.0.0.1",
     "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Loader/EnsoulSharp-update.exe"
   }
 }
