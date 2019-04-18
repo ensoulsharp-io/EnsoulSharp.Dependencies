@@ -70,6 +70,20 @@
         "e757f0f50e0acecb740da17fc381e4c7",
         "34bdd1513451bac8a0d148bb47f65b35"
       ]
+    },
+    {
+      "build": "6",
+      "changes": [
+        "added: AIBaseClient.SetSkin",
+        "fixed: Hacks.ZoomHack",
+        "fixed: Chat.PrintChat into Hacks.IngameChat control",
+        "fixed: Spellbook.UpdateChargeableSpell crash",
+        "deleted: Hacks.UselessInterface"
+      ],
+      "md5": [
+        "5b46710e302774cee7fba0ee336d091d",
+        "efb757a9de25f1eb563a76423578b902"
+      ]
     }
   ]
 }
