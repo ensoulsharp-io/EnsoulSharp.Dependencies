@@ -1,18 +1,18 @@
 {
   "System": {
     "System\\EnsoulSharp.Sandbox.dll": {
-      "MD5": "5fe14b92794576ba0366d14eb1f22dde",
+      "MD5": "38fc5a09b1dfc4df10f5c85cf79e65d8",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Sandbox.dll",
-      "Version": "1.0.0.1"
+      "Version": "1.0.0.2"
     },
     "System\\EnsoulSharp.Bootstrap.dll": {
       "MD5": "a5ca07ab3f34c0010b0dd1c99a641f1a",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
     },
     "System\\EnsoulSharp.SDK.dll": {
-      "MD5": "99306b79b4dfdd9f740bab81d04d5816",
+      "MD5": "7c81fca4c380335395b173822efaa280",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll",
-      "Version": "1.0.0.1"
+      "Version": "1.0.0.2"
     },
     "System\\Newtonsoft.Json.dll": {
       "MD5": "d827dd8a8c4b2a2cfa23c7f90f3cce95",
@@ -31,22 +31,22 @@
     }
   },
   "Core": {
-    "1a3a111698e9b96e5193febc8a4c2e01": {
+    "a42633469ad8390b003653ae077dd07e": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "e757f0f50e0acecb740da17fc381e4c7",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.7/EnsoulSharp.Core.dll"
+          "MD5": "5b46710e302774cee7fba0ee336d091d",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.8/EnsoulSharp.Core.dll"
         },
         "System\\EnsoulSharp.Wrapper.dll": {
-          "MD5": "34bdd1513451bac8a0d148bb47f65b35",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.7/EnsoulSharp.Wrapper.dll",
-          "Version": "1.0.0.1"
+          "MD5": "efb757a9de25f1eb563a76423578b902",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.8/EnsoulSharp.Wrapper.dll",
+          "Version": "1.0.0.2"
         }
       }
     }
   },
   "Loader": {
-    "Version": "1.0.0.2",
+    "Version": "1.0.0.3",
     "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Loader/EnsoulSharp-update.exe"
   }
 }
