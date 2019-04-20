@@ -75,14 +75,17 @@
       "build": "6",
       "changes": [
         "added: AIBaseClient.SetSkin",
+        "added: AIBaseClient.CanUseObject",
+        "added: AIBaseClient.UseObject",
+        "added: SpellData.CastFrame",
         "fixed: Hacks.ZoomHack",
         "fixed: Chat.PrintChat into Hacks.IngameChat control",
         "fixed: Spellbook.UpdateChargeableSpell crash",
         "deleted: Hacks.UselessInterface"
       ],
       "md5": [
-        "5b46710e302774cee7fba0ee336d091d",
-        "efb757a9de25f1eb563a76423578b902"
+        "5ffa876252dd27aeb0194d8907691bd2",
+        "149ef2c64db9b8195fb4d63eb227ce5a"
       ]
     }
   ]
