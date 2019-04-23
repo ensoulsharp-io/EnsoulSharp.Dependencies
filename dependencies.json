@@ -10,14 +10,14 @@
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
     },
     "System\\EnsoulSharp.SDK.dll": {
-      "MD5": "660d9ce46b2428930ac500a2bd08d547",
+      "MD5": "42a648ad3d24e686ca9c2648b32c76c9",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.3"
     },
     "System\\Newtonsoft.Json.dll": {
       "MD5": "d827dd8a8c4b2a2cfa23c7f90f3cce95",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/Newtonsoft.Json.dll",
-      "Version": "12.0.0.0"
+      "Version": "12.0.1.22727"
     },
     "System\\SharpDX.Direct3D9.dll": {
       "MD5": "b64939d8f4e6658d90ad9c344994553b",
