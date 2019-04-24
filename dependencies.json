@@ -1,7 +1,7 @@
 {
   "System": {
     "System\\EnsoulSharp.Sandbox.dll": {
-      "MD5": "fdc324822bb8921662c9d16529f8e35f",
+      "MD5": "6d886f2d5651a92fef9b3551e91e9c0b",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Sandbox.dll",
       "Version": "1.0.0.3"
     },
@@ -10,7 +10,7 @@
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
     },
     "System\\EnsoulSharp.SDK.dll": {
-      "MD5": "5ebb66acdcc6b5d2050028ccd8d3add1",
+      "MD5": "4af0e6142570757707cb811671e1dbfb",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.3"
     },
