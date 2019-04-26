@@ -78,14 +78,17 @@
         "added: AIBaseClient.CanUseObject",
         "added: AIBaseClient.UseObject",
         "added: SpellData.CastFrame",
+        "added: GameObject.OnMissileCreate",
         "fixed: Hacks.ZoomHack",
         "fixed: Chat.PrintChat into Hacks.IngameChat control",
         "fixed: Spellbook.UpdateChargeableSpell crash",
-        "deleted: Hacks.UselessInterface"
+        "fixed: Change GameObject.OnAssign to GameObject.OnCreate",
+        "deleted: Hacks.UselessInterface",
+        "deleted: GameObject.OnAssign"
       ],
       "md5": [
-        "5ffa876252dd27aeb0194d8907691bd2",
-        "149ef2c64db9b8195fb4d63eb227ce5a"
+        "31cdb9d2278b0f04c3a1f2d3e7861cb9",
+        "7a3f94964fdab3705bdacf832abe7183"
       ]
     }
   ]
