@@ -90,6 +90,18 @@
         "31cdb9d2278b0f04c3a1f2d3e7861cb9",
         "7a3f94964fdab3705bdacf832abe7183"
       ]
+    },
+    {
+      "build": "7",
+      "changes": [
+        "added: AttackableUnit.IsVisible",
+        "added: MissileClient.IsVisible",
+        "deleted: GameObject.IsVisible"
+      ],
+      "md5": [
+        "5e63d0d0fa76389cdd6e2ff8e81c3ac2",
+        "27564e038ad8ee7d11c12577a5141b6e"
+      ]
     }
   ]
 }
