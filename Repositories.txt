@@ -13,6 +13,7 @@ Developers
 
 Contributors
 ------------
+<repo>https://github.com/Shinobi176/EnsoulSharp</repo>
 
 Known Users
 -----------
