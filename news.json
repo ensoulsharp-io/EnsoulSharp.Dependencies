@@ -34,6 +34,11 @@
       "PostDate": "2019-05-08T00:00:00Z",
       "Header": "9.9 updated",
       "Content": "EnsoulSharp has been updated for patch 9.9 and it works."
+    },
+    {
+      "PostDate": "2019-05-16T00:00:00Z",
+      "Header": "9.10 updated",
+      "Content": "EnsoulSharp has been updated for patch 9.10 and it works."
     }
   ]
 }

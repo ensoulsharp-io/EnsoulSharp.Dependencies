@@ -102,6 +102,17 @@
         "471ccc0145edf05dec4bf799d8b3b0ce",
         "1b0a70f832717ee7cd877f17951aeb14"
       ]
+    },
+    {
+      "build": "8",
+      "changes": [
+        "added: Game.MouseOverObject",
+        "added: Game.TooltipObject"
+      ],
+      "md5": [
+        "99c4747d102efaa8363269dc2a36ba29",
+        "f5cc7d8e536b933a2066d59ae24befa5"
+      ]
     }
   ]
 }
