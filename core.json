@@ -107,11 +107,12 @@
       "build": "8",
       "changes": [
         "added: Game.MouseOverObject",
-        "added: Game.TooltipObject"
+        "added: Game.TooltipObject",
+        "deleted: Missile => MissileClient still exist"
       ],
       "md5": [
-        "99c4747d102efaa8363269dc2a36ba29",
-        "f5cc7d8e536b933a2066d59ae24befa5"
+        "04593fb7cbf71190f28089c30282acb6",
+        "19e58a3df23172990593b245e4e5441c"
       ]
     }
   ]

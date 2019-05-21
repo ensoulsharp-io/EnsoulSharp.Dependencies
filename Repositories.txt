@@ -14,6 +14,8 @@ Developers
 Contributors
 ------------
 <repo>https://github.com/Shinobi176/EnsoulSharp</repo>
+<repo>https://github.com/Sutyn/Ensoul</repo>
+<repo>https://github.com/JaceNithy/EnsoulSharp</repo>
 
 Known Users
 -----------
