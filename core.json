@@ -107,12 +107,33 @@
       "build": "8",
       "changes": [
         "added: Game.MouseOverObject",
-        "added: Game.TooltipObject",
+        "added: Game.TooltipObject"
+      ],
+      "md5": [
+        "99c4747d102efaa8363269dc2a36ba29",
+        "f5cc7d8e536b933a2066d59ae24befa5"
+      ]
+    },
+    {
+      "build": "9",
+      "changes": [
         "deleted: Missile => MissileClient still exist"
       ],
       "md5": [
         "04593fb7cbf71190f28089c30282acb6",
         "19e58a3df23172990593b245e4e5441c"
+      ]
+    },
+    {
+      "build": "10",
+      "changes": [
+        "fixed: Character drift sometime",
+        "fixed: Orbwalker break AA sometime",
+        "fixed: A part of fps drop"
+      ],
+      "md5": [
+        "0979f09d722b6151924128c96aa225b5",
+        "1e67c3d32e130889e24d8a505a67bf1b"
       ]
     }
   ]
