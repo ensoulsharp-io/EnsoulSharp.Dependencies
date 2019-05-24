@@ -129,11 +129,11 @@
       "changes": [
         "fixed: Character drift sometime",
         "fixed: Orbwalker break AA sometime",
-        "fixed: A part of fps drop"
+        "fixed: Orbwalker cause fps drop"
       ],
       "md5": [
-        "0979f09d722b6151924128c96aa225b5",
-        "1e67c3d32e130889e24d8a505a67bf1b"
+        "795e9ea812724fcc7afda5a98c5a95c1",
+        "1484dee624e6fe53b2e6cd139893827d"
       ]
     }
   ]
