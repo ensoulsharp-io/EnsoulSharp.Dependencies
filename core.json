@@ -153,6 +153,17 @@
         "648b604f7daf816bef77e00a0cda17c3",
         "2ee8dd0489e8008a48db5d7547915164"
       ]
+    },
+    {
+      "build": "12",
+      "changes": [
+        "fixed: Drawing.DrawLine fps issue",
+        "fixed: Spellbook.CastSpell vector issue"
+      ],
+      "md5": [
+        "1c40eff82208b3e6e6e512c1a9cdcd91",
+        "bdc4f3cb7e9a9047546b1b3f5bf0a2c7"
+      ]
     }
   ]
 }
