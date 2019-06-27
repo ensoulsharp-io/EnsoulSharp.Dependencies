@@ -164,6 +164,17 @@
         "1c40eff82208b3e6e6e512c1a9cdcd91",
         "bdc4f3cb7e9a9047546b1b3f5bf0a2c7"
       ]
+    },
+    {
+      "build": "13",
+      "changes": [
+        "deleted: Champion Enum",
+        "deleted: AIHeroClient.Hero"
+      ],
+      "md5": [
+        "5b5de7072fb1729078bd65b573e7281b",
+        "b6a4fdf95e0b8c6a6ad31a4bce035f6a"
+      ]
     }
   ]
 }
