@@ -175,6 +175,17 @@
         "cd8e00412e8c1aba2375641f292df4d7",
         "e738a3895250ddddf2fd0c867754c850"
       ]
+    },
+    {
+      "build": "14",
+      "changes": [
+        "added: Game.OnNotify",
+        "added: GameObject.Name.Set"
+      ],
+      "md5": [
+        "e0d3da128c5bfe4abbdd6f2bcb217ca3",
+        "3d606707acc43cb17d9218288ef52cf8"
+      ]
     }
   ]
 }
