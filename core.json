@@ -180,11 +180,13 @@
       "build": "14",
       "changes": [
         "added: Game.OnNotify",
-        "added: GameObject.Name.Set"
+        "added: GameObject.Name.Set",
+        "fixed: MenuGUI.IsChatOpen",
+        "deleted: Chat.PrintChat"
       ],
       "md5": [
-        "e0d3da128c5bfe4abbdd6f2bcb217ca3",
-        "3d606707acc43cb17d9218288ef52cf8"
+        "ac860fdf7cca764971dca54ff2beace3",
+        "fd3847890a53ec51ada00c1e1b32ef6e"
       ]
     }
   ]
