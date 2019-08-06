@@ -188,6 +188,16 @@
         "ac860fdf7cca764971dca54ff2beace3",
         "fd3847890a53ec51ada00c1e1b32ef6e"
       ]
+    },
+    {
+      "build": "15",
+      "changes": [
+        "added: MenuGUI.IsScoreboardOpen"
+      ],
+      "md5": [
+        "36748b1bd7b8ccd7517a1f58b104173d",
+        "7f7a8eb75bb6bffde6fa4f94da47d550"
+      ]
     }
   ]
 }
