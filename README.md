@@ -1,5 +1,9 @@
 # EnsoulSharp.Dependencies
 EnsoulSharp - General dependencies
 
-Discord now disabled (both Admin & EnsoulSharp group)  
-Telegram now available: https://t.me/joinchat/AAAAAE15y7kZXRHjTTUqCg  
+Previous Discord already got banned (both Admin & EnsoulSharp group)  
+New Admin Discord account: RoserFlake#0938  
+  
+Telegram now available:  
+Channel: https://t.me/joinchat/AAAAAE15y7kZXRHjTTUqCg  
+Chat Group: https://t.me/joinchat/JjuaL0XzLZkcse9H_SvEvg  
