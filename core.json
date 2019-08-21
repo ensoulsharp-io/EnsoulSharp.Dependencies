@@ -198,6 +198,16 @@
         "36748b1bd7b8ccd7517a1f58b104173d",
         "7f7a8eb75bb6bffde6fa4f94da47d550"
       ]
+    },
+    {
+      "build": "16",
+      "changes": [
+        "updated for patch 9.16"
+      ],
+      "md5": [
+        "bb7a610d386fa300fa265fa5c17bf4b0",
+        "73c98e7ec21af9a65c1ed0ee9bd53431"
+      ]
     }
   ]
 }
