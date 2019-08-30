@@ -13,8 +13,12 @@ Developers
 
 Contributors
 ------------
-<repo>https://github.com/Shinobi176/EnsoulSharp</repo>
-<repo>https://github.com/Sutyn/Ensoul</repo>
+<repo>https://github.com/memsenpai/Ensoulsharp.Sayuto</repo>
+<repo>https://github.com/ajvavjuhani666/Ensoul</repo>
+<repo>https://github.com/DeathGodx/EnsoulSharp</repo>
+<repo>https://github.com/xDreamms/EnsoulSharp</repo>
+<repo>https://github.com/N1ghtMoon/EnsoulSharp</repo>
+<repo>https://github.com/thienha1/EnsoulSharp-1</repo>
 
 Known Users
 -----------
