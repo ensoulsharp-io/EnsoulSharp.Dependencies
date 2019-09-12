@@ -208,6 +208,16 @@
         "bb7a610d386fa300fa265fa5c17bf4b0",
         "73c98e7ec21af9a65c1ed0ee9bd53431"
       ]
+    },
+    {
+      "build": "17",
+      "changes": [
+        "updated for patch 9.18"
+      ],
+      "md5": [
+        "bb5f1fc0620a1124f3006626bbdfe7e3",
+        "e49fdbef887deef00ccca247bcc2fea6"
+      ]
     }
   ]
 }
