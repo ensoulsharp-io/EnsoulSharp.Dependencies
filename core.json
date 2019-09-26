@@ -218,6 +218,16 @@
         "bb5f1fc0620a1124f3006626bbdfe7e3",
         "e49fdbef887deef00ccca247bcc2fea6"
       ]
+    },
+    {
+      "build": "18",
+      "changes": [
+        "updated for patch 9.19"
+      ],
+      "md5": [
+        "993b017516035ae8e4e69126b17b929c",
+        "85eb0f0c203c3b87e7af25bfde6ff493"
+      ]
     }
   ]
 }
