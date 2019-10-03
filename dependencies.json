@@ -20,7 +20,7 @@
       "Version": "1.0.0.19"
     },
     "System\\Newtonsoft.Json.dll": {
-      "MD5": "d827dd8a8c4b2a2cfa23c7f90f3cce95",
+      "MD5": "4df6c8781e70c3a4912b5be796e6d337",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/Newtonsoft.Json.dll",
       "Version": "12.0.0.0"
     },
