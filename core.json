@@ -238,6 +238,16 @@
         "d73f32aaf13b60bfb55cfc0bd46166bb",
         "2480f3c3fbf97de9d2fa66ec333eae0e"
       ]
+    },
+    {
+      "build": "20",
+      "changes": [
+        "updated for patch 9.20"
+      ],
+      "md5": [
+        "0c6faeb599abcff161ca050c0266325b",
+        "b06e265741b8aff00f35a95fdc70d43b"
+      ]
     }
   ]
 }
