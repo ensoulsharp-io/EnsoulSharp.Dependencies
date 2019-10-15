@@ -10,7 +10,7 @@
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
     },
     "System\\EnsoulSharp.SDK.dll": {
-      "MD5": "058fbb99798279857cf00850b2e17d46",
+      "MD5": "454b8b3969ae12dd73ae0e29659272c7",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.20"
     },
@@ -31,14 +31,14 @@
     }
   },
   "Core": {
-    "86e88210d0dbd8b9ca243c84a2e88062": {
+    "92fde4ee2f09e7429a8022f83f6abdc3": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "0c6faeb599abcff161ca050c0266325b",
+          "MD5": "cb65a9d46be28ab938b8a3214b26dd5d",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.20/EnsoulSharp.Core.dll"
         },
         "System\\EnsoulSharp.Wrapper.dll": {
-          "MD5": "b06e265741b8aff00f35a95fdc70d43b",
+          "MD5": "1da558e978d7e2ab20236f459f7e4440",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/9.20/EnsoulSharp.Wrapper.dll",
           "Version": "1.0.0.19"
         }
