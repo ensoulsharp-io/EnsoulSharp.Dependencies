@@ -10,7 +10,7 @@
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.Bootstrap.dll"
     },
     "System\\EnsoulSharp.SDK.dll": {
-      "MD5": "be66f970d353d437149c2488e43518a4",
+      "MD5": "967ece0d5f8c5e2c76d0cc0b4b25e4e4",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/System/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.20"
     },
