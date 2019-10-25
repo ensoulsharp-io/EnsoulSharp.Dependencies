@@ -248,6 +248,17 @@
         "cb65a9d46be28ab938b8a3214b26dd5d",
         "1da558e978d7e2ab20236f459f7e4440"
       ]
+    },
+    {
+      "build": "21",
+      "changes": [
+        "updated for patch 9.21",
+        "too many changes all pin to discord Core channel"
+      ],
+      "md5": [
+        "805133d528204aedbd34ead931119b98",
+        "4f4dd68301c0bbfac8caa114b549fcec"
+      ]
     }
   ]
 }
