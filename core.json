@@ -259,6 +259,19 @@
         "a8127ce9e786bfd3b168b5627ed7a251",
         "8cb5ffcb7c10bd3ea568f9fe749fc9da"
       ]
+    },
+    {
+      "build": "22",
+      "changes": [
+        "updated for patch 9.22",
+        "deleted: AIBaseClient.IsAttackingPlayer",
+        "deleted: AIBaseClient.IsMovingPath",
+        "optimized: AIBaseClient.IsMoving"
+      ],
+      "md5": [
+        "dc684a3c5b6df7e8494180f3495c4320",
+        "4f8c599f94e7cd38be85288e56a9293d"
+      ]
     }
   ]
 }
