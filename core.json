@@ -266,11 +266,12 @@
         "updated for patch 9.22",
         "deleted: AIBaseClient.IsAttackingPlayer",
         "deleted: AIBaseClient.IsMovingPath",
-        "optimized: AIBaseClient.IsMoving"
+        "fixed: AIBaseClient.Path => now the first element always current position whether stop & attack or not",
+        "fixed: AIBaseClient.IsMoving => now more fast more exactive and sync with Path"
       ],
       "md5": [
-        "dc684a3c5b6df7e8494180f3495c4320",
-        "4f8c599f94e7cd38be85288e56a9293d"
+        "cfa275bfa538474f7aa968a549764d0d",
+        "162922fc7c55698b986ffdb3975bfcbd"
       ]
     }
   ]
