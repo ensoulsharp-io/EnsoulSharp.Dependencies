@@ -273,6 +273,16 @@
         "cfa275bfa538474f7aa968a549764d0d",
         "162922fc7c55698b986ffdb3975bfcbd"
       ]
+    },
+    {
+      "build": "23",
+      "changes": [
+        "updated for patch 9.23"
+      ],
+      "md5": [
+        "1fcc302eb20e3566356bc65678201749",
+        "351cfa63073612c436fb6454a8e15bbc"
+      ]
     }
   ]
 }
