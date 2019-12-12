@@ -283,6 +283,17 @@
         "1fcc302eb20e3566356bc65678201749",
         "351cfa63073612c436fb6454a8e15bbc"
       ]
+    },
+    {
+      "build": "24",
+      "changes": [
+        "updated for patch 9.24",
+        "improve anti-dc on core side"
+      ],
+      "md5": [
+        "52857543702f64293ba1446abdeb376d",
+        "799a188bbd688db43530ef127a698204"
+      ]
     }
   ]
 }
