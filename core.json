@@ -294,6 +294,18 @@
         "52857543702f64293ba1446abdeb376d",
         "799a188bbd688db43530ef127a698204"
       ]
+    },
+    {
+      "build": "25",
+      "changes": [
+        "improve anti-dc quality on core side",
+        "added: SpellDataInst.NumericalDisplay",
+        "added: SpellDataInst.ToolTipVars"
+      ],
+      "md5": [
+        "3a9c72701c20f2f6d85d9af5f66db31b",
+        "08941a1c25bdd736f4a4d1fdf41f2be9"
+      ]
     }
   ]
 }
