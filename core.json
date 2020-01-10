@@ -306,6 +306,16 @@
         "3a9c72701c20f2f6d85d9af5f66db31b",
         "08941a1c25bdd736f4a4d1fdf41f2be9"
       ]
+    },
+    {
+      "build": "26",
+      "changes": [
+        "updated for patch 10.1"
+      ],
+      "md5": [
+        "3fa482c8a3a6593fb4d9656ee0831231",
+        "c53be239216cae4589188f42f49ac720"
+      ]
     }
   ]
 }
