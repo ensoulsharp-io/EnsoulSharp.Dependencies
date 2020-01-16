@@ -316,6 +316,18 @@
         "631a17757780a3e67853ca1ac90e3a59",
         "c6a57896a6e0bc914ac2c96048ca9de3"
       ]
+    },
+    {
+      "build": "27",
+      "changes": [
+        "updated for mini patch 10.1.304.7100",
+        "added: Hacks.DisableAntiDisconnect",
+        "added: Game.OnProcessPacket"
+      ],
+      "md5": [
+        "0207c60ac463ed6d5b23022282e1e536",
+        "45d9a642a67d366f5ae7231e6c9aca3c"
+      ]
     }
   ]
 }
