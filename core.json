@@ -328,6 +328,17 @@
         "0207c60ac463ed6d5b23022282e1e536",
         "45d9a642a67d366f5ae7231e6c9aca3c"
       ]
+    },
+    {
+      "build": "28",
+      "changes": [
+        "updated for patch 10.3",
+        "improve anti-dc on core side"
+      ],
+      "md5": [
+        "2542af75c0c678df228cc641add98708",
+        "801ccccbfb4475d4df5b0d3639986c7c"
+      ]
     }
   ]
 }
