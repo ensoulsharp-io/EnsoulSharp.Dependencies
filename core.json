@@ -339,6 +339,19 @@
         "2542af75c0c678df228cc641add98708",
         "801ccccbfb4475d4df5b0d3639986c7c"
       ]
+    },
+    {
+      "build": "29",
+      "changes": [
+        "updated for patch 10.4",
+        "obsoleted: Hacks.DisableAntiDisconnect => now AntiDC system default open",
+        "added: GameObjectType.TFTSlotObject => only type bcz this only for TFT mode",
+        "added: NavGrid.IsWater => support QiyanaQ logic"
+      ],
+      "md5": [
+        "ef26c5b40fc9a4261520ca379ed13f85",
+        "a16f7e8571119ad963e6e8807791cae9"
+      ]
     }
   ]
 }
