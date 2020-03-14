@@ -38,7 +38,7 @@
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.5/EnsoulSharp.Core.dll"
         },
         "System\\EnsoulSharp.Wrapper.dll": {
-          "MD5": "bfb48d4e631b0b293974bfd415510062",
+          "MD5": "8484971a24420df1bafc2afc5ea07d79",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.5/EnsoulSharp.Wrapper.dll",
           "Version": "1.0.0.0"
         }
