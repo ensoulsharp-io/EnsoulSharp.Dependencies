@@ -3,7 +3,7 @@ EnsoulSharp - General dependencies
 
 Previous Discord already got banned (both Admin & EnsoulSharp group)  
 New Admin Discord account: RoserFlake#0938  
-New Discord Server: https://discordapp.com/invite/tmrD25h
+New Discord Server: https://discord.gg/H7bj34a
 
 Telegram now available:  
 Channel: https://t.me/joinchat/AAAAAE15y7kZXRHjTTUqCg  
