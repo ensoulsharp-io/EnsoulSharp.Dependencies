@@ -368,6 +368,16 @@
         "25a3ff6a572a92f76d9ca2420e05dd0e",
         "8484971a24420df1bafc2afc5ea07d79"
       ]
+    },
+    {
+      "build": "31",
+      "changes": [
+        "updated for patch 10.6"
+      ],
+      "md5": [
+        "9cf7ad2fc6d6557c27651a4b27dcc4e8",
+        "4652854d38d919da043bd776020a2648"
+      ]
     }
   ]
 }
