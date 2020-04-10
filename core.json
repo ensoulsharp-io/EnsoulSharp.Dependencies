@@ -382,10 +382,11 @@
     {
       "build": "32",
       "changes": [
-        "updated for patch 10.7"
+        "updated for patch 10.7",
+        "fixed: AIHeroClient.KDA"
       ],
       "md5": [
-        "90931d32429a6729f4c909c1606e8728",
+        "9f4c99bfc80acd1db9f72004fb40dcd4",
         "1b733395703658a411e69f182e9f41ec"
       ]
     }

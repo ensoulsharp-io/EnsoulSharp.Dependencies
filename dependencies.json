@@ -34,7 +34,7 @@
     "8a3b0d258d32456e2ffffc09a93ffb6e": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "90931d32429a6729f4c909c1606e8728",
+          "MD5": "9f4c99bfc80acd1db9f72004fb40dcd4",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.7/EnsoulSharp.Core.dll"
         },
         "System\\EnsoulSharp.Wrapper.dll": {
