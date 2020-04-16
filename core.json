@@ -389,6 +389,19 @@
         "9f4c99bfc80acd1db9f72004fb40dcd4",
         "1b733395703658a411e69f182e9f41ec"
       ]
+    },
+    {
+      "build": "33",
+      "changes": [
+        "updated for patch 10.8",
+        "fixed: Spellbook.OnCastSpell",
+        "fixed: GameObjectType.MapPropClient",
+        "fixed: Game.SendSummonerEmote"
+      ],
+      "md5": [
+        "2a359f125b72f580c3691483d8699a23",
+        "4b5c2b470e1fe13c4bfcad9777dfdf5c"
+      ]
     }
   ]
 }
