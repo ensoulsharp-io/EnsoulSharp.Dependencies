@@ -402,6 +402,16 @@
         "2a359f125b72f580c3691483d8699a23",
         "4b5c2b470e1fe13c4bfcad9777dfdf5c"
       ]
+    },
+    {
+      "build": "34",
+      "changes": [
+        "updated for patch 10.9"
+      ],
+      "md5": [
+        "35c8f7e028daa63f3ce4c5b71496b8e1",
+        "a937a2621a78761bb872ac66778c795f"
+      ]
     }
   ]
 }
