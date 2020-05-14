@@ -412,6 +412,16 @@
         "35c8f7e028daa63f3ce4c5b71496b8e1",
         "a937a2621a78761bb872ac66778c795f"
       ]
+    },
+    {
+      "build": "35",
+      "changes": [
+        "updated for patch 10.10"
+      ],
+      "md5": [
+        "c3f55e3a49f8046a83a88ac3650d5611",
+        "7b7b455a61b9a1bf1bc52d1188825b8e"
+      ]
     }
   ]
 }
