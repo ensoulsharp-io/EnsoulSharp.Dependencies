@@ -422,6 +422,16 @@
         "c3f55e3a49f8046a83a88ac3650d5611",
         "7b7b455a61b9a1bf1bc52d1188825b8e"
       ]
+    },
+    {
+      "build": "36",
+      "changes": [
+        "updated for patch 10.11"
+      ],
+      "md5": [
+        "66d3a7345a2acfe1b8d33687722e5cd2",
+        "c93f8b2bee7aa3b47324fcc53336a69c"
+      ]
     }
   ]
 }
