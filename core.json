@@ -432,6 +432,16 @@
         "66d3a7345a2acfe1b8d33687722e5cd2",
         "c93f8b2bee7aa3b47324fcc53336a69c"
       ]
+    },
+    {
+      "build": "37",
+      "changes": [
+        "updated for patch 10.12"
+      ],
+      "md5": [
+        "6a920ef1f98a3e499fd481abe29be4c4",
+        "1e4f14a9da437a8a1cf7e8a34c8c41f3"
+      ]
     }
   ]
 }
