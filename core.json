@@ -442,6 +442,16 @@
         "6a920ef1f98a3e499fd481abe29be4c4",
         "1e4f14a9da437a8a1cf7e8a34c8c41f3"
       ]
+    },
+    {
+      "build": "38",
+      "changes": [
+        "updated for patch 10.13"
+      ],
+      "md5": [
+        "0fdc4b35fdbeb00a362785b22c2d9747",
+        "a7245da45f80424ddcbf44d64adec77f"
+      ]
     }
   ]
 }
