@@ -60,6 +60,23 @@
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.13/EnsoulSharp.Bootstrap.dll"
         }
       }
+    },
+    "1f76d54cf64182b2cb4a65c33ab8f6b9": {
+      "Files": {
+        "System\\EnsoulSharp.Core.dll": {
+          "MD5": "f83298f1476ef61fa02802407c1d6f8b",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.13.326.6482/EnsoulSharp.Core.dll"
+        },
+        "System\\EnsoulSharp.Wrapper.dll": {
+          "MD5": "f1f64260b5343621da90b85a63795eca",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.13.326.6482/EnsoulSharp.Wrapper.dll",
+          "Version": "1.0.0.0"
+        },
+        "System\\EnsoulSharp.Bootstrap.dll": {
+          "MD5": "f971a831a80e28d6ad5a896617e1c4ea",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/Core/10.13.326.6482/EnsoulSharp.Bootstrap.dll"
+        }
+      }
     }
   },
   "Loader": {
