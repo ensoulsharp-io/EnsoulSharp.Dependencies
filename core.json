@@ -452,6 +452,16 @@
         "0fdc4b35fdbeb00a362785b22c2d9747",
         "a7245da45f80424ddcbf44d64adec77f"
       ]
+    },
+    {
+      "build": "39",
+      "changes": [
+        "updated for patch 10.14"
+      ],
+      "md5": [
+        "54067845f61409655ef317fcda7920a9",
+        "e2c5c6fd24a86efb1a7a3d75f1b9ace9"
+      ]
     }
   ]
 }
