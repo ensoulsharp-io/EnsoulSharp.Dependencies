@@ -462,6 +462,16 @@
         "54067845f61409655ef317fcda7920a9",
         "e2c5c6fd24a86efb1a7a3d75f1b9ace9"
       ]
+    },
+    {
+      "build": "40",
+      "changes": [
+        "updated for patch 10.15"
+      ],
+      "md5": [
+        "840e3b2abccec376c08a70a5323f9c3f",
+        "7b4583a0c73b86e31f309d18ce486ebf"
+      ]
     }
   ]
 }
