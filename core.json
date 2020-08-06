@@ -472,6 +472,16 @@
         "840e3b2abccec376c08a70a5323f9c3f",
         "7b4583a0c73b86e31f309d18ce486ebf"
       ]
+    },
+    {
+      "build": "41",
+      "changes": [
+        "updated for patch 10.16"
+      ],
+      "md5": [
+        "840e3b2abccec376c08a70a5323f9c3f",
+        "7b4583a0c73b86e31f309d18ce486ebf"
+      ]
     }
   ]
 }
