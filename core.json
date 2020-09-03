@@ -482,6 +482,16 @@
         "840e3b2abccec376c08a70a5323f9c3f",
         "7b4583a0c73b86e31f309d18ce486ebf"
       ]
+    },
+    {
+      "build": "42",
+      "changes": [
+        "updated for patch 10.18"
+      ],
+      "md5": [
+        "3fd42afe9436739faa042abbed61a8f3",
+        "65b56e2c40e223df0d256e5a59458da5"
+      ]
     }
   ]
 }
