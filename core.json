@@ -492,6 +492,16 @@
         "3fd42afe9436739faa042abbed61a8f3",
         "65b56e2c40e223df0d256e5a59458da5"
       ]
+    },
+    {
+      "build": "43",
+      "changes": [
+        "updated for patch 10.19"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
