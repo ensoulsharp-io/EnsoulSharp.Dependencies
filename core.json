@@ -512,6 +512,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "45",
+      "changes": [
+        "updated for patch 10.21",
+        "fix AntiAFK SS issue"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
