@@ -1,0 +1,548 @@
+{
+  "core": [
+    {
+      "build": "1",
+      "changes": [
+        "updated for 9.2"
+      ],
+      "md5": [
+        "35dc449655d3b642bad1a966dbd65411",
+        "1591f652861fcd6298c933533d24b858"
+      ]
+    },
+    {
+      "build": "2",
+      "changes": [
+        "updated for 9.4",        
+        "fixed: PlayerIssueOrderEventArgs.Process => default true now",
+        "fixed: ProcessSpellCastEventArgs.Process => default true now",
+        "fixed: AIBaseClient.Path => start from Position now",
+        "fixed: AIBaseClient.IssueOrder.triggerEvent => trigger event as excepted",
+        "fixed: Drawing.DrawCircle => no more crash",
+        "fixed: NavMesh.GetCollisionFlags => will get proper result",
+        "added: EffectEmitter.Properties",
+        "added: Missile.Properties",
+        "added: AIBaseClient.PercentAttackSpeedMod => be used to calc spell cast delay such as JinxW etc",
+        "deleted: Missile.UselessProperties"
+      ],
+      "md5": [
+        "648cf38536203f8a603e3baf9796669e",
+        "0ae5732ef57e9387baeeaa13a407601d"
+      ]
+    },
+    {
+      "build": "3",
+      "changes": [
+        "updated for 9.5",
+        "fixed: AIBaseClient.Buffs",
+        "fixed: AIBaseClient.GetBuff",
+        "fixed: AIBaseClient.GetBuffCount",
+        "fixed: AIBaseClient.HasBuff",
+        "fixed: AIBaseClient.HasBuffOfType"
+      ],
+      "md5": [
+        "bae168fd79829ff4f5c0508f440269fa",
+        "196b0d3e7b16a09c53fca12c1617aab6"
+      ]
+    },
+    {
+      "build": "4",
+      "changes": [
+        "updated for 9.6"
+      ],
+      "md5": [
+        "6a1bfc6a6db1975cac35b9e55924ee5d",
+        "bd9b14d980ad00e3ae5e2a094d9246a7"
+      ]
+    },
+    {
+      "build": "5",
+      "changes": [
+        "added: AIBaseClient.PercentLifeStealMod",
+        "added: AIHeroClient.OnLevelUp",
+        "added: Chat.PrintChat",
+        "added: Hacks.DisableDrawings",
+        "added: MenuGUI.IsShopOpen",
+        "fixed: BuffInstance.Count",
+        "fixed: AIHeroClient.OnLevelUp"
+      ],
+      "md5": [
+        "e757f0f50e0acecb740da17fc381e4c7",
+        "34bdd1513451bac8a0d148bb47f65b35"
+      ]
+    },
+    {
+      "build": "6",
+      "changes": [
+        "added: AIBaseClient.SetSkin",
+        "added: AIBaseClient.CanUseObject",
+        "added: AIBaseClient.UseObject",
+        "added: SpellData.CastFrame",
+        "added: GameObject.OnMissileCreate",
+        "fixed: Hacks.ZoomHack",
+        "fixed: Chat.PrintChat into Hacks.IngameChat control",
+        "fixed: Spellbook.UpdateChargeableSpell crash",
+        "fixed: Change GameObject.OnAssign to GameObject.OnCreate",
+        "deleted: Hacks.UselessInterface",
+        "deleted: GameObject.OnAssign"
+      ],
+      "md5": [
+        "31cdb9d2278b0f04c3a1f2d3e7861cb9",
+        "7a3f94964fdab3705bdacf832abe7183"
+      ]
+    },
+    {
+      "build": "7",
+      "changes": [
+        "added: AttackableUnit.IsVisible",
+        "added: MissileClient.IsVisible",
+        "deleted: GameObject.IsVisible"
+      ],
+      "md5": [
+        "471ccc0145edf05dec4bf799d8b3b0ce",
+        "1b0a70f832717ee7cd877f17951aeb14"
+      ]
+    },
+    {
+      "build": "8",
+      "changes": [
+        "added: Game.MouseOverObject",
+        "added: Game.TooltipObject"
+      ],
+      "md5": [
+        "99c4747d102efaa8363269dc2a36ba29",
+        "f5cc7d8e536b933a2066d59ae24befa5"
+      ]
+    },
+    {
+      "build": "9",
+      "changes": [
+        "deleted: Missile => MissileClient still exist"
+      ],
+      "md5": [
+        "04593fb7cbf71190f28089c30282acb6",
+        "19e58a3df23172990593b245e4e5441c"
+      ]
+    },
+    {
+      "build": "10",
+      "changes": [
+        "fixed: Character drift sometime",
+        "fixed: Orbwalker break AA sometime",
+        "fixed: Orbwalker cause fps drop"
+      ],
+      "md5": [
+        "795e9ea812724fcc7afda5a98c5a95c1",
+        "1484dee624e6fe53b2e6cd139893827d"
+      ]
+    },
+    {
+      "build": "11",
+      "changes": [
+        "added: SpellDataInstClient.ManaCost",
+        "fixed: SpellDataInstClient.IsReady",
+        "fixed: SpellDataInstClient.IsOnCooldown",
+        "fixed: SpellDataInstClient.State",
+        "fixed: change SpellState into flags",
+        "fixed: optimize some interface efficiency",
+        "fixed: sometimes double inject",
+        "deleted: InventorySlot.IsWard",
+        "deleted: useless Exceptions"
+      ],
+      "md5": [
+        "648b604f7daf816bef77e00a0cda17c3",
+        "2ee8dd0489e8008a48db5d7547915164"
+      ]
+    },
+    {
+      "build": "12",
+      "changes": [
+        "fixed: Drawing.DrawLine fps issue",
+        "fixed: Spellbook.CastSpell vector issue"
+      ],
+      "md5": [
+        "1c40eff82208b3e6e6e512c1a9cdcd91",
+        "bdc4f3cb7e9a9047546b1b3f5bf0a2c7"
+      ]
+    },
+    {
+      "build": "13",
+      "changes": [
+        "deleted: Champion Enum",
+        "deleted: AIHeroClient.Hero"
+      ],
+      "md5": [
+        "cd8e00412e8c1aba2375641f292df4d7",
+        "e738a3895250ddddf2fd0c867754c850"
+      ]
+    },
+    {
+      "build": "14",
+      "changes": [
+        "added: Game.OnNotify",
+        "added: GameObject.Name.Set",
+        "fixed: MenuGUI.IsChatOpen",
+        "deleted: Chat.PrintChat"
+      ],
+      "md5": [
+        "ac860fdf7cca764971dca54ff2beace3",
+        "fd3847890a53ec51ada00c1e1b32ef6e"
+      ]
+    },
+    {
+      "build": "15",
+      "changes": [
+        "added: MenuGUI.IsScoreboardOpen"
+      ],
+      "md5": [
+        "36748b1bd7b8ccd7517a1f58b104173d",
+        "7f7a8eb75bb6bffde6fa4f94da47d550"
+      ]
+    },
+    {
+      "build": "16",
+      "changes": [
+        "updated for patch 9.16"
+      ],
+      "md5": [
+        "bb7a610d386fa300fa265fa5c17bf4b0",
+        "73c98e7ec21af9a65c1ed0ee9bd53431"
+      ]
+    },
+    {
+      "build": "17",
+      "changes": [
+        "updated for patch 9.18"
+      ],
+      "md5": [
+        "bb5f1fc0620a1124f3006626bbdfe7e3",
+        "e49fdbef887deef00ccca247bcc2fea6"
+      ]
+    },
+    {
+      "build": "18",
+      "changes": [
+        "updated for patch 9.19"
+      ],
+      "md5": [
+        "993b017516035ae8e4e69126b17b929c",
+        "85eb0f0c203c3b87e7af25bfde6ff493"
+      ]
+    },
+    {
+      "build": "19",
+      "changes": [
+        "updated for patch 9.19 mid"
+      ],
+      "md5": [
+        "d73f32aaf13b60bfb55cfc0bd46166bb",
+        "2480f3c3fbf97de9d2fa66ec333eae0e"
+      ]
+    },
+    {
+      "build": "20",
+      "changes": [
+        "updated for patch 9.20"
+      ],
+      "md5": [
+        "cb65a9d46be28ab938b8a3214b26dd5d",
+        "1da558e978d7e2ab20236f459f7e4440"
+      ]
+    },
+    {
+      "build": "21",
+      "changes": [
+        "updated for patch 9.21",
+        "too many changes all pin to discord Core channel"
+      ],
+      "md5": [
+        "a8127ce9e786bfd3b168b5627ed7a251",
+        "8cb5ffcb7c10bd3ea568f9fe749fc9da"
+      ]
+    },
+    {
+      "build": "22",
+      "changes": [
+        "updated for patch 9.22",
+        "deleted: AIBaseClient.IsAttackingPlayer",
+        "deleted: AIBaseClient.IsMovingPath",
+        "fixed: AIBaseClient.Path => now the first element always current position whether stop & attack or not",
+        "fixed: AIBaseClient.IsMoving => now more fast more exactive and sync with Path"
+      ],
+      "md5": [
+        "cfa275bfa538474f7aa968a549764d0d",
+        "162922fc7c55698b986ffdb3975bfcbd"
+      ]
+    },
+    {
+      "build": "23",
+      "changes": [
+        "updated for patch 9.23"
+      ],
+      "md5": [
+        "1fcc302eb20e3566356bc65678201749",
+        "351cfa63073612c436fb6454a8e15bbc"
+      ]
+    },
+    {
+      "build": "24",
+      "changes": [
+        "updated for patch 9.24",
+        "improve anti-dc on core side"
+      ],
+      "md5": [
+        "52857543702f64293ba1446abdeb376d",
+        "799a188bbd688db43530ef127a698204"
+      ]
+    },
+    {
+      "build": "25",
+      "changes": [
+        "improve anti-dc quality on core side",
+        "added: SpellDataInst.NumericalDisplay",
+        "added: SpellDataInst.ToolTipVars"
+      ],
+      "md5": [
+        "3a9c72701c20f2f6d85d9af5f66db31b",
+        "08941a1c25bdd736f4a4d1fdf41f2be9"
+      ]
+    },
+    {
+      "build": "26",
+      "changes": [
+        "updated for patch 10.1"
+      ],
+      "md5": [
+        "631a17757780a3e67853ca1ac90e3a59",
+        "c6a57896a6e0bc914ac2c96048ca9de3"
+      ]
+    },
+    {
+      "build": "27",
+      "changes": [
+        "updated for mini patch 10.1.304.7100",
+        "added: Hacks.DisableAntiDisconnect",
+        "added: Game.OnProcessPacket"
+      ],
+      "md5": [
+        "0207c60ac463ed6d5b23022282e1e536",
+        "45d9a642a67d366f5ae7231e6c9aca3c"
+      ]
+    },
+    {
+      "build": "28",
+      "changes": [
+        "updated for patch 10.3",
+        "improve anti-dc on core side"
+      ],
+      "md5": [
+        "2542af75c0c678df228cc641add98708",
+        "801ccccbfb4475d4df5b0d3639986c7c"
+      ]
+    },
+    {
+      "build": "29",
+      "changes": [
+        "updated for patch 10.4",
+        "obsoleted: Hacks.DisableAntiDisconnect => now AntiDC system default open",
+        "added: GameObjectType.TFTSlotObject => only type bcz this only for TFT mode",
+        "added: NavGrid.IsWater => support QiyanaQ logic"
+      ],
+      "md5": [
+        "ef26c5b40fc9a4261520ca379ed13f85",
+        "a16f7e8571119ad963e6e8807791cae9"
+      ]
+    },
+    {
+      "build": "30",
+      "changes": [
+        "updated for patch 10.5",
+        "optimized: ObjectManager.GetUnitByIndex",
+        "optimized: ObjectManager.GetUnitByNetworkId",
+        "added: Hud.ShowClick",
+        "added: Game.SendMasteryBadge",
+        "added: Game.SendEmote",
+        "added: Game.SendSummonerEmote"
+      ],
+      "md5": [
+        "25a3ff6a572a92f76d9ca2420e05dd0e",
+        "8484971a24420df1bafc2afc5ea07d79"
+      ]
+    },
+    {
+      "build": "31",
+      "changes": [
+        "updated for patch 10.6"
+      ],
+      "md5": [
+        "9cf7ad2fc6d6557c27651a4b27dcc4e8",
+        "4652854d38d919da043bd776020a2648"
+      ]
+    },
+    {
+      "build": "32",
+      "changes": [
+        "updated for patch 10.7",
+        "fixed: AIHeroClient.KDA"
+      ],
+      "md5": [
+        "9f4c99bfc80acd1db9f72004fb40dcd4",
+        "1b733395703658a411e69f182e9f41ec"
+      ]
+    },
+    {
+      "build": "33",
+      "changes": [
+        "updated for patch 10.8",
+        "fixed: Spellbook.OnCastSpell",
+        "fixed: GameObjectType.MapPropClient",
+        "fixed: Game.SendSummonerEmote"
+      ],
+      "md5": [
+        "2a359f125b72f580c3691483d8699a23",
+        "4b5c2b470e1fe13c4bfcad9777dfdf5c"
+      ]
+    },
+    {
+      "build": "34",
+      "changes": [
+        "updated for patch 10.9"
+      ],
+      "md5": [
+        "35c8f7e028daa63f3ce4c5b71496b8e1",
+        "a937a2621a78761bb872ac66778c795f"
+      ]
+    },
+    {
+      "build": "35",
+      "changes": [
+        "updated for patch 10.10"
+      ],
+      "md5": [
+        "c3f55e3a49f8046a83a88ac3650d5611",
+        "7b7b455a61b9a1bf1bc52d1188825b8e"
+      ]
+    },
+    {
+      "build": "36",
+      "changes": [
+        "updated for patch 10.11"
+      ],
+      "md5": [
+        "66d3a7345a2acfe1b8d33687722e5cd2",
+        "c93f8b2bee7aa3b47324fcc53336a69c"
+      ]
+    },
+    {
+      "build": "37",
+      "changes": [
+        "updated for patch 10.12"
+      ],
+      "md5": [
+        "6a920ef1f98a3e499fd481abe29be4c4",
+        "1e4f14a9da437a8a1cf7e8a34c8c41f3"
+      ]
+    },
+    {
+      "build": "38",
+      "changes": [
+        "updated for patch 10.13"
+      ],
+      "md5": [
+        "0fdc4b35fdbeb00a362785b22c2d9747",
+        "a7245da45f80424ddcbf44d64adec77f"
+      ]
+    },
+    {
+      "build": "39",
+      "changes": [
+        "updated for patch 10.14"
+      ],
+      "md5": [
+        "54067845f61409655ef317fcda7920a9",
+        "e2c5c6fd24a86efb1a7a3d75f1b9ace9"
+      ]
+    },
+    {
+      "build": "40",
+      "changes": [
+        "updated for patch 10.15"
+      ],
+      "md5": [
+        "840e3b2abccec376c08a70a5323f9c3f",
+        "7b4583a0c73b86e31f309d18ce486ebf"
+      ]
+    },
+    {
+      "build": "41",
+      "changes": [
+        "updated for patch 10.16"
+      ],
+      "md5": [
+        "840e3b2abccec376c08a70a5323f9c3f",
+        "7b4583a0c73b86e31f309d18ce486ebf"
+      ]
+    },
+    {
+      "build": "42",
+      "changes": [
+        "updated for patch 10.18"
+      ],
+      "md5": [
+        "3fd42afe9436739faa042abbed61a8f3",
+        "65b56e2c40e223df0d256e5a59458da5"
+      ]
+    },
+    {
+      "build": "43",
+      "changes": [
+        "updated for patch 10.19"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "build": "44",
+      "changes": [
+        "updated for patch 10.20"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "build": "45",
+      "changes": [
+        "updated for patch 10.21",
+        "fix AntiAFK SS issue"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "build": "46",
+      "changes": [
+        "updated for patch 10.22"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "build": "47",
+      "changes": [
+        "updated for patch 10.23"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    }
+  ]
+}
