@@ -64,8 +64,8 @@
     }
   },
   "Loader": {
-    "MD5": "3725D249D3B6CE761994AD904CFA550F",
+    "MD5": "199E14C4114EC673E02708B201BD06C1",
     "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Loader/EnsoulSharp-update.exe",
-    "Version": "1.0.0.26"
+    "Version": "1.0.0.27"
   }
 }
