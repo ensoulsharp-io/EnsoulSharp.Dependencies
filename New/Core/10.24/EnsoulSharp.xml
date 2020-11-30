@@ -24,6 +24,11 @@
 	This class contains everything we can offer related to menu gui.
 </summary>
         </member>
+        <member name="T:EnsoulSharp.GameObjectNotFoundException">
+            <summary>
+	This exception is thrown when a GameObject object can no longer be located in memory.
+</summary>
+        </member>
         <member name="M:EnsoulSharp.Hud.ShowClick(EnsoulSharp.ClickType,SharpDX.Vector3)">
             <summary>
 	Show specific click effect on specified 3D world position.
@@ -647,6 +652,11 @@
 	This class contains everything we can offer related to each item data.
 </summary>
         </member>
+        <member name="T:EnsoulSharp.InventorySlotNotFoundException">
+            <summary>
+	This exception is thrown when a InventorySlot object can no longer be located in memory.
+</summary>
+        </member>
         <member name="T:EnsoulSharp.AIMarker">
             <summary>
 	This class contains everything we can offer related to each AIMarker object.
@@ -995,6 +1005,11 @@
 	This class contains everything we can offer related to each buff instance.
 </summary>
         </member>
+        <member name="T:EnsoulSharp.SpellbookNotFoundException">
+            <summary>
+	This exception is thrown when a Spellbook object can no longer be located in memory.
+</summary>
+        </member>
         <member name="M:EnsoulSharp.Spellbook.GetSpell(EnsoulSharp.SpellSlot)">
             <summary>
 	Gets the spell data instance of the given spell slot.
@@ -1278,6 +1293,11 @@
 	This class contains everything we can offer related to each BuildingClient object.
 </summary>
         </member>
+        <member name="T:EnsoulSharp.SpellDataNotFoundException">
+            <summary>
+	This exception is thrown when a SpellData object can no longer be located in memory.
+</summary>
+        </member>
         <member name="P:EnsoulSharp.SpellData.ManaArray">
             <summary>
 	Gets the mana array of the spell.
@@ -1397,6 +1417,11 @@
         <member name="T:EnsoulSharp.SpellData">
             <summary>
 	This class contains everything we can offer related to each spell data.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellDataInstNotFoundException">
+            <summary>
+	This exception is thrown when a SpellDataInst object can no longer be located in memory.
 </summary>
         </member>
         <member name="P:EnsoulSharp.SpellDataInst.State">
@@ -2593,11 +2618,6 @@
 	This event is fired every time a float property of the object changed.
 </summary>
         </member>
-        <member name="E:EnsoulSharp.GameObject.OnMissileCreate">
-            <summary>
-	This event is fired after a missile created.
-</summary>
-        </member>
         <member name="E:EnsoulSharp.GameObject.OnDelete">
             <summary>
 	This event is fired before a object deleted.
@@ -2651,31 +2671,6 @@
         <member name="T:EnsoulSharp.GameObjectFloatPropertyChangeEventArgs">
             <summary>
 	Args for <see cref="T:EnsoulSharp.GameObject" /> float property change event.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.SpellDataInstNotFoundException">
-            <summary>
-	This exception is thrown when a SpellDataInst object can no longer be located in memory.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.SpellDataNotFoundException">
-            <summary>
-	This exception is thrown when a SpellData object can no longer be located in memory.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.SpellbookNotFoundException">
-            <summary>
-	This exception is thrown when a Spellbook object can no longer be located in memory.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.InventorySlotNotFoundException">
-            <summary>
-	This exception is thrown when a InventorySlot object can no longer be located in memory.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.GameObjectNotFoundException">
-            <summary>
-	This exception is thrown when a GameObject object can no longer be located in memory.
 </summary>
         </member>
     </members>
