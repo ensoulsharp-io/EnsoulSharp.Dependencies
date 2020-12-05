@@ -2610,22 +2610,22 @@
         </member>
         <member name="E:EnsoulSharp.GameObject.OnIntegerPropertyChange">
             <summary>
-	This event is fired every time a integer property of the obejct changed.
+	This event is fired every time one integer property of the obejct changed.
 </summary>
         </member>
         <member name="E:EnsoulSharp.GameObject.OnFloatPropertyChange">
             <summary>
-	This event is fired every time a float property of the object changed.
+	This event is fired every time one float property of the object changed.
 </summary>
         </member>
         <member name="E:EnsoulSharp.GameObject.OnDelete">
             <summary>
-	This event is fired before a object deleted.
+	This event is fired before an object deleted.
 </summary>
         </member>
         <member name="E:EnsoulSharp.GameObject.OnCreate">
             <summary>
-	This event is fired after a object created.
+	This event is fired after an object created.
 </summary>
         </member>
         <member name="T:EnsoulSharp.GameObject">
