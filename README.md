@@ -3,7 +3,7 @@ EnsoulSharp - General dependencies
 
 Previous Discord already got banned (both Admin & EnsoulSharp group)  
 New Admin Discord account: Vino#2206 (disabled)  
-New Discord Server: https://discord.com/invite/Pn5YzxRrVu (active)
+New Discord Server: https://discord.gg/cvtWrBz5nR (active)
 
 Telegram now available:  
 Channel: https://t.me/ensoulsharp_announcement  
