@@ -563,6 +563,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "50",
+      "changes": [
+        "AIBaseClient.Path no longer include current position, only the next path, if stand by, will return empty results."
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }

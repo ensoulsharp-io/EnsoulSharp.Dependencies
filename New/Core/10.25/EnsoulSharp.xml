@@ -2137,7 +2137,7 @@
         </member>
         <member name="P:EnsoulSharp.AIBaseClient.Path">
             <summary>
-	Gets the path of the object.
+	Gets the next path of the object.
 </summary>
         </member>
         <member name="P:EnsoulSharp.AIBaseClient.Buffs">
