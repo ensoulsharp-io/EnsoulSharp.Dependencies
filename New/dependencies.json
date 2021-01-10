@@ -44,20 +44,20 @@
     "1407049E913569BB7D39D2040B12A433": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "02D41A7CF2580816CC08B1960BB7B774",
+          "MD5": "49A34E136052550CBC939B975EBE0D07",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.1/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "4A731DF5B0799E731F872E36720D62E9",
+          "MD5": "9854C473B7CA57D1D2070E3165998271",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.1/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "Reference\\EnsoulSharp.xml": {
-          "MD5": "F95973062C336697377430F713C36EE2",
+          "MD5": "E8BA323DE38552D08635E8B3EE00DBE3",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.1/EnsoulSharp.xml"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "F4158F99458817C3C5DAD7A521D849BD",
+          "MD5": "9C91C38B01C8E053C3DA5D7526F22902",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.1/EnsoulSharp.Injector.dll"
         }
       }
@@ -85,8 +85,8 @@
     }
   },
   "Loader": {
-    "MD5": "F5F9902DF9A4AD43A3C7F5DAD6E459E3",
+    "MD5": "7B036BC602059ABDB8B244E1672B6483",
     "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Loader/EnsoulSharp-update.exe",
-    "Version": "1.0.0.30"
+    "Version": "1.0.0.31"
   }
 }
