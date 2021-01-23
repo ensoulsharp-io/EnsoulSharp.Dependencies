@@ -593,6 +593,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "53",
+      "changes": [
+        "updated for RIOT patch 11.2"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
