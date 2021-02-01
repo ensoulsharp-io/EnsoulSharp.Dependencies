@@ -603,6 +603,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "54",
+      "changes": [
+        "optimize GameObject equal relative"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
