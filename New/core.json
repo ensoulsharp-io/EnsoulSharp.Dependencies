@@ -623,6 +623,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "56",
+      "changes": [
+        "updated for RIOT patch 11.3"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
