@@ -542,7 +542,7 @@
         </member>
         <member name="E:EnsoulSharp.Drawing.OnBeginScene">
             <summary>
-	This event is fired before D3D9.BeginScene.
+	This event is fired after D3D9.BeginScene.
 </summary>
         </member>
         <member name="E:EnsoulSharp.Drawing.OnDraw">

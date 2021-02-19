@@ -633,6 +633,28 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "57",
+      "changes": [
+        "fixed: minimap issue",
+        "fixed: Drawing.DrawCircle",
+        "fixed: Render.Circle.DrawCircle"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "build": "58",
+      "changes": [
+        "updated for RIOT patch 11.4"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
