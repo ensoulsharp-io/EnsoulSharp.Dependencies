@@ -1901,6 +1901,11 @@
 	Gets the inventory items of the object.
 </summary>
         </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Pet">
+            <summary>
+	Gets the first pet of the object.
+</summary>
+        </member>
         <member name="P:EnsoulSharp.AIBaseClient.BasicAttack">
             <summary>
 	Gets the first basic attack of the object.
@@ -1919,6 +1924,11 @@
         <member name="P:EnsoulSharp.AIBaseClient.InfoComponentBasePosition">
             <summary>
 	Gets the info component base position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Velocity">
+            <summary>
+	Gets the velocity of the object.
 </summary>
         </member>
         <member name="P:EnsoulSharp.AIBaseClient.Direction">

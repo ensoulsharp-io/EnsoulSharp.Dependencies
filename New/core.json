@@ -655,6 +655,20 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "59",
+      "changes": [
+        "added: GameObjectOrder for pet",
+        "added: AIBaseClient.Pet for order",
+        "added: AIBaseClient.Velocity for speed predict",
+        "fixed: AIBaseClient.InventoryItems throw exception",
+        "fixed: MenuGUI.IsScoreboardOpen always TRUE on RIOT"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
