@@ -669,6 +669,18 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "60",
+      "changes": [
+        "fixed: Game.FPS on RIOT",
+        "fixed: Game.Ping on RIOT",
+        "fixed: IssueOrder get dc issue with Pet"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
