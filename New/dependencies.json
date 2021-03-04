@@ -6,7 +6,7 @@
       "Version": "1.0.0.0"
     },
     "Reference\\EnsoulSharp.SDK.dll": {
-      "MD5": "8C3166CB6AD47B005111B0B030040538",
+      "MD5": "3FABA80C5BD46BC55231E8EACB140D04",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.0"
     },
@@ -58,27 +58,27 @@
         }
       }
     },
-    "5B07586CC764E4AA7ACA44D6073E57E0": {
+    "42253C302A6777A4913DE0B916BE2655": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "2A9E629E69CCDCD87236B082A23A4A0F",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.4/Riot/EnsoulSharp.Core.dll"
+          "MD5": "7ED07744E62BB0538F4A4FEC93176DAE",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.5/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "496238467D2308D7BED0B5DB2A8D0E0A",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.4/Riot/EnsoulSharp.dll",
+          "MD5": "3F3DE4A52F05E02C5FB9C63DBA68262E",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.5/Riot/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "C65B1CF4A375C6C707C674D72CD90B9A",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.4/Riot/EnsoulSharp.Injector.dll"
+          "MD5": "B1561A8DD251339260A3CE5CC0026657",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.5/Riot/EnsoulSharp.Injector.dll"
         }
       }
     }
   },
   "Loader": {
     "MD5": "6F16D9596EBBA297A7DFBA4505FEA128",
-    "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Loader/EnsoulSharp-update-CN.exe",
+    "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Loader/EnsoulSharp-update-RIOT.exe",
     "Version": "1.0.0.37"
   }
 }

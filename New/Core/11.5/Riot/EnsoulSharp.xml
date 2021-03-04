@@ -1,0 +1,2687 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "EnsoulSharp.Wrapper"
+    </assembly>
+    <members>
+        <member name="P:EnsoulSharp.MenuGUI.IsShopOpen">
+            <summary>
+	Gets a value indicating whether the shop is open.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MenuGUI.IsScoreboardOpen">
+            <summary>
+	Gets a value indicating whether the scoreboard is open.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MenuGUI.IsChatOpen">
+            <summary>
+	Gets a value indicating whether the chat is open.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.MenuGUI">
+            <summary>
+	This class contains everything we can offer related to menu gui.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellbookNotFoundException">
+            <summary>
+	This exception is thrown when a Spellbook object can no longer be located in memory.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.InventorySlotNotFoundException">
+            <summary>
+	This exception is thrown when a InventorySlot object can no longer be located in memory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Hacks.ZoomHack">
+            <summary>
+	Gets or sets a value indicating whether open zoom hack.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Hacks.DisablePrints">
+            <summary>
+	Gets or sets a value indicating whether disable all prints come from Game.Print.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Hacks.DisableDrawings">
+            <summary>
+	Gets or sets a value indicating whether disable all drawings come from scripts.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Hacks.Console">
+            <summary>
+	Gets or sets a value indicating whether open console.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Hacks.AntiAFK">
+            <summary>
+	Gets or sets a value indicating whether open anti-afk.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Hacks">
+            <summary>
+	This class contains everything we can offer related to controlling basic hack features.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Obj_InfoPoint">
+            <summary>
+	This class contains everything we can offer related to each Obj_InfoPoint object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.HQClient">
+            <summary>
+	This class contains everything we can offer related to each HQClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GrassObject">
+            <summary>
+	This class contains everything we can offer related to each GrassObject object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Barracks">
+            <summary>
+	This class contains everything we can offer related to each Barracks object.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.ItemData.GetIData(EnsoulSharp.ItemId)">
+            <summary>
+	Gets the specific item data.
+</summary>
+            <param name="itemId">The item id.</param>
+            <returns>The <see cref="T:EnsoulSharp.ItemData" /> instance.</returns>
+            <remarks>Returns null if the specified item id is invalid.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.Entries">
+            <summary>
+	Gets the entries of all items.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.SpellName">
+            <summary>
+	Gets the spell name of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.TranslatedDisplayName">
+            <summary>
+	Gets the translated display name of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.DisplayName">
+            <summary>
+	Gets the display name of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.SellBackPercentage">
+            <summary>
+	Gets the sell back percentage of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.CanBeSold">
+            <summary>
+	Gets a value indicating whether the item can be sold.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.UsableInStore">
+            <summary>
+	Gets a value indicating whether the item is usable in store.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.Price">
+            <summary>
+	Gets the price of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.MaxStack">
+            <summary>
+	Gets the max stack of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.Id">
+            <summary>
+	Gets the id of the item.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.ItemData.RequiredLevel">
+            <summary>
+	Gets the required level of the item.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.ItemData">
+            <summary>
+	This class contains everything we can offer related to each item data.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.LevelPropGameObjectClient">
+            <summary>
+	This class contains everything we can offer related to each LevelPropGameObjectClient object.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.Hud.ShowClick(EnsoulSharp.ClickType,SharpDX.Vector3)">
+            <summary>
+	Show specific click effect on specified 3D world position.
+</summary>
+            <param name="type">The click type.</param>
+            <param name="position">The 3D world click position.</param>
+        </member>
+        <member name="T:EnsoulSharp.Hud">
+            <summary>
+	This class contains everything we can offer related to hud.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.BarracksDampenerClient">
+            <summary>
+	This class contains everything we can offer related to each BarracksDampenerClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Obj_NavPoint">
+            <summary>
+	This class contains everything we can offer related to each Obj_NavPoint object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Pawn">
+            <summary>
+	This class contains everything we can offer related to each Pawn object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIMinionClient">
+            <summary>
+	This class contains ecerything we can offer related to each AIMinionClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.LevelPropAIClient">
+            <summary>
+	This class contains everything we can offer related to each LevelPropAIClient object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.IsVisible">
+            <summary>
+	Gets a value indicating whether the object is visible.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.IsDestroyed">
+            <summary>
+	Gets a value indicating whether the object is destroyed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.IsComplete">
+            <summary>
+	Gets a value indicating whether the object is complete.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.Width">
+            <summary>
+	Gets the width of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.Speed">
+            <summary>
+	Gets the speed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.StartTime">
+            <summary>
+	Gets the start time of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.Slot">
+            <summary>
+	Gets the spell slot of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.Target">
+            <summary>
+	Gets the spell target of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.EndPosition">
+            <summary>
+	Gets the end position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.StartPosition">
+            <summary>
+	Gets the start position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.SpellCaster">
+            <summary>
+	Gets the spell caster of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.SData">
+            <summary>
+	Gets the spell data of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.MissileClient.CastInfo">
+            <summary>
+	Gets the spell cast info of the object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.MissileClient">
+            <summary>
+	This class contains everything we can offer related to each MissileClient object.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.WorldToScreen(SharpDX.Vector3,SharpDX.Vector2@)">
+            <summary>
+	Converts the given 3D world coordinates into screen coordinates.
+</summary>
+            <param name="worldCoord">The world position.</param>
+            <param name="screenCoord">The screen position result.</param>
+            <returns>A value indicating whether the conversion is successful and whether the coordinates is valid.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.WorldToScreen(SharpDX.Vector3)">
+            <summary>
+	Converts the given 3D world coordinates into screen coordinates.
+</summary>
+            <param name="worldCoord">The world position.</param>
+            <returns>The screen coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.WorldToMinimap(SharpDX.Vector3,SharpDX.Vector2@)">
+            <summary>
+	Converts the given 3D world coordinates into minimap coordinates.
+</summary>
+            <param name="worldCoord">The world position.</param>
+            <param name="mapCoord">The minimap position result.</param>
+            <returns>A value indicating whether the conversion is successful and whether the coordinates is valid.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.WorldToMinimap(SharpDX.Vector3)">
+            <summary>
+	Converts the given 3D world coordinates into minimap coordinates.
+</summary>
+            <param name="worldCoord">The world position.</param>
+            <returns>The minimap coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.ScreenToWorld(SharpDX.Vector2)">
+            <summary>
+	Converts the given screen coordinates into 3D world coordinates.
+</summary>
+            <param name="position">The screen position.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.ScreenToWorld(System.Single,System.Single)">
+            <summary>
+	Converts the given screen coordinates into 3D world coordinates.
+</summary>
+            <param name="x">The screen x.</param>
+            <param name="y">The screen y.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.MinimapToWorld(SharpDX.Vector2)">
+            <summary>
+	Converts the given minimap coordinates into 3D world coordinates.
+</summary>
+            <param name="position">The minimap position.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.MinimapToWorld(System.Single,System.Single)">
+            <summary>
+	Converts the given minimap coordinates into 3D world coordinates.
+</summary>
+            <param name="x">The minimap x.</param>
+            <param name="y">The minimap y.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.GetTextExtent(System.String)">
+            <summary>
+	Retrieves text extent.
+</summary>
+            <param name="text">The text.</param>
+            <returns>The size of the given text.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawText(SharpDX.Vector2,System.Drawing.Color,System.String,System.Object[])">
+            <summary>
+	Draws text on the screen.
+</summary>
+            <param name="position">The screen position.</param>
+            <param name="color">The color.</param>
+            <param name="format">The format.</param>
+            <param name="params">The params.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawText(System.Single,System.Single,System.Drawing.Color,System.String,System.Object[])">
+            <summary>
+	Draws text on the screen.
+</summary>
+            <param name="x">The screen x.</param>
+            <param name="y">The screen y.</param>
+            <param name="color">The color.</param>
+            <param name="format">The format.</param>
+            <param name="params">The params.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawText(SharpDX.Vector2,System.Drawing.Color,System.String)">
+            <summary>
+	Draws text on the screen.
+</summary>
+            <param name="position">The screen position.</param>
+            <param name="color">The color.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawText(System.Single,System.Single,System.Drawing.Color,System.String)">
+            <summary>
+	Draws text on the screen.
+</summary>
+            <param name="x">The screen x.</param>
+            <param name="y">The screen y.</param>
+            <param name="color">The color.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawLine(SharpDX.Vector2,SharpDX.Vector2,System.Single,System.Drawing.Color)">
+            <summary>
+	Draws a line on the screen with specified thickness and color.
+</summary>
+            <param name="start">The screen start position.</param>
+            <param name="end">The screen end position.</param>
+            <param name="thickness">The thickness.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawLine(System.Single,System.Single,System.Single,System.Single,System.Single,System.Drawing.Color)">
+            <summary>
+	Draws a line on the screen with specified thickness and color.
+</summary>
+            <param name="startX">The screen start x.</param>
+            <param name="startY">The screen start y.</param>
+            <param name="endX">The screen end x.</param>
+            <param name="endY">The scrren end y.</param>
+            <param name="thickness">The thickness.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:EnsoulSharp.Drawing.DrawCircle(SharpDX.Vector3,System.Single,System.Drawing.Color)">
+            <summary>
+	Draws a circular range indicator at the given 3D position with the given radius in the specified color.
+</summary>
+            <param name="position">The 3D world position.</param>
+            <param name="radius">The radius.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="P:EnsoulSharp.Drawing.Height">
+            <summary>
+	Gets the height of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Drawing.Width">
+            <summary>
+	Gets the width of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Drawing.View">
+            <summary>
+	Gets the view of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Drawing.Projection">
+            <summary>
+	Gets the projection of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Drawing.Direct3DDevice">
+            <summary>
+	Gets the direct3d device of the game.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnPresent">
+            <summary>
+	This event is fired before D3D9.Present.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnPostReset">
+            <summary>
+	This event is fired after D3D9.Reset.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnPreReset">
+            <summary>
+	This event is fired before D3D9.Reset.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnEndScene">
+            <summary>
+	This event is fired before D3D9.EndScene.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnBeginScene">
+            <summary>
+	This event is fired after D3D9.BeginScene.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Drawing.OnDraw">
+            <summary>
+	This event is fired before game hud and menu gui draw.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Drawing">
+            <summary>
+	This class contains everything we can offer related to drawing.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.EffectEmitter.RestartTime">
+            <summary>
+	Gets the restart time of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.EffectEmitter.Orientation">
+            <summary>
+	Gets the orientation of the object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.EffectEmitter">
+            <summary>
+	This class contains everything we can offer related to each EffectEmitter object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Turret">
+            <summary>
+	This class contains everything we can offer related to each Turret object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AnimatedBuildingClient">
+            <summary>
+	This class contains everything we can offer related to each AnimatedBuildingClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.UnrevealedTarget">
+            <summary>
+	This class contains everything we can offer related to each UnrevealedTarget object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Obj_Levelsizer">
+            <summary>
+	This class contains everything we can offer related to each Obj_Levelsizer object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIMarker">
+            <summary>
+	This class contains everything we can offer related to each AIMarker object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.ObjectAttacher">
+            <summary>
+	This class contains everything we can offer related to each ObjectAttacher object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DrawFX">
+            <summary>
+	This class contains everything we can offer related to each DrawFX object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.ShopClient">
+            <summary>
+	This class contains everything we can offer related to each ShopClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AITurretClient">
+            <summary>
+	This class contains everything we can offer related to each AITurretClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AITurretCommon">
+            <summary>
+	This class contains everything we can offer related to each AITurretCommon object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.NeutralMinionCampClient">
+            <summary>
+	This class contains everything we can offer related to each NeutralMinionCampClient object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.LevelPropSpawnerPoint">
+            <summary>
+	This class contains everything we can offer related to each LevelPropSpawnerPoint object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellDataNotFoundException">
+            <summary>
+	This exception is thrown when a SpellData object can no longer be located in memory.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellDataInstNotFoundException">
+            <summary>
+	This exception is thrown when a SpellDataInst object can no longer be located in memory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.State">
+            <summary>
+	Gets the state of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Slot">
+            <summary>
+	Gets the slot of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.SData">
+            <summary>
+	Gets the data of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.ManaCost">
+            <summary>
+	Gets the mana cost of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Name">
+            <summary>
+	Gets the name of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.IconUsed">
+            <summary>
+	Gets the icon used index of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.TooltipVars">
+            <summary>
+	Gets the tooltip vars of the spell.
+</summary>
+            <remarks>The max count is 16.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Cooldown">
+            <summary>
+	Gets the total cooldown time of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.ToggleState">
+            <summary>
+	Gets the toggle state of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Ammo">
+            <summary>
+	Gets the current ammo of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.NumericalDisplay">
+            <summary>
+	Gets the display numerical of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.CooldownExpires">
+            <summary>
+	Gets the cooldown expires time of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Learned">
+            <summary>
+	Gets a value indicating whether the spell is learned.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.Level">
+            <summary>
+	Gets the level of the spell.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellDataInst">
+            <summary>
+	This class contains everything we can offer related to each spell data instance.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.AIHeroClient.SellItem(System.Int32)">
+            <summary>
+	Sells an item.
+</summary>
+            <param name="slot">The inventory slot.</param>
+        </member>
+        <member name="M:EnsoulSharp.AIHeroClient.BuyItem(EnsoulSharp.ItemId)">
+            <summary>
+	Buys an item.
+</summary>
+            <param name="itemId">The item id.</param>
+            <returns>The <see cref="T:EnsoulSharp.BuyItemResult" /> of the given item id.</returns>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.Assists">
+            <summary>
+	Gets the assists of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.Deaths">
+            <summary>
+	Gets the deaths of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.ChampionsKilled">
+            <summary>
+	Gets the champions killed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.NeutralMinionsKilled">
+            <summary>
+	Gets the neutral minions killed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.MinionsKilled">
+            <summary>
+	Gets the minions killed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.ExpToNextLevel">
+            <summary>
+	Gets the experience to next level of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.ExpToCurrentLevel">
+            <summary>
+	Gets the experience to current level of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.Experience">
+            <summary>
+	Gets the experience of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.Level">
+            <summary>
+	Gets the level of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.SpellTrainingPoints">
+            <summary>
+	Gets the spell training points of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClient.EvolvePoints">
+            <summary>
+	Gets the evolve points of the object.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIHeroClient.OnLevelUp">
+            <summary>
+	This event is fired before level up.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIHeroClient">
+            <summary>
+	This class contains ecerything we can offer related to each AIHeroClient object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIHeroClientLevelUpEventArgs.Level">
+            <summary>
+	Gets the level up to.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIHeroClientLevelUpEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIHeroClient" /> level up event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.NavMeshCell.WorldPosition">
+            <summary>
+	Gets the world position of the grid.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.NavMeshCell.IsWater">
+            <summary>
+	Gets a value indicating whether the grid is water.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.NavMeshCell.GridY">
+            <summary>
+	Gets the grid y.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.NavMeshCell.GridX">
+            <summary>
+	Get the grid x.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.NavMeshCell.CollFlags">
+            <summary>
+	Gets the collision flags of the grid.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.NavMeshCell">
+            <summary>
+	This class contains everything we can offer related to navigation mesh cell.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetHeightForPosition(SharpDX.Vector3)">
+            <summary>
+	Gets the height of the given 3D world coordinates.
+</summary>
+            <param name="position">The world position.</param>
+            <returns>The height of the given 3D world coordinates.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetHeightForPosition(System.Single,System.Single)">
+            <summary>
+	Gets the height of the given 3D world coordinates.
+</summary>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+            <returns>The height of the given 3D world coordinates.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.WorldToGrid(SharpDX.Vector3)">
+            <summary>
+	Converts the given 3D world coordinates into grid coordinates.
+</summary>
+            <param name="position">The world position.</param>
+            <returns>The grid coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.WorldToGrid(System.Single,System.Single)">
+            <summary>
+	Converts the given 3D world coordinates into grid coordinates.
+</summary>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+            <returns>The grid coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GridToWorld(SharpDX.Vector2)">
+            <summary>
+	Converts the given grid coordinates into 3D world coordinates.
+</summary>
+            <param name="position">The grid position.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GridToWorld(System.Int32,System.Int32)">
+            <summary>
+	Converts the given grid coordinates into 3D world coordinates.
+</summary>
+            <param name="x">The grid x.</param>
+            <param name="y">The grid y.</param>
+            <returns>The 3D world coordinates result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.IsWater(SharpDX.Vector3)">
+            <summary>
+	Checks if there is water at the given position.
+</summary>
+            <param name="position">The world position.</param>
+            <returns>A value indicating whether there is water at the given position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.IsWater(System.Single,System.Single)">
+            <summary>
+	Checks if there is water at the given position.
+</summary>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+            <returns>A value indicating whether there is water at the given position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.IsWallOfType(SharpDX.Vector3,EnsoulSharp.CollisionFlags,System.Single)">
+            <summary>
+	Checks if there if a wall of type at the given position.
+</summary>
+            <param name="position">The world position.</param>
+            <param name="flags">The collision flags specified to check.</param>
+            <param name="radius">The check radius.</param>
+            <returns>A value indicating whether there is a wall of type at the given position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.IsWallOfType(System.Single,System.Single,EnsoulSharp.CollisionFlags,System.Single)">
+            <summary>
+	Checks if there is a wall of type at the given position.
+</summary>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+            <param name="flags">The collision flags specified to check.</param>
+            <param name="radius">The check radius.</param>
+            <returns>A value indicating whether there is a wall of type at the given position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.SetCollisionFlags(EnsoulSharp.CollisionFlags,SharpDX.Vector3)">
+            <summary>
+	Sets the collision flags of the specified world position.
+</summary>
+            <param name="flags">The collision flags specified to set.</param>
+            <param name="position">The world position.</param>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.SetCollisionFlags(EnsoulSharp.CollisionFlags,System.Single,System.Single)">
+            <summary>
+	Sets the collision flags of the specified world position.
+</summary>
+            <param name="flags">The collision flags specified to set.</param>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetCollisionFlags(SharpDX.Vector3)">
+            <summary>
+	Gets the collision flags of the specfied world position.
+</summary>
+            <param name="position">The world position.</param>
+            <returns>The <see cref="T:EnsoulSharp.CollisionFlags" /> of the specfied world position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetCollisionFlags(System.Single,System.Single)">
+            <summary>
+	Gets the collision flags of the specified world position.
+</summary>
+            <param name="x">The world x.</param>
+            <param name="y">The world y.</param>
+            <returns>The <see cref="T:EnsoulSharp.CollisionFlags" /> of the specified world position.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetCell(SharpDX.Vector2)">
+            <summary>
+	Gets the navigation mesh cell.
+</summary>
+            <param name="position">The grid position.</param>
+            <returns>An instance of the <see cref="T:EnsoulSharp.NavMeshCell" />.</returns>
+        </member>
+        <member name="M:EnsoulSharp.NavMesh.GetCell(System.Int32,System.Int32)">
+            <summary>
+	Gets the navigation mesh cell.
+</summary>
+            <param name="x">The grid x.</param>
+            <param name="y">The grid y.</param>
+            <returns>An instance of the <see cref="T:EnsoulSharp.NavMeshCell" />.</returns>
+        </member>
+        <member name="T:EnsoulSharp.NavMesh">
+            <summary>
+	This class contains everything we can offer related to navigation mesh.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.MapPropClient">
+            <summary>
+	This class contains ecerything we can offer related to each MapPropClient object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.ManaArray">
+            <summary>
+	Gets the mana array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRadiusSecondaryArray">
+            <summary>
+	Gets the secondary cast radius array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRadiusArray">
+            <summary>
+	Gets the cast radius array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRangeDisplayOverrideArray">
+            <summary>
+	Gets the display override cast range array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRangeArray">
+            <summary>
+	Gets the cast range array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CooldownTimeArray">
+            <summary>
+	Gets the cooldown time array of the spell.
+</summary>
+            <remarks>The max count is 6.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.TargetingType">
+            <summary>
+	Gets the targeting type of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.LineDragLength">
+            <summary>
+	Gets the line drag length of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.LineWidth">
+            <summary>
+	Gets the line width of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.MissileSpeed">
+            <summary>
+	Gets the missile speed of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastType">
+            <summary>
+	Gets the cast type of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastFrame">
+            <summary>
+	Gets the cast frame of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastConeDistance">
+            <summary>
+	Gets the cast cone distance of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastConeAngle">
+            <summary>
+	Gets the cast cone angle of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRadiusSecondary">
+            <summary>
+	Gets the secondary cast radius of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRadius">
+            <summary>
+	Gets the cast radius of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRangeDisplayOverride">
+            <summary>
+	Gets the dislay override cast range of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CastRange">
+            <summary>
+	Gets the cast range of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.IsToggleSpell">
+            <summary>
+	Gets a value indiacating whether the spell is toggle type.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.UseMinimapTargeting">
+            <summary>
+	Gets a value indicating whether the spell can use minimap targeting.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.CooldownTime">
+            <summary>
+	Gets the cooldown time of the spell.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellData.Name">
+            <summary>
+	Gets the name of the spell.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellData">
+            <summary>
+	This class contains everything we can offer related to each spell data.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.GetSpell(EnsoulSharp.SpellSlot)">
+            <summary>
+	Gets the spell data instance of the given spell slot.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <returns>The spell data instance.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CanUseSpell(EnsoulSharp.SpellSlot)">
+            <summary>
+	Gets the <see cref="T:EnsoulSharp.SpellState" /> of the given spell slot.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <returns>The <see cref="T:EnsoulSharp.SpellState" /> of the given spell slot.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.LevelSpell(EnsoulSharp.SpellSlot)">
+            <summary>
+	Upgrades a spell.
+</summary>
+            <param name="slot">The spell slot.</param>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.EvolveSpell(EnsoulSharp.SpellSlot)">
+            <summary>
+	Evolves a spell.
+</summary>
+            <param name="slot">The spell slot.</param>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.UpdateChargedSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Updates a charged spell at the given position.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="position">The spell target position.</param>
+            <param name="releaseCast">A value indicating whether the cast is release.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.UpdateChargedSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3,System.Boolean,System.Boolean)">
+            <summary>
+	Updates a charged spell at the given position, and you can specify whether trigger event.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="position">The spell target position.</param>
+            <param name="releaseCast">A value indicating whether the cast is release.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3)">
+            <summary>
+	Casts a spell at the given position.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="position">The spell target position.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Casts a spell at the given position, and you can specify whether trigger event.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="position">The spell target position.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3,SharpDX.Vector3)">
+            <summary>
+	Casts a spell from given start position to end position.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="startPosition">The spell start position.</param>
+            <param name="endPosition">The spell end position.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,SharpDX.Vector3,SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Casts a spell from given start position to end position, and you can specify whether trigger event.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="startPosition">The spell start position.</param>
+            <param name="endPosition">The spell end position.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,EnsoulSharp.GameObject)">
+            <summary>
+	Casts a spell on the given unit.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="target">The spell target unit.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,EnsoulSharp.GameObject,System.Boolean)">
+            <summary>
+	Casts a spell on the given unit, and you can specify whether trigger event.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="target">The spell target unit.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot)">
+            <summary>
+	Casts a spell.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Spellbook.CastSpell(EnsoulSharp.SpellSlot,System.Boolean)">
+            <summary>
+	Casts a spell, and you can specify whether trigger event.
+</summary>
+            <param name="slot">The spell slot.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether the spell is successfully cast.</returns>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.SpellWasCast">
+            <summary>
+	Gets a value indicating whether the spell was cast.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.SpellEndTime">
+            <summary>
+	Gets the spell end time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.SpellCastTime">
+            <summary>
+	Gets the spell cast time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsStopped">
+            <summary>
+	Gets a value indicating whether is stopped now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsCharging">
+            <summary>
+	Gets a value indicating whether is charging now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsChanneling">
+            <summary>
+	Gets a value indicating whether is channeling now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsAutoAttack">
+            <summary>
+	Gets a value indicating whether is auto attacking now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsWindingUp">
+            <summary>
+	Gets a value indicating whether is winding up now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.IsCastingSpell">
+            <summary>
+	Gets a value indicating whether is casting spell now.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.Owner">
+            <summary>
+	Gets the book owner.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.Spells">
+            <summary>
+	Gets the all spells.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Spellbook.OnUpdateChargedSpell">
+            <summary>
+	This event is fired before update a charged spell.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Spellbook.OnStopCast">
+            <summary>
+	This event is fired after stop cast a spell.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Spellbook.OnCastSpell">
+            <summary>
+	This event is fired before cast a spell.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Spellbook">
+            <summary>
+	This class contains everything we can offer related to each object spell book.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookUpdateChargedSpellEventArgs.ReleaseCast">
+            <summary>
+	Gets a value indicating whether the spell is release cast.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookUpdateChargedSpellEventArgs.Position">
+            <summary>
+	Gets the spell target position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookUpdateChargedSpellEventArgs.Slot">
+            <summary>
+	Gets the spell slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookUpdateChargedSpellEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellbookUpdateChargedSpellEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Spellbook" /> update charged spell event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.SpellCastId">
+            <summary>
+	Gets the spell cast id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.MissileNetworkId">
+            <summary>
+	Gets the destroy missile network id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.DestroyMissile">
+            <summary>
+	Gets a value indicating whether the spell destroy missile.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.SpellStopCancelled">
+            <summary>
+	Gets a value indicating whether the spell stop cancelled.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.HasBeenCast">
+            <summary>
+	Gets a value indicating whether the spell has been cast.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookStopCastEventArgs.KeepAnimationPlaying">
+            <summary>
+	Gets a value indicating whether keep spell animation playing.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellbookStopCastEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Spellbook" /> stop cast event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookCastSpellEventArgs.Slot">
+            <summary>
+	Gets the spell slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookCastSpellEventArgs.Target">
+            <summary>
+	Gets the spell target.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookCastSpellEventArgs.EndPosition">
+            <summary>
+	Gets the spell target position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookCastSpellEventArgs.StartPosition">
+            <summary>
+	Gets the spell start position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellbookCastSpellEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.SpellbookCastSpellEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Spellbook" /> cast spell event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.IData">
+            <summary>
+	Gets the item data of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.InvestedGoldAmount">
+            <summary>
+	Gets the invested gold amount of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.SpellCharges">
+            <summary>
+	Gets the spell charges of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.PurchaseTime">
+            <summary>
+	Gets the purchase time of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.CountInSlot">
+            <summary>
+	Gets the inventory count in slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.Id">
+            <summary>
+	Gets the item id of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.Slot">
+            <summary>
+	Gets the slot of the inventory.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.InventorySlot.SpellSlot">
+            <summary>
+	Gets the spell slot of the inventory.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.InventorySlot">
+            <summary>
+	This class contains everything we can offer related to each inventory in slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.Caster">
+            <summary>
+	Gets the caster of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.Name">
+            <summary>
+	Gets the name of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.Count">
+            <summary>
+	Gets the count of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.TooltipVars">
+            <summary>
+	Gets the tooltip vars of the buff.
+</summary>
+            <remarks>The max count is 16.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.EndTime">
+            <summary>
+	Gets the end time of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.StartTime">
+            <summary>
+	Gets the start time of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.Type">
+            <summary>
+	Gets the type of the buff.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.IsPositive">
+            <summary>
+	Gets a value indicating whether the buff is positive.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.IsActive">
+            <summary>
+	Gets a value indicating whether the buff is active.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.BuffInstance.IsValid">
+            <summary>
+	Gets a value indicating whether the buff is valid.
+</summary>
+            <remarks>We suggest you can use this property check whether the buff is valid before any other calls.</remarks>
+        </member>
+        <member name="T:EnsoulSharp.BuffInstance">
+            <summary>
+	This class contains everything we can offer related to each buff instance.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.IssueOrder(EnsoulSharp.GameObjectOrder,SharpDX.Vector3)">
+            <summary>
+	Issues order at the given position.
+</summary>
+            <param name="order">The order.</param>
+            <param name="targetPos">The position.</param>
+            <returns>A value indicating whether successfully issue the order.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.IssueOrder(EnsoulSharp.GameObjectOrder,SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Issues order at the given position, and you can specify whether trigger event.
+</summary>
+            <param name="order">The order.</param>
+            <param name="targetPos">The position.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether successfully issue the order.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.IssueOrder(EnsoulSharp.GameObjectOrder,EnsoulSharp.AttackableUnit)">
+            <summary>
+	Issues order on the given unit.
+</summary>
+            <param name="order">The order.</param>
+            <param name="targetUnit">The unit.</param>
+            <returns>A value indicating whether successfully issue the order.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.IssueOrder(EnsoulSharp.GameObjectOrder,EnsoulSharp.AttackableUnit,System.Boolean)">
+            <summary>
+	Issues order on the given unit, and you can specify whether trigger event.
+</summary>
+            <param name="order">The order.</param>
+            <param name="targetUnit">The unit.</param>
+            <param name="triggerEvent">A value indicating whether trigger event.</param>
+            <returns>A value indicating whether successfully issue the order.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetPath(SharpDX.Vector3,SharpDX.Vector3)">
+            <summary>
+	Gets the path from start position to end position.
+</summary>
+            <param name="start">The start position.</param>
+            <param name="end">The end position.</param>
+            <returns>The path.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetPath(SharpDX.Vector3,SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Gets the path from start position to end position, and you can specify whether smooth the path.
+</summary>
+            <param name="start">The start position.</param>
+            <param name="end">The end position.</param>
+            <param name="smoothPath">A value indicating whether smooth the path.</param>
+            <returns>The path.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetPath(SharpDX.Vector3)">
+            <summary>
+	Gets the path from object position to end position.
+</summary>
+            <param name="end">The end position.</param>
+            <returns>The path.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetPath(SharpDX.Vector3,System.Boolean)">
+            <summary>
+	Gets the path from object position to end position, and you can specify whether smooth the path.
+</summary>
+            <param name="end">The end position.</param>
+            <param name="smoothPath">A value indicating whether smooth the path.</param>
+            <returns>The path.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.HasBuffOfType(EnsoulSharp.BuffType)">
+            <summary>
+	Gets whether the object has buff with specified type.
+</summary>
+            <param name="type">The buff type.</param>
+            <returns>A value indicating whether the object has buff.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.HasBuff(System.String)">
+            <summary>
+	Gets whether the object has buff with specified name.
+</summary>
+            <param name="name">The buff name.</param>
+            <returns>A value indicating whether the object has buff.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetBuffCount(System.String)">
+            <summary>
+	Gets buff count with specified name.
+</summary>
+            <param name="name">The buff name.</param>
+            <returns>The buff count.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetBuff(System.String)">
+            <summary>
+	Gets buff with specified name.
+</summary>
+            <param name="name">The buff name.</param>
+            <returns>The <see cref="T:EnsoulSharp.BuffInstance" /> result.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.GetAbilityResource(EnsoulSharp.AbilityResourceType,EnsoulSharp.OutputType)">
+            <summary>
+	Gets the specific ability resource value.
+</summary>
+            <param name="abilityResourceType">The ability resource type.</param>
+            <param name="outputType">The output type.</param>
+            <returns>The ability resource value.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.UseObject(EnsoulSharp.AttackableUnit)">
+            <summary>
+	Uses a object.
+</summary>
+            <param name="target">The object.</param>
+            <returns>A value indicating whether successfully use the object.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.CanUseObject(EnsoulSharp.AttackableUnit)">
+            <summary>
+	Gets whether the object can use.
+</summary>
+            <param name="target">The object.</param>
+            <returns>A value indicating whether the object can use.</returns>
+        </member>
+        <member name="M:EnsoulSharp.AIBaseClient.SetSkin(System.Int32)">
+            <summary>
+	Sets a specific skin.
+</summary>
+            <param name="skinId">The skin id.</param>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BaseMoveSpeed">
+            <summary>
+	Gets the base move speed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BaseHP">
+            <summary>
+	Gets the base hp of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.TotalMagicalDamage">
+            <summary>
+	Gets the total magical damage of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.TotalAttackDamage">
+            <summary>
+	Gets the total attack damage of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.MagicLethality">
+            <summary>
+	Gets the magic lethality of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PhysicalLethality">
+            <summary>
+	Gets the physical lethality of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentBonusMagicPenetrationMod">
+            <summary>
+	Gets the percent bonus magic penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentBonusArmorPenetrationMod">
+            <summary>
+	Gets the percent bonus armor penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentMagicPenetrationMod">
+            <summary>
+	Gets the percent magic penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentArmorPenetrationMod">
+            <summary>
+	Gets the percent armor penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatMagicPenetrationMod">
+            <summary>
+	Gets the flat magic penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatArmorPenetrationMod">
+            <summary>
+	Gets the flat armor penetration mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.AttackRange">
+            <summary>
+	Gets the attack range of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.MoveSpeed">
+            <summary>
+	Gets the move speed of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.HPRegenRate">
+            <summary>
+	Gets the hp regen rate of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BaseHPRegenRate">
+            <summary>
+	Gets the base hp regen rate of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PARRegenRate">
+            <summary>
+	Gets the par regen rate of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BasePARRegenRate">
+            <summary>
+	Gets the base par regen rate of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BonusSpellBlock">
+            <summary>
+	Gets the bonus spell block of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.SpellBlock">
+            <summary>
+	Gets the spell block of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BonusArmor">
+            <summary>
+	Gets the bonus armor of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Armor">
+            <summary>
+	Gets the armor of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Crit">
+            <summary>
+	Gets the crit of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CritDamageMultiplier">
+            <summary>
+	Gets the crit damage multiplier of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentCritDamageMod">
+            <summary>
+	Gets the percent crit damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatCritDamageMod">
+            <summary>
+	Gets the flat crit damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatCritChanceMod">
+            <summary>
+	Gets the flat crit chance mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.AttackSpeedMod">
+            <summary>
+	Gets the attack speed mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentAttackSpeedMod">
+            <summary>
+	Gets the percent attack speed mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentLifeStealMod">
+            <summary>
+	Gets the percent life steal mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BaseAttackDamage">
+            <summary>
+	Gets the base attack damage of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentBasePhysicalDamageAsFlatBonusMod">
+            <summary>
+	Gets the percent base physical damage as flat bonus mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentBonusPhysicalDamageMod">
+            <summary>
+	Gets the percent bonus physical damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentPhysicalDamageMod">
+            <summary>
+	Gets the percent physical damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatPhysicalDamageMod">
+            <summary>
+	Gets the flat physical damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BaseAbilityDamage">
+            <summary>
+	Gets the base ability damage of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentMagicDamageMod">
+            <summary>
+	Gets the percent magic damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.FlatMagicDamageMod">
+            <summary>
+	Gets the flat magic damage mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient._PercentCooldownMod">
+            <summary>
+	Gets the percent cooldown mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.PercentCooldownMod">
+            <summary>
+	Gets the percent cooldown mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.AbilityHasteMod">
+            <summary>
+	Gets the ability haste mod of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsTaunted">
+            <summary>
+	Gets a value indicating whether the object is taunted.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsSuppressed">
+            <summary>
+	Gets a value indicating whether the object is suppressed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsStunned">
+            <summary>
+	Gets a value indicating whether the object is stunned.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsStealthed">
+            <summary>
+	Gets a value indicating whether the object is stealthed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsSlowed">
+            <summary>
+	Gets a value indicating whether the object is slowed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsSelectable">
+            <summary>
+	Gets a value indicating whether the object is selectable.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsRevealSpecificUnit">
+            <summary>
+	Gets a value indicating whether the object is reveal specific unit.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsObscured">
+            <summary>
+	Gets a value indicating whether the object is obscured.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsNoRender">
+            <summary>
+	Gets a value indicating whether the object is no render.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsNearSight">
+            <summary>
+	Gets a value indicating whether the object is near sight.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsGrounded">
+            <summary>
+	Gets a value indicating whether the object is grounded.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsGhostedForAllies">
+            <summary>
+	Gets a value indicating whether the object is ghoested for allies.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsGhosted">
+            <summary>
+	Gets a value indicating whether the object is ghosted.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsForceRenderParticles">
+            <summary>
+	Gets a value indicating whether the object is force render particles.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsFleeing">
+            <summary>
+	Gets a value indicating whether the object is fleeing.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsFeared">
+            <summary>
+	Gets a value indicating whether the object is feared.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsDodgingMissiles">
+            <summary>
+	Gets a value indicating whether the object is dodging missiles.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsCursorAllowedWhileUntargetable">
+            <summary>
+	Gets a value indicating whether the object is cursor allowed while untargetable.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsClickproofToEnemies">
+            <summary>
+	Gets a value indicating whether the object is clickproof to enemies.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsCharmed">
+            <summary>
+	Gets a value indicating whether the object is charmed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsAsleep">
+            <summary>
+	Gets a value indicating whether the object is asleep.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CanWalk">
+            <summary>
+	Gets a value indicating whether the object can walk.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CanMove">
+            <summary>
+	Gets a value indicating whether the object can move.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CanCast">
+            <summary>
+	Gets a value indicating whether the object can cast.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CanAttack">
+            <summary>
+	Gets a value indicating whether the object can attack.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.AttackDelay">
+            <summary>
+	Gets the attack delay of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.AttackCastDelay">
+            <summary>
+	Gets the attack cast delay of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BonusMana">
+            <summary>
+	Gets the bonus mana of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BonusHealth">
+            <summary>
+	Gets the bonus health of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.GoldTotal">
+            <summary>
+	Gets the total gold of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Gold">
+            <summary>
+	Gets the current gold of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.ExpGiveRadius">
+            <summary>
+	Gets the experience give radius of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsRanged">
+            <summary>
+	Gets a value indicating whether the object is ranged.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsMelee">
+            <summary>
+	Gets a value indicating whether the object is melee.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsWindingUp">
+            <summary>
+	Gets a value indicating whether the object is winding up.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsMoving">
+            <summary>
+	Gets a value indicating whether the object is moving.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.SkinId">
+            <summary>
+	Gets the skin id of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CombatType">
+            <summary>
+	Gets the combat type of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Path">
+            <summary>
+	Gets the next path of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Buffs">
+            <summary>
+	Gets the buffs of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.InventoryItems">
+            <summary>
+	Gets the inventory items of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Pet">
+            <summary>
+	Gets the first pet of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.BasicAttack">
+            <summary>
+	Gets the first basic attack of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Spellbook">
+            <summary>
+	Gets the spell book of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.HPBarPosition">
+            <summary>
+	Gets the health bar position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.InfoComponentBasePosition">
+            <summary>
+	Gets the info component base position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Velocity">
+            <summary>
+	Gets the velocity of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.Direction">
+            <summary>
+	Gets the direction of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.SkinName">
+            <summary>
+	Gets the skin name of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CharacterName">
+            <summary>
+	Gets the character name of the object.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnProcessSpellCast">
+            <summary>
+	This event is fired before spell launch.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnPlayAnimation">
+            <summary>
+	This event is fired before playing animation.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnNewPath">
+            <summary>
+	This event is fired before generating new path.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnIssueOrder">
+            <summary>
+	This event is fired before issuing order.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnDoCast">
+            <summary>
+	This event is fired before starting spell cast.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnBuffRemove">
+            <summary>
+	This event is fired before a buff remove.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnBuffAdd">
+            <summary>
+	This event is fired before a buff add.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AIBaseClient.OnAggro">
+            <summary>
+	This event is fired before a object as attacker outline a target.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClient">
+            <summary>
+	This class contains everything we can offer related to each AIBaseClient object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.Slot">
+            <summary>
+	Gets the spell slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.TotalTime">
+            <summary>
+	Gets the total spell time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.CastTime">
+            <summary>
+	Gets the cast spell time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.MissileNetworkId">
+            <summary>
+	Gets the spell missile network id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.Target">
+            <summary>
+	Gets the spell target.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.End">
+            <summary>
+	Gets the spell target end position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.To">
+            <summary>
+	Gets the spell target position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.Start">
+            <summary>
+	Gets the spell start position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.Level">
+            <summary>
+	Gets the spell level.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs.SData">
+            <summary>
+	Gets the spell data.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientProcessSpellCastEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> do cast and process spell cast event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientPlayAnimationEventArgs.Animation">
+            <summary>
+	Gets the animation name.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientPlayAnimationEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientPlayAnimationEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> play animation event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientNewPathEventArgs.Speed">
+            <summary>
+	Gets the speed.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientNewPathEventArgs.IsDash">
+            <summary>
+	Gets a value indicating whether the new path is dash.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientNewPathEventArgs.Path">
+            <summary>
+	Gets the path.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientNewPathEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> new path event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.IsPetCommand">
+            <summary>
+	Gets a value indicating whether the order is pet command.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.IsAttackMove">
+            <summary>
+	Gets a value indicating whether the order is attack move.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.Target">
+            <summary>
+	Gets the target.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.TargetPosition">
+            <summary>
+	Gets the target position.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.Order">
+            <summary>
+	Gets the order.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientIssueOrderEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientIssueOrderEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> issue order event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientBuffRemoveEventArgs.Buff">
+            <summary>
+	Gets the buff.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientBuffRemoveEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> buff remove event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientAggroEventArgs.NetworkId">
+            <summary>
+	Gets the target network id.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientAggroEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> aggro event.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.ObjectManager.Get``1">
+            <summary>
+	Gets all units can assign to specified object type.
+</summary>
+            <returns>The units.</returns>
+        </member>
+        <member name="M:EnsoulSharp.ObjectManager.GetUnitByNetworkId``1(System.Int32)">
+            <summary>
+	Gets the unit by specified network id if valid, otherwise null.
+</summary>
+            <param name="networkId">The network id.</param>
+            <returns>The unit.</returns>
+        </member>
+        <member name="M:EnsoulSharp.ObjectManager.GetUnitByIndex``1(System.Int32)">
+            <summary>
+	Gets the unit by specified index if valid, otherwise null.
+</summary>
+            <param name="index">The index.</param>
+            <returns>The unit.</returns>
+        </member>
+        <member name="P:EnsoulSharp.ObjectManager.Player">
+            <summary>
+	Gets the local player.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.ObjectManager">
+            <summary>
+	This class contains everything we can offer related to object manager.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameObjectNotFoundException">
+            <summary>
+	This exception is thrown when a GameObject object can no longer be located in memory.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Obj_SpawnPoint">
+            <summary>
+	This class contains everything we can offer related to each Obj_SpawnPoint object.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.BuildingClient">
+            <summary>
+	This class contains everything we can offer related to each BuildingClient object.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.AttackableUnit.IsTargetableToTeam(EnsoulSharp.GameObjectTeam)">
+            <summary>
+	Gets whether the object is targetable to specified team.
+</summary>
+            <param name="attackingTeam">The attacking team.</param>
+            <returns />
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.WeaponMaterial">
+            <summary>
+	Gets the weapon material of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.ArmorMaterial">
+            <summary>
+	Gets the armor material of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.AbilityResourcePercent">
+            <summary>
+	Gets the ability resource percent of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.ManaPercent">
+            <summary>
+	Gets the mana percent of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.HealthPercent">
+            <summary>
+	Gets the health percent of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.MagicalShield">
+            <summary>
+	Gets the magical shield of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.PhysicalShield">
+            <summary>
+	Gets the physical shield of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.AllShield">
+            <summary>
+	Gets the all shield of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.MaxAbilityResource">
+            <summary>
+	Gets the max ability resource of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.AbilityResource">
+            <summary>
+	Gets the ability resource of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.MaxMana">
+            <summary>
+	Gets the max mana of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.Mana">
+            <summary>
+	Gets the mana of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.MaxHealth">
+            <summary>
+	Gets the max health of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.Health">
+            <summary>
+	Gets the health of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.PathfindingCollisionRadius">
+            <summary>
+	Gets the pathfinding collision radius of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.OverrideCollisionRadius">
+            <summary>
+	Gets the override collision radius of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.OverrideCollisionHeight">
+            <summary>
+	Gets the override collision height of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsVisible">
+            <summary>
+	Gets a value indicating whether the object is visible.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsTargetable">
+            <summary>
+	Gets a value indicating whether the object is targetable.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsInvulnerable">
+            <summary>
+	Gets a value indicating whether the object is invulnerable.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsLifestealImmune">
+            <summary>
+	Gets a value indicating whether the object is lifesteal immune.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsMagicalImmune">
+            <summary>
+	Gets a value indicating whether the object is magical immune.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnit.IsPhysicalImmune">
+            <summary>
+	Gets a value indicating whether the object is physical immune.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.AttackableUnit.OnTeleport">
+            <summary>
+	This event is fired before a object teleport.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AttackableUnit">
+            <summary>
+	This class contains everything we can offer related to each AttackableUnit object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnitTeleportEventArgs.RecallName">
+            <summary>
+	Gets the recall name.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AttackableUnitTeleportEventArgs.RecallType">
+            <summary>
+	Gets the recall type.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AttackableUnitTeleportEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AttackableUnit" /> teleport event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClientBuffAddEventArgs.Buff">
+            <summary>
+	Gets the buff.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.AIBaseClientBuffAddEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.AIBaseClient" /> buff add event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsValid">
+            <summary>
+	Gets a value indicating whether the object is valid.
+</summary>
+            <remarks>We suggest you can use this property check whether the object is valid before any other calls.</remarks>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsEnemy">
+            <summary>
+	Gets a value indicating whether the object is not ally.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsAlly">
+            <summary>
+	Gets a value indicating whether the object is ally.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsMe">
+            <summary>
+	Gets a value indicating whether the obejct is local player.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsVisibleOnScreen">
+            <summary>
+	Gets a value indicating whether the object is visible on screen.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.IsDead">
+            <summary>
+	Gets a value indicating whether the object is dead.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.BoundingRadius">
+            <summary>
+	Gets the bounding radius of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.Type">
+            <summary>
+	Gets the type of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.Team">
+            <summary>
+	Gets the team of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.PreviousPosition">
+            <summary>
+	Gets the previous position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.Position">
+            <summary>
+	Gets the position of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.Name">
+            <summary>
+	Gets or sets the name of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.BBox">
+            <summary>
+	Gets the bounding box of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.NetworkId">
+            <summary>
+	Gets the network id of the object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObject.Index">
+            <summary>
+	Gets the index of the object.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.GameObject.OnIntegerPropertyChange">
+            <summary>
+	This event is fired every time one integer property of the obejct changed.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.GameObject.OnFloatPropertyChange">
+            <summary>
+	This event is fired every time one float property of the object changed.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.GameObject.OnDelete">
+            <summary>
+	This event is fired before an object deleted.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.GameObject.OnCreate">
+            <summary>
+	This event is fired after an object created.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameObject">
+            <summary>
+	This class contains everything we can offer related to each game object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectIntegerPropertyChangeEventArgs.NewValue">
+            <summary>
+	Gets the new property value.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectIntegerPropertyChangeEventArgs.OldValue">
+            <summary>
+	Gets the old property value.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectIntegerPropertyChangeEventArgs.Property">
+            <summary>
+	Gets the property name.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameObjectIntegerPropertyChangeEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.GameObject" /> integer property change event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectFloatPropertyChangeEventArgs.NewValue">
+            <summary>
+	Gets the new property value;
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectFloatPropertyChangeEventArgs.OldValue">
+            <summary>
+	Gets the old property value.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameObjectFloatPropertyChangeEventArgs.Property">
+            <summary>
+	Gets the property name.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameObjectFloatPropertyChangeEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.GameObject" /> float property change event.
+</summary>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendSummonerEmote(EnsoulSharp.SummonerEmoteSlot)">
+            <summary>
+	Sends your summoner emote.
+</summary>
+            <param name="emoteSlot">The emote slot.</param>
+            <returns>A value indicating whether successfully sent.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendEmote(EnsoulSharp.EmoteId)">
+            <summary>
+	Sends your emote.
+</summary>
+            <param name="emoteId">The emote id.</param>
+            <returns>A vlaue indicating whether successfully sent.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendMasteryBadge">
+            <summary>
+	Sends your champion mastery badge.
+</summary>
+            <returns>A value indicating whether successfully sent.</returns>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendPing(EnsoulSharp.PingCategory,SharpDX.Vector3)">
+            <summary>
+	Sends specified ping at the given position.
+</summary>
+            <param name="pingType">The ping.</param>
+            <param name="position">The world position.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendPing(EnsoulSharp.PingCategory,SharpDX.Vector2)">
+            <summary>
+	Sends specified ping at the given position.
+</summary>
+            <param name="pingType">The ping.</param>
+            <param name="position">The world position.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.SendPing(EnsoulSharp.PingCategory,EnsoulSharp.GameObject)">
+            <summary>
+	Sends specified ping on the given unit.
+</summary>
+            <param name="pingType">The ping.</param>
+            <param name="target">The unit.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.Say(System.String,System.Boolean,System.Object[])">
+            <summary>
+	Says something to team channel or all channel with format and params.
+</summary>
+            <param name="format">The format.</param>
+            <param name="sendToAll">A value indicating whether send to all channel.</param>
+            <param name="params">The params.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.Say(System.String,System.Boolean)">
+            <summary>
+	Says something to team channel or all channel.
+</summary>
+            <param name="text">The text.</param>
+            <param name="sendToAll">A value indicating whether send to all channel.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.Print(System.String,System.Object[])">
+            <summary>
+	Prints text into game chat with format and params.
+</summary>
+            <param name="format">The format.</param>
+            <param name="params">The params.</param>
+        </member>
+        <member name="M:EnsoulSharp.Game.Print(System.String)">
+            <summary>
+	Prints text into game chat.
+</summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="P:EnsoulSharp.Game.Version">
+            <summary>
+	Gets the version of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.CursorPos">
+            <summary>
+	Gets the 3D cursor world position of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.State">
+            <summary>
+	Gets the state of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.MapId">
+            <summary>
+	Gets the map id of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.Window">
+            <summary>
+	Gets the window of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.Time">
+            <summary>
+	Gets the time of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.Ping">
+            <summary>
+	Gets the ping of the game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Game.FPS">
+            <summary>
+	Gets the fps of the game.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Game.OnUpdate">
+            <summary>
+	This event is fired every time the game updates.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Game.OnWndProc">
+            <summary>
+	This event is fired every a window event is received and about to be processed.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Game.OnProcessPacket">
+            <summary>
+	This event is fired every a packet is received and about to be processed.
+</summary>
+        </member>
+        <member name="E:EnsoulSharp.Game.OnNotify">
+            <summary>
+	This event is fired every a notify is received and about to be processed.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.Game">
+            <summary>
+	This class contains everthing we can offer related to basic game.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameWndEventArgs.LParam">
+            <summary>
+	Gets the lparam.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameWndEventArgs.WParam">
+            <summary>
+	Gets the wparam.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameWndEventArgs.Msg">
+            <summary>
+	Gets the message.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameWndEventArgs.HWnd">
+            <summary>
+	Gets the window handle.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameWndEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameWndEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Game" /> window event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GamePacketEventArgs.PacketData">
+            <summary>
+	Gets the origin packet data.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GamePacketEventArgs.NetworkId">
+            <summary>
+	Gets the relative object network id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GamePacketEventArgs.EventId">
+            <summary>
+	Gets the event id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GamePacketEventArgs.Process">
+            <summary>
+	Gets or sets a value indicating whether the event should process.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GamePacketEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Game" /> process packet event.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameNotifyEventArgs.NetworkId">
+            <summary>
+	Gets the relative object network id.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.GameNotifyEventArgs.EventId">
+            <summary>
+	Gets the event id.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.GameNotifyEventArgs">
+            <summary>
+	Args for <see cref="T:EnsoulSharp.Game" /> notify event.
+</summary>
+        </member>
+    </members>
+</doc>
