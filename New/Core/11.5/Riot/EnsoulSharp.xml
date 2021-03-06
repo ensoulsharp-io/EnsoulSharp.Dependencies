@@ -164,6 +164,11 @@
             <param name="type">The click type.</param>
             <param name="position">The 3D world click position.</param>
         </member>
+        <member name="P:EnsoulSharp.Hud.DragonSRX">
+            <summary>
+	Gets the dragon srx.
+</summary>
+        </member>
         <member name="T:EnsoulSharp.Hud">
             <summary>
 	This class contains everything we can offer related to hud.
@@ -453,6 +458,46 @@
         <member name="T:EnsoulSharp.Drawing">
             <summary>
 	This class contains everything we can offer related to drawing.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Soul">
+            <summary>
+	Gets a value indicating whether the dragon is soul.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Team">
+            <summary>
+	Gets the team of the dragon.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Id">
+            <summary>
+	Gets the id of the dragon.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DragonSRXSlot">
+            <summary>
+	This class contains everything we can offer related to each dragon srx slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.ElementsTwo">
+            <summary>
+	Gets the elements two.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.ElementsOne">
+            <summary>
+	Gets the elements one.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.Center">
+            <summary>
+	Gets the center element.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DragonSRX">
+            <summary>
+	This class contains everything we can offer related to dragon srx.
 </summary>
         </member>
         <member name="P:EnsoulSharp.EffectEmitter.RestartTime">

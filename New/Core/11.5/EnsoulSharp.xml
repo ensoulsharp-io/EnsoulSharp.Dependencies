@@ -4,6 +4,11 @@
         "EnsoulSharp.Wrapper"
     </assembly>
     <members>
+        <member name="T:EnsoulSharp.GameObjectNotFoundException">
+            <summary>
+	This exception is thrown when a GameObject object can no longer be located in memory.
+</summary>
+        </member>
         <member name="T:EnsoulSharp.SpellDataNotFoundException">
             <summary>
 	This exception is thrown when a SpellData object can no longer be located in memory.
@@ -39,6 +44,11 @@
 	This class contains everything we can offer related to each LevelPropSpawnerPoint object.
 </summary>
         </member>
+        <member name="T:EnsoulSharp.LevelPropGameObjectClient">
+            <summary>
+	This class contains everything we can offer related to each LevelPropGameObjectClient object.
+</summary>
+        </member>
         <member name="T:EnsoulSharp.Obj_SpawnPoint">
             <summary>
 	This class contains everything we can offer related to each Obj_SpawnPoint object.
@@ -52,11 +62,6 @@
         <member name="T:EnsoulSharp.Barracks">
             <summary>
 	This class contains everything we can offer related to each Barracks object.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.DrawFX">
-            <summary>
-	This class contains everything we can offer related to each DrawFX object.
 </summary>
         </member>
         <member name="T:EnsoulSharp.Pawn">
@@ -102,11 +107,6 @@
         <member name="T:EnsoulSharp.GrassObject">
             <summary>
 	This class contains everything we can offer related to each GrassObject object.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.GameObjectNotFoundException">
-            <summary>
-	This exception is thrown when a GameObject object can no longer be located in memory.
 </summary>
         </member>
         <member name="P:EnsoulSharp.BuffInstance.Caster">
@@ -572,14 +572,14 @@
             <param name="type">The click type.</param>
             <param name="position">The 3D world click position.</param>
         </member>
+        <member name="P:EnsoulSharp.Hud.DragonSRX">
+            <summary>
+	Gets the dragon srx.
+</summary>
+        </member>
         <member name="T:EnsoulSharp.Hud">
             <summary>
 	This class contains everything we can offer related to hud.
-</summary>
-        </member>
-        <member name="T:EnsoulSharp.LevelPropGameObjectClient">
-            <summary>
-	This class contains everything we can offer related to each LevelPropGameObjectClient object.
 </summary>
         </member>
         <member name="T:EnsoulSharp.AIMinionClient">
@@ -2235,6 +2235,51 @@
         <member name="T:EnsoulSharp.Obj_InfoPoint">
             <summary>
 	This class contains everything we can offer related to each Obj_InfoPoint object.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Soul">
+            <summary>
+	Gets a value indicating whether the dragon is soul.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Team">
+            <summary>
+	Gets the team of the dragon.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRXSlot.Id">
+            <summary>
+	Gets the id of the dragon.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DragonSRXSlot">
+            <summary>
+	This class contains everything we can offer related to each dragon srx slot.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.ElementsTwo">
+            <summary>
+	Gets the elements two.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.ElementsOne">
+            <summary>
+	Gets the elements one.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.DragonSRX.Center">
+            <summary>
+	Gets the center element.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DragonSRX">
+            <summary>
+	This class contains everything we can offer related to dragon srx.
+</summary>
+        </member>
+        <member name="T:EnsoulSharp.DrawFX">
+            <summary>
+	This class contains everything we can offer related to each DrawFX object.
 </summary>
         </member>
         <member name="P:EnsoulSharp.GameObject.IsValid">

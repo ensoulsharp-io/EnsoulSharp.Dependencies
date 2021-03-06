@@ -701,6 +701,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "63",
+      "changes": [
+        "api added to fix damage on dragon error"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
