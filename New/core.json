@@ -711,6 +711,19 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "64",
+      "changes": [
+        "added: AIBaseClient.CharacterStateIndicatorIndex/Active for Samira P",
+        "added: AIBaseClient.IsHPBarRendered for Senna E",
+        "added: Hud.SetCameraLockState",
+        "fixed: One script throw exception will let all other scripts stop work on some events"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }

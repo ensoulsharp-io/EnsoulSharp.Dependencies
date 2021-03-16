@@ -567,10 +567,16 @@
         </member>
         <member name="M:EnsoulSharp.Hud.ShowClick(EnsoulSharp.ClickType,SharpDX.Vector3)">
             <summary>
-	Show specific click effect on specified 3D world position.
+	Shows specific click effect on specified 3D world position.
 </summary>
             <param name="type">The click type.</param>
             <param name="position">The 3D world click position.</param>
+        </member>
+        <member name="M:EnsoulSharp.Hud.SetCameraLockState(System.Boolean)">
+            <summary>
+	Sets specific camera lock state.
+</summary>
+            <param name="locked" />
         </member>
         <member name="P:EnsoulSharp.Hud.DragonSRX">
             <summary>
@@ -1808,6 +1814,21 @@
         <member name="P:EnsoulSharp.AIBaseClient.IsMoving">
             <summary>
 	Gets a value indicating whether the object is moving.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.IsHPBarRendered">
+            <summary>
+	Gets a value indicating whether the object's health bar is rendered.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CharacterStateIndicatorActive">
+            <summary>
+	Gets a value indicating whether the character state indicator index is active.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.AIBaseClient.CharacterStateIndicatorIndex">
+            <summary>
+	Gets the character state indicator index of the object.
 </summary>
         </member>
         <member name="P:EnsoulSharp.AIBaseClient.SkinId">
