@@ -734,6 +734,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "66",
+      "changes": [
+        "added: Spellbook.ActiveSpell",
+        "renamed: Spellbook.SpellCastTime/SpellEndTime -> CastTime/CastEndTime"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
