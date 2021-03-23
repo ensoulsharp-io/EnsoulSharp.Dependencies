@@ -837,16 +837,6 @@
 	Gets a value indicating whether the spell was cast.
 </summary>
         </member>
-        <member name="P:EnsoulSharp.Spellbook.SpellEndTime">
-            <summary>
-	Gets the spell end time.
-</summary>
-        </member>
-        <member name="P:EnsoulSharp.Spellbook.SpellCastTime">
-            <summary>
-	Gets the spell cast time.
-</summary>
-        </member>
         <member name="P:EnsoulSharp.Spellbook.IsStopped">
             <summary>
 	Gets a value indicating whether is stopped now.
@@ -877,9 +867,24 @@
 	Gets a value indicating whether is casting spell now.
 </summary>
         </member>
+        <member name="P:EnsoulSharp.Spellbook.CastEndTime">
+            <summary>
+	Gets the spell end time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.CastTime">
+            <summary>
+	Gets the spell cast time.
+</summary>
+        </member>
         <member name="P:EnsoulSharp.Spellbook.Owner">
             <summary>
 	Gets the book owner.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.Spellbook.ActiveSpell">
+            <summary>
+	Gets the active spell if exist, otherwise null.
 </summary>
         </member>
         <member name="P:EnsoulSharp.Spellbook.Spells">
