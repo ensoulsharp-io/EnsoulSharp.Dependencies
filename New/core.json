@@ -765,6 +765,19 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "69",
+      "changes": [
+        "updated for RIOT and CN patch 11.9",
+        "added: Hacks.HideDrawingsFromCapture for anti obs",
+        "added: AttackableUnit.Owner for AnnieR & GangplankE",
+        "added: AIBaseClient.IsInvulnerableVisual for GwenW"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
