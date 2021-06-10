@@ -798,6 +798,18 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "72",
+      "changes": [
+        "updated for RIOT and CN patch 11.12",
+        "added: AttackableUnit.Glow",
+        "added: Drawing.OnRenderMouseOvers"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
