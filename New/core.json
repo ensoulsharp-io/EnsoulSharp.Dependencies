@@ -820,6 +820,18 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "74",
+      "changes": [
+        "updated for CN patch 11.14",
+        "added: GameObjectOrder.AttackMove",
+        "fixed: BuffType"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
