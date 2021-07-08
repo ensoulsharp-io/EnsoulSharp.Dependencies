@@ -58,20 +58,20 @@
         }
       }
     },
-    "437ABEDF202E35EDCCBE9805B27D1073": {
+    "D160E88EC130046FEC66353D22F280BA": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "66E11774B632E8DA683EA980B6777585",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.13/Riot/EnsoulSharp.Core.dll"
+          "MD5": "9B3F7ABE1A83A35AF41C8A3DB8ACAA64",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "DF71C3E492A9B3038E937B325AAE0D97",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.13/Riot/EnsoulSharp.dll",
+          "MD5": "8CA8396933C9A0ED2AA2B1D2C11DEC24",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "BB1150CBF7492202F5D1D7621E5CF4C5",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.13/Riot/EnsoulSharp.Injector.dll"
+          "MD5": "321E845490B0E9538ECD081A27F541BF",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.Injector.dll"
         }
       }
     }
