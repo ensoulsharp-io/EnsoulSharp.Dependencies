@@ -832,6 +832,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "75",
+      "changes": [
+        "updated for RIOT and CN mid-patch 11.14",
+        "fixed: RIOT region may get partly initialize"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }

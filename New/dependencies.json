@@ -41,36 +41,36 @@
     }
   },
   "Core": {
-    "46771FF072115BE0622187A35596F27E": {
+    "5524EB896177E92B39DD003244C9355A": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "E67C477B86C7E418043B7F5987282634",
+          "MD5": "D48D864DBF3C0270B16075C9E3E4575F",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "22601DE5B03FF6758960F09C1EEC8336",
+          "MD5": "2972608887A445FB264AF03845A2C2A7",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "C5E907A813A5E186E805EB248AD3A552",
+          "MD5": "2A0637FA5B1B0A3F854F45D4E8C4EF5E",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/EnsoulSharp.Injector.dll"
         }
       }
     },
-    "D160E88EC130046FEC66353D22F280BA": {
+    "724A6EDB8770184B2EACD7A0E40F2F4A": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "9B3F7ABE1A83A35AF41C8A3DB8ACAA64",
+          "MD5": "708C9F59EEFB7369FB0BBCA3E0855DC1",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "8CA8396933C9A0ED2AA2B1D2C11DEC24",
+          "MD5": "C310AB74CD5DA698992D6FC334357AF6",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "321E845490B0E9538ECD081A27F541BF",
+          "MD5": "C87731F8E4EA7717544F239A4D10AF81",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.14/Riot/EnsoulSharp.Injector.dll"
         }
       }
