@@ -853,6 +853,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "77",
+      "changes": [
+        "updated for RIOT mid-patch 11.15"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
