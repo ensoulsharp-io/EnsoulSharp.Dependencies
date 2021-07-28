@@ -863,6 +863,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "78",
+      "changes": [
+        "updated for CN mid-patch 11.15"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
