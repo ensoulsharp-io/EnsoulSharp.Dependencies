@@ -1049,9 +1049,12 @@
   "Force on Select Target": "集中攻击已选择目标",
   "Only Attack Select Target": "仅攻击已选择目标",
   "Prediction Selected:": "预判模式选择: ",
-  "Check for target AA Windup": "检查 AA 结束",
-  "Spell Delay": "拼写延迟",
-  "Max Range Dodge Ignore": "最大范围射程 (%)",
+  "Check for target AA Windup": "检查 目标 AA前摇",
+  "Spell Delay": "技能延迟",
+  "Max Range Dodge Ignore (%)": "最大范围射程 (%)",
   "Ignore Reaction Time": "忽略反应时间",
-  "Bypass Obs": "绕过OBS"
+  "Bypass Obs": "绕过OBS",
+  "SPrediction": "S 预判",
+  "SDK Beta Prediction": "SDK Beta 预判",
+  "Select on Prediction Menu": "在预测菜单上选择"
 }
