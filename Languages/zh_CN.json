@@ -273,9 +273,9 @@
   "Item Height": "菜单高度",
   "Font Size": "字体大小",
   "Background Color": "背景颜色",
-  "Apply Changes": "使用更改",
+  "Apply Changes": "应用更改",
   "Apply": "应用",
-  "Reset Customization": "应用到默认设置",
+  "Reset Customization": "重置到默认设置",
   "Notifications": "通知栏设置",
   "Edit Options": "编辑选项",
   "Edit Position": "编辑位置",
@@ -1056,5 +1056,10 @@
   "Bypass Obs": "绕过OBS",
   "SPrediction": "S 预判",
   "SDK Beta Prediction": "SDK Beta 预判",
-  "Select on Prediction Menu": "在预测菜单上选择"
+  "Select on Prediction Menu": "在预测菜单上选择",
+  "Text Color": "字体颜色",
+  "Pets": "召唤物",
+  "Turret Farm Logic": "塔刀发育逻辑",
+  "Disable Turret Farm When Player Level >= x": "禁止塔刀发育逻辑当自己等级 >= x",
+  "Support Mode": "辅助模式"
 }
