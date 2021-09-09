@@ -893,6 +893,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "81",
+      "changes": [
+        "updated for RIOT and CN patch 11.18"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
