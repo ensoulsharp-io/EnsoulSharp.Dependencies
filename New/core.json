@@ -903,6 +903,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "82",
+      "changes": [
+        "updated for CN mid patch 11.18"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
