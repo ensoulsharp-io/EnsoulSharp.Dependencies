@@ -585,21 +585,21 @@
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageCaitlynPassive.GetDamageType">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageChoGathPassive">
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageChogathPassive">
             <summary>
-                ChoGath's Damage Passive.
+                Chogath's Damage Passive.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChoGathPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChogathPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
             <inheritdoc />
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChoGathPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChogathPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
             <inheritdoc />
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChoGathPassive.OverwriteAttackDamage">
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChogathPassive.OverwriteAttackDamage">
             <inheritdoc />
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChoGathPassive.GetDamageType">
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageChogathPassive.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageGwenPassive">
@@ -634,6 +634,23 @@
             <inheritdoc />
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageSamiraPassive.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive">
+            <summary>
+                Vex's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageCorkiPassiveA">
@@ -3802,56 +3819,56 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageCassiopeiaW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathE">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathE">
             <summary>
-                Spell Damage, ChoGath E.
+                Spell Damage, Chogath E.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathE.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathE.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathE" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathE" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathQ">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathQ">
             <summary>
-                Spell Damage, ChoGath Q.
+                Spell Damage, Chogath Q.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathQ.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathQ.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathQ" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathQ" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathR">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathR">
             <summary>
-                Spell Damage, ChoGath R.
+                Spell Damage, Chogath R.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathR.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathR.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathR" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathR" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathW">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathW">
             <summary>
-                Spell Damage, ChoGath W.
+                Spell Damage, Chogath W.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathW.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathW.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChoGathW" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageChogathW" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChoGathW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageChogathW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageCorkiE">
@@ -9438,6 +9455,58 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVayneE1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageVexE">
+            <summary>
+                Spell Damage, Vex E.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexE.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageVexE" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageVexQ">
+            <summary>
+                Spell Damage, Vex Q.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexQ.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageVexQ" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageVexR">
+            <summary>
+                Spell Damage, Vex R.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexR.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageVexR" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageVexW">
+            <summary>
+                Spell Damage, Vex W.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexW.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageVexW" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageVexW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageViegoQ">
             <summary>
                 Spell Damage, Viego Q.
@@ -11511,6 +11580,13 @@
             <returns>
                 The <see cref="T:EnsoulSharp.SDK.MovementCollisionInfo" />.
             </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Vector2Extensions.ToRawVector2(SharpDX.Vector2)">
+            <summary>
+                Transform Vector2 to RawVector2.
+            </summary>
+            <param name="vector">The Vector2.</param>
+            <returns></returns>
         </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.AllowAllAssemblyVersionsDeserializationBinder">
             <summary>
@@ -15153,6 +15229,12 @@
             <param name="name">Child Menu Component name</param>
             <returns>Child Menu Component of this component.</returns>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.SetLogo(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache)">
+            <summary>
+                Set Menu Logo.
+            </summary>
+            <param name="spriteLogo">Sprite logo.</param>
+        </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.Menu.SetLogo(EnsoulSharp.SDK.Render.Sprite)">
             <summary>
                 Set Menu Logo.
@@ -16560,6 +16642,302 @@
             <param name="checkCollision">if set to <c>true</c>, checks collision.</param>
             <returns>SpellPrediction.PredictionOutput.</returns>
         </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.CircleRender">
+            <summary>
+                Class draw circle on the screen.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.CircleRender.Draw(SharpDX.Vector3,System.Single,SharpDX.Color,System.Int32,System.Boolean)">
+            <summary>
+                Draws the circle.
+            </summary>
+            <param name="position">The position.</param>
+            <param name="radius">The radius.</param>
+            <param name="color">The color.</param>
+            <param name="width">The width.</param>
+            <param name="zDeep">if set to <c>true</c> the circle will be drawn with depth buffering.</param>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.LineRender">
+            <summary>
+                Class draw line on the screen.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.CreateLine(System.Single,System.Boolean,System.Boolean)">
+            <summary>
+                Create the line cache.
+            </summary>
+            <param name="width">The line witdh.</param>
+            <param name="gllines">Returns TRUE if OpenGL-style lines are enabled, and FALSE if Direct3D-style lines are enabled.</param>
+            <param name="antialias">Returns the antialiasing switch value. TRUE means antialiasing is on, and FALSE means antialiasing is off.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.LineRender.LineCache,SharpDX.Vector2,SharpDX.Vector2,SharpDX.Color,System.Int32)">
+            <summary>
+                Draw line.
+            </summary>
+            <param name="lineCache">The lineCache.</param>
+            <param name="startPosition">The startPosition.</param>
+            <param name="endPosition">The endPosition.</param>
+            <param name="width">The line width.</param>
+            <param name="color">The line color.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.LineRender.LineCache,SharpDX.Vector2[],SharpDX.Color,System.Single)">
+            <summary>
+                Draw line.
+            </summary>
+            <param name="lineCache">The lineCache.</param>
+            <param name="positions">The position.</param>
+            <param name="width">The line width.</param>
+            <param name="color">The line color.</param>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.LineRender.LineCache">
+            <summary>
+                Class line cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheLine">
+            <summary>
+                The line.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheWidth">
+            <summary>
+                The line width.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheGLLines">
+            <summary>
+                The line GGlines.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheAntialias">
+            <summary>
+                The line Antialias.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.IsRendering">
+            <summary>
+                The line is Rendering.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.SpriteRender">
+            <summary>
+                Class draw sprite on the screen.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateLogo(System.Drawing.Bitmap,SharpDX.Vector2)">
+            <summary>
+                Create the sprite logo cache (for Menu).
+            </summary>
+            <param name="bitmap">The bitmap.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateLogo(System.Byte[],SharpDX.Vector2)">
+            <summary>
+                Create the sprite logo cache (for Menu).
+            </summary>
+            <param name="bytes">The byte Arrays.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateLogo(System.String,SharpDX.Vector2)">
+            <summary>
+                Create the sprite logo cache (for Menu).
+            </summary>
+            <param name="fileLocation">The file location.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(System.Drawing.Bitmap,SharpDX.Vector2)">
+            <summary>
+                Create the sprite cache.
+            </summary>
+            <param name="bitmap">The bitmap.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(SharpDX.Direct3D9.BaseTexture,SharpDX.Vector2)">
+            <summary>
+                Create the sprite cache.
+            </summary>
+            <param name="texture">The BaseTexture.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(System.IO.Stream,SharpDX.Vector2)">
+            <summary>
+                Create the sprite cache.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(System.Byte[],SharpDX.Vector2)">
+            <summary>
+                Create the sprite cache.
+            </summary>
+            <param name="bytes">The byte Arrays.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(System.String,SharpDX.Vector2)">
+            <summary>
+                Create the sprite cache.
+            </summary>
+            <param name="fileLocation">The file location.</param>
+            <param name="Scale">The Sprite Scale.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache,SharpDX.Vector2)">
+            <summary>
+                Draw sprite.
+            </summary>
+            <param name="spriteCache">The spriteCache.</param>
+            <param name="position">The Draw position.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache,System.Single,System.Single)">
+            <summary>
+                Draw sprite.
+            </summary>
+            <param name="spriteCache">The spriteCache.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache">
+            <summary>
+                Class sprite cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.CacheBitmap">
+            <summary>
+                The Bitmap.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.CacheTexture">
+            <summary>
+                The Texture.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Rotation">
+            <summary>
+                The sprite rotation.
+            </summary>
+            <value>The rotation.</value>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Color">
+            <summary>
+                The sprite color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Alpha">
+            <summary>
+                The sprite Alpha.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Scale">
+            <summary>
+                The sprite Scale.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Width">
+            <summary>
+                Get the Sprite Width.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Height">
+            <summary>
+                 Get the Sprite Height.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Center">
+            <summary>
+                Get the Sprite Center.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.TextRender">
+            <summary>
+                Class draw text on the screen.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(SharpDX.Direct3D9.FontDescription)">
+            <summary>
+                Create the FontCache.
+            </summary>
+            <param name="fontDescription">The FontDescription.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(System.Int32,SharpDX.Direct3D9.FontWeight,System.String)">
+            <summary>
+                Create the FontCache.
+            </summary>
+            <param name="height">The Font Height.</param>
+            <param name="weight">The Font Weight.</param>
+            <param name="faceName">The Font FaceName.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,SharpDX.Vector2,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+            <summary>
+                Draw font.
+            </summary>
+            <param name="fontCache">The FontCache.</param>
+            <param name="text">The draw Text.</param>
+            <param name="position">The position.</param>
+            <param name="sprite">The font sprite.</param>
+            <param name="color">The font color.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,System.Int32,System.Int32,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+            <summary>
+                Draw font.
+            </summary>
+            <param name="fontCache">The FontCache.</param>
+            <param name="text">The draw Text.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="sprite">The font sprite.</param>
+            <param name="color">The font color.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,SharpDX.Rectangle,SharpDX.Direct3D9.FontDrawFlags,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+            <summary>
+                Draw font.
+            </summary>
+            <param name="fontCache">The FontCache.</param>
+            <param name="text">The draw Text.</param>
+            <param name="rectangle">The Font Rectangle.</param>
+            <param name="fontDrawFlags">The Font DrawFlags.</param>
+            <param name="sprite">The font sprite.</param>
+            <param name="color">The font color.</param>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.TextRender.FontCache">
+            <summary>
+                Class The Font Cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.TextRender.FontCache.CacheFont">
+            <summary>
+                The font.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.TextRender.FontCache.IsRendering">
+            <summary>
+                The line is Rendering.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.TextRender.FontCache.Description">
+            <summary>
+                The Font Description.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.FontCache.MeasureText(SharpDX.Direct3D9.Sprite,System.String,SharpDX.Direct3D9.FontDrawFlags)">
+            <summary>
+                Measure Font Text.
+            </summary>
+            <param name="sprite">The Sprite.</param>
+            <param name="text">The text.</param>
+            <param name="fontDrawFlags">The Font DrawFlags.</param>
+            <returns></returns>
+        </member>
         <member name="T:EnsoulSharp.SDK.Render">
             <summary>
                 The render class allows you to draw stuff using SharpDX easier.
@@ -16659,11 +17037,6 @@
                 Gets or sets a value indicating whether to enable depth buffering.
             </summary>
             <value><c>true</c> if depth buffering enabled; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.CreateVertexes">
-            <summary>
-                Creates the vertexes.
-            </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Render.Circle.DrawCircle(SharpDX.Vector3,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
             <summary>
@@ -19447,6 +19820,11 @@
                 targets possible.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.PredictionInput.ChoiceCloserPosition">
+            <summary>
+                Gets or sets a value prediction to choice the closer position.
+            </summary>
+        </member>
         <member name="F:EnsoulSharp.SDK.PredictionInput.Collision">
             <summary>
                 Gets or sets a value indicating whether input source has a collision flag to collide with other objects before
@@ -19768,6 +20146,11 @@
         <member name="P:EnsoulSharp.SDK.Spell.Level">
             <summary>
                 Get the spell level
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Spell.PredictionCloserPosition">
+            <summary>
+                Gets or sets a value prediction to get the closer position.
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.Spell.Range">
