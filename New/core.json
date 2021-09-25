@@ -913,6 +913,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "83",
+      "changes": [
+        "updated for RIOT patch 11.19"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
