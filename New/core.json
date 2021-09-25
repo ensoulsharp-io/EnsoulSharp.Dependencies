@@ -923,6 +923,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "84",
+      "changes": [
+        "fixed: SpellDataInst.CooldownExpires"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
