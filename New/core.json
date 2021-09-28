@@ -943,6 +943,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "86",
+      "changes": [
+        "fixed: SpellDataInst.Cooldown"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
