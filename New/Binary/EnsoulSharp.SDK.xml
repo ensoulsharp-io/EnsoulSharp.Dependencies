@@ -118,6 +118,26 @@
                 The <see cref="T:System.Double" /> value of damage.
             </returns>
         </member>
+        <member name="M:EnsoulSharp.SDK.Damage.GetSylasStealDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <summary>
+                Gets the sylas steal damage spell.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="originHero">
+                The from Hero.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <param name="stage">
+                The stage.
+            </param>
+            <returns>
+                The <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageSpell" />
+            </returns>
+        </member>
         <member name="M:EnsoulSharp.SDK.Damage.GetSummonerSpellDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SDK.SummonerSpell)">
             <summary>
                 Calculates the summoner spell damage.
@@ -244,6 +264,20 @@
                 The <see cref="T:System.Double" />.
             </returns>
         </member>
+        <member name="M:EnsoulSharp.SDK.Damage.GetTotalAaDamage(EnsoulSharp.AIBaseClient)">
+            <summary>
+                Get hero TotalAttackDamage (for Sylas)
+            </summary>
+            <param name="hero"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damage.GetBonusAaDamage(EnsoulSharp.AIBaseClient)">
+            <summary>
+                Get hero BonusPhysicalDamage (for Sylas)
+            </summary>
+            <param name="hero"></param>
+            <returns></returns>
+        </member>
         <member name="T:EnsoulSharp.SDK.DamageData">
             <summary>
                 Damage calculations data.
@@ -280,6 +314,26 @@
             </param>
             <param name="slot">
                 The slot.
+            </param>
+            <param name="stage">
+                The stage.
+            </param>
+            <returns>
+                The <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageSpell" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.DamageData.GetStealSpellDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <summary>
+                Gets the sylas steal damage spell.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="originHero">
+                The from Hero.
+            </param>
+            <param name="target">
+                The target.
             </param>
             <param name="stage">
                 The stage.
@@ -16855,6 +16909,23 @@
             <summary>
                 Get the Sprite Center.
             </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Crop(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                Crops the sprite.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="w">The width.</param>
+            <param name="h">The height.</param>
+            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Crop(SharpDX.Rectangle,System.Boolean)">
+            <summary>
+                Crops the sprite.
+            </summary>
+            <param name="rect">The rectangle.</param>
+            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
         </member>
         <member name="T:EnsoulSharp.SDK.Rendering.TextRender">
             <summary>
