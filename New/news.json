@@ -340,6 +340,11 @@
       "Header": "CN 11.19 updated",
       "Content": "EnsoulSharp has been updated for CN patch 11.19 and it works."
     },
+        {
+      "PostDate": "2021-10-08T08:00:00Z",
+      "Header": "RIOT and CN 11.20 updated",
+      "Content": "EnsoulSharp has been updated for RIOT and CN patch 11.20 and it works."
+    },
     {
       "PostDate": "2021-01-01T00:00:00Z",
       "Header": "Announcements",
