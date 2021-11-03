@@ -977,7 +977,7 @@
     {
       "build": "89",
       "changes": [
-        "updated for RIOT and CN patch 11.22"，
+        "updated for RIOT and CN patch 11.22",
         "added: AIBaseClient.PercentOmnivampMod",
         "added: AIBaseClient.PercentPhysicalVampMod",
         "added: AIBaseClient.PercentSpellVampMod",
