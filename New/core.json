@@ -973,6 +973,37 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "89",
+      "changes": [
+        "updated for RIOT and CN patch 11.22"，
+        "added: AIBaseClient.PercentOmnivampMod",
+        "added: AIBaseClient.PercentPhysicalVampMod",
+        "added: AIBaseClient.PercentSpellVampMod",
+        "added: Drawing.OnFlushEndScene -> not controlled by Hacks.HideDrawingsFromCapture",
+        "added: Game.IsInFogOfWar",
+        "added: Game.OnSendChat -> control Game.Say and manual input",
+        "added: Game.Say -> triggerEvent arg",
+        "added: Game.ShowPing",
+        "added: Hud.PingSpell",
+        "added: Hud.SelectedSpell",
+        "added: MissileClient.OnCommitMovement -> work for YuumiQ",
+        "added: TacticalMap.CenterWorldPos",
+        "added: TacticalMap.Offset",
+        "added: TacticalMap.Size",
+        "fixed: GameObject.Name.set -> leak memory and randomly crash",
+        "fixed: Hacks.DisableDrawings for OnRenderMouseOvers",
+        "fixed: Hacks.HideDrawingsFromCapture for OnRenderMouseOvers",
+        "fixed: welcome msg spell error",
+        "fixed: remove ready check in Core.CastSpell",
+        "fixed: remove order check in Core.IssueOrder",
+        "improved: Game.SendPing -> more fast"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
