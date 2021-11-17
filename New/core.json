@@ -1004,6 +1004,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "90",
+      "changes": [
+        "updated for RIOT and CN patch 11.23"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
