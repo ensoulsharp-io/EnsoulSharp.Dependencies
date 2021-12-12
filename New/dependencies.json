@@ -39,7 +39,7 @@
     "3E3644AC212DB6B5BA2442EB9E349546": {
       "Files": {
           "Reference\\EnsoulSharp.SDK.dll": {
-          "MD5": "CD9D42DE1146CF006C2693A293D7E86B",
+          "MD5": "5A733C41233DF863DF1490161215F9A9",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/11.24/EnsoulSharp.SDK.dll"
         },
         "System\\EnsoulSharp.Core.dll": {
