@@ -277,7 +277,7 @@
         </member>
         <member name="M:EnsoulSharp.Drawing.WorldToScreen(SharpDX.Vector3)">
             <summary>
-	Converts the given 3D world coordinates into screen coordinates.
+	Converts the given 3D world coordinates into screen coordinates no matter valid or not.
 </summary>
             <param name="worldCoord">The world position.</param>
             <returns>The screen coordinates result.</returns>
@@ -292,7 +292,7 @@
         </member>
         <member name="M:EnsoulSharp.Drawing.WorldToMinimap(SharpDX.Vector3)">
             <summary>
-	Converts the given 3D world coordinates into minimap coordinates.
+	Converts the given 3D world coordinates into minimap coordinates no matter valid or not.
 </summary>
             <param name="worldCoord">The world position.</param>
             <returns>The minimap coordinates result.</returns>
