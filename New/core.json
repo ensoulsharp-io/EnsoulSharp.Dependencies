@@ -1014,6 +1014,20 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "91",
+      "changes": [
+        "updated for RIOT and CN patch 11.24",
+        "fixed: ItemId incomplete during past patches",
+        "fixed: GameEventId mismatch during past patches",
+        "fixed: Drawing.WorldToMinimap(Vector3) return invalid results",
+        "fixed: Drawing.WorldToScreen(Vector3) return invalid results"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
