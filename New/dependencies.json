@@ -11,7 +11,7 @@
     },
 	"Reference\\EnsoulSharp.SDK.dll": {
       "MD5": "1614DC71D0622131172BCE733829C247",
-      "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.1/EnsoulSharp.SDK.dll",
+      "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/EnsoulSharp.SDK.dll",
       "Version": "1.0.0.0"
     },
     "Reference\\log4net.dll": {
