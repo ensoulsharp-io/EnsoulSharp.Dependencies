@@ -1026,6 +1026,31 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "92",
+      "changes": [
+        "updated for RIOT and CN patch 12.1",
+        "added: AIBaseClient.GetSpellTooltipCalculationStrings",
+        "added: AIBaseClient.GetSpellTooltipCalculationValues",
+        "added: Hud.PingBar",
+        "added: Hud.PingStat",
+        "added: Hud.TargetChampionsOnly",
+        "added: NeutralMinionCampCommon.TimerExpiry",
+        "added: PingCategory.AreaIsWarded",
+        "added: Loader side option <Compile as debug mode>",
+        "fixed: Drawing.MinimapToWorld potential to be invalid or throw exception",
+        "fxied: Game.SendSummonerEmote potential to be invalid or throw exception",
+        "fixed: Game.ShowPing potential throw exception",
+        "fixed: Game.Version potential throw exception",
+        "fixed: Spellbook.GetSpell throw exception with invalid slot",
+        "fixed: API running before SDK fully init -> example GameObjects.Player still null for the first time",
+        "removed: Loader side option <Enable developer options>"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
