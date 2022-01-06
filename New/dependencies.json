@@ -80,8 +80,8 @@
     }
   },
   "Loader": {
-    "MD5": "A3FA4D06F2F4BD7A2A434FB3504D7EC9",
+    "MD5": "73DE888AA72580DB58EF0B71A204F1C2",
     "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Loader/EnsoulSharp-update-RIOT.exe",
-    "Version": "1.0.0.40"
+    "Version": "1.0.0.41"
   }
 }
