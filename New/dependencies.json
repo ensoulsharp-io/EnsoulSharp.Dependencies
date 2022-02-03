@@ -74,7 +74,7 @@
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.3/Riot/EnsoulSharp.Injector.dll"
         },
 	    "Reference\\EnsoulSharp.SDK.dll": {
-		  "MD5": "F079EA7131AB7FA756EFBB4CB857760A",
+		  "MD5": "A48E32C3C43200EFEC86062A1D6763FB",
 		  "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.3/Riot/EnsoulSharp.SDK.dll",
 		  "Version": "1.0.0.0"
         }
