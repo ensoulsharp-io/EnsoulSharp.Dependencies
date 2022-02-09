@@ -41,6 +41,64 @@
             <param name="data"></param>
             <returns></returns>
         </member>
+        <member name="T:EnsoulSharp.SDK.GameCache">
+            <summary>
+               To Cache some Game Function and Objects.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.WindowsValue">
+            <summary>
+               Game Windows Value Cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.ItemCache">
+            <summary>
+               All Heros Have Item Cahce.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.GameCache.#ctor">
+            <inheritdoc cref="T:EnsoulSharp.SDK.GameCache" />
+        </member>
+        <member name="T:EnsoulSharp.SDK.GameCache.HeroItemCache">
+            <summary>
+                Hero Item Cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.HeroItemCache.Hero">
+            <summary>
+               The Hero.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.HeroItemCache.HasItems">
+            <summary>
+               Get Hero All Items.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.GameCache.GameWindowsValue">
+            <summary>
+               Game Windows Values.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.GameWindowsValue.WindowsWidth">
+            <summary>
+               Return Drawing.Width Cache Value.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.GameWindowsValue.WindowsHeight">
+            <summary>
+               Return Drawing.Height Cache Value.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.GameWindowsValue.MiniMapWidth">
+            <summary>
+               Return MiniMap.Width Cache Value.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.GameWindowsValue.MiniMapHeight">
+            <summary>
+               Return MiniMap.Height Cache Value.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.Library">
             <inheritdoc cref="T:EnsoulSharp.SDK.Library" />
         </member>
@@ -55,6 +113,9 @@
         </member>
         <member name="P:EnsoulSharp.SDK.Library.MenuWrapper">
             <inheritdoc cref="P:EnsoulSharp.SDK.Library.MenuWrapper" />
+        </member>
+        <member name="P:EnsoulSharp.SDK.Library.GameCache">
+            <inheritdoc cref="P:EnsoulSharp.SDK.Library.GameCache" />
         </member>
         <member name="T:EnsoulSharp.SDK.Damage">
             <summary>
@@ -81,7 +142,7 @@
                 The estimated damage from calculations.
             </returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damage.GetAutoAttackDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Boolean)">
+        <member name="M:EnsoulSharp.SDK.Damage.GetAutoAttackDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Boolean,System.Boolean)">
             <summary>
                 Gets the auto attack damage.
             </summary>
@@ -93,6 +154,9 @@
             </param>
             <param name="includePassive">
                 A value indicating whether to include the passive.
+            </param>
+            <param name="includeItem">
+                A value indicating whether to include the item.
             </param>
             <returns>
                 The <see cref="T:System.Double" />.
@@ -110,6 +174,26 @@
             </param>
             <param name="spellSlot">
                 The spell slot
+            </param>
+            <param name="stage">
+                The stage
+            </param>
+            <returns>
+                The <see cref="T:System.Double" /> value of damage.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damage.GetSpellDamageFromName(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,System.String,System.Int32)">
+            <summary>
+                Get the spell damage value.
+            </summary>
+            <param name="source">
+                The source
+            </param>
+            <param name="target">
+                The target
+            </param>
+            <param name="spellName">
+                The spell name
             </param>
             <param name="stage">
                 The stage
@@ -136,6 +220,23 @@
             </param>
             <returns>
                 The <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageSpell" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damage.GetItemDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SDK.Damages.Items.DamageItems)">
+            <summary>
+                Calculates the item damage.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <param name="item">
+                The item.
+            </param>
+            <returns>
+                The <see cref="T:System.Double" />.
             </returns>
         </member>
         <member name="M:EnsoulSharp.SDK.Damage.GetSummonerSpellDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SDK.SummonerSpell)">
@@ -283,6 +384,11 @@
                 Damage calculations data.
             </summary>
         </member>
+        <member name="P:EnsoulSharp.SDK.DamageData.ItemLazies">
+            <summary>
+                Gets or sets the items.
+            </summary>
+        </member>
         <member name="P:EnsoulSharp.SDK.DamageData.PassiveLazies">
             <summary>
                 Gets or sets the spells.
@@ -301,6 +407,29 @@
         <member name="P:EnsoulSharp.SDK.DamageData.SpellsDictionary">
             <summary>
             </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.DamageData.GetItemDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SDK.Damages.Items.DamageItems,EnsoulSharp.SDK.Damages.Items.ItemDamageType,System.Boolean)">
+            <summary>
+                Calculates the item damage.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <param name="item">
+                The item.
+            </param>
+            <param name="type">
+                The raw damage type.
+            </param>
+            <param name="fromSDKCache">
+                Check item from SDK cache.
+            </param>
+            <returns>
+                The <see cref="T:System.Double" />.
+            </returns>
         </member>
         <member name="M:EnsoulSharp.SDK.DamageData.GetDamageSpell(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SpellSlot,System.Int32)">
             <summary>
@@ -340,6 +469,17 @@
             </param>
             <returns>
                 The <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageSpell" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.DamageData.GetItemDamage(EnsoulSharp.SDK.Damages.Items.DamageItems)">
+            <summary>
+                Retrieves the item damage from the lazy collection.
+            </summary>
+            <param name="item">
+                The item.
+            </param>
+            <returns>
+                The <see cref="T:EnsoulSharp.SDK.Damages.Items.IDamageItem" />.
             </returns>
         </member>
         <member name="M:EnsoulSharp.SDK.DamageData.GetSummonerSpellDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient,EnsoulSharp.SDK.SummonerSpell)">
@@ -382,6 +522,974 @@
         <member name="F:EnsoulSharp.SDK.DamageType.True">
             <summary>
                 True Damage
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageItem">
+            <summary>
+                The damage item base class.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Damages.Items.DamageItem.DamageType">
+            <inheritdoc />
+        </member>
+        <member name="P:EnsoulSharp.SDK.Damages.Items.DamageItem.ItemId">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageItem.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageItem.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageItem.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageItems">
+            <summary>
+                Damaging item types.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.BladeoftheRuinedKing">
+            <summary>
+                Blade of the Ruined King.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.CeaselessHunger">
+            <summary>
+                Ceaseless Hunger.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DeadMansPlate">
+            <summary>
+                Dead Man's Plate.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Deicide">
+            <summary>
+                Deicide.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DivineSunderer">
+            <summary>
+                Divine Sunderer.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DoransRing">
+            <summary>
+               Doran's Ring.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DoransShield">
+            <summary>
+               Doran's Shield.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DraktharrsShadowcarver">
+            <summary>
+                Draktharrs Shadowcarver.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Dreamshatter">
+            <summary>
+                Dreamshatter.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.DuskbladeofDraktharr">
+            <summary>
+                Duskblade of Draktharr.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.EssenceReaver">
+            <summary>
+                Essence Reaver.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.EternalWinter">
+            <summary>
+                Eternal Winter.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Everfrost">
+            <summary>
+                Everfrost.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.FrostfireGauntlet">
+            <summary>
+                Frostfire Gauntlet.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Galeforce">
+            <summary>
+                Galeforce.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Goredrinker">
+            <summary>
+                Goredrinker.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.GuinsoosRageblade">
+            <summary>
+                Guinsoo's Rageblade.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.HextechRocketbelt">
+            <summary>
+                Hextech Rocketbelt.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.InfinityForce">
+            <summary>
+                Infinity Force.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.IronspikeWhip">
+            <summary>
+                Ironspike Whip.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.KircheisShard">
+            <summary>
+                Kircheis Shard.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.KrakenSlayer">
+            <summary>
+                Kraken Slayer.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.LichBane">
+            <summary>
+                Lich Bane.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Muramana">
+            <summary>
+               Muramana.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.NashorsTooth">
+            <summary>
+                Nashor's Tooth.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Noonquiver">
+            <summary>
+                Noonquiver.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.ProwlersClaw">
+            <summary>
+                Prowler's Claw.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Rageknife">
+            <summary>
+                Rageknife.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.RapidFirecannon">
+            <summary>
+                Rapid Firecannon.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.RecurveBow">
+            <summary>
+                Recurve Bow.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.RimeforgedGrasp">
+            <summary>
+                Rimeforged Grasp
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.SandshrikesClaw">
+            <summary>
+                Sandshrikes Claw.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Sheen">
+            <summary>
+               Sheen.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Stridebreaker">
+            <summary>
+                Stridebreaker.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Stormrazor">
+            <summary>
+                Stormrazor.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.TearoftheGoddess">
+            <summary>
+               Tear of the Goddess.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.TitanicHydra">
+            <summary>
+                Titanic Hydra.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.TrinityForce">
+            <summary>
+                Trinity Force.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.Typhoon">
+            <summary>
+                Typhoon.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.UpgradedAeropack">
+            <summary>
+                Upgraded Aeropack.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.WitsEnd">
+            <summary>
+                Wit's End.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.DamageItems.WyrmfallenSacrifice">
+            <summary>
+                Wyrmfallen Sacrifice.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDeicide">
+            <summary>
+                Deicide item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDeicide.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDeicide" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDeicide.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDeicide.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDraktharrsShadowcarver">
+            <summary>
+                Draktharrs Shadowcarver item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDraktharrsShadowcarver.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDraktharrsShadowcarver" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDraktharrsShadowcarver.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDraktharrsShadowcarver.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageEternalWinter">
+            <summary>
+                Eternal Winter item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEternalWinter.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageEternalWinter" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEternalWinter.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEternalWinter.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDreamshatter">
+            <summary>
+                Dreamshatter item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDreamshatter.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDreamshatter" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDreamshatter.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDreamshatter.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageCeaselessHunger">
+            <summary>
+                Ceaseless Hunger item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageCeaselessHunger.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageCeaselessHunger" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageCeaselessHunger.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageCeaselessHunger.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageWyrmfallenSacrifice">
+            <summary>
+                Wyrmfallen Sacrifice item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageWyrmfallenSacrifice.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageWyrmfallenSacrifice" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageWyrmfallenSacrifice.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageWyrmfallenSacrifice.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageTyphoon">
+            <summary>
+                Typhoon item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTyphoon.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageTyphoon" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTyphoon.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTyphoon.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageInfinityForce">
+            <summary>
+                Infinity Force item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageInfinityForce.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageInfinityForce" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageInfinityForce.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageInfinityForce.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageUpgradedAeropack">
+            <summary>
+                Upgraded Aeropack item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageUpgradedAeropack.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageUpgradedAeropack" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageUpgradedAeropack.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageUpgradedAeropack.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageSandshrikesClaw">
+            <summary>
+                Sandshrikes Claw item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSandshrikesClaw.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageSandshrikesClaw" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSandshrikesClaw.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSandshrikesClaw.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageRimeforgedGrasp">
+            <summary>
+                Rimeforged Grasp item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRimeforgedGrasp.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageRimeforgedGrasp" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRimeforgedGrasp.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRimeforgedGrasp.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageIronspikeWhip">
+            <summary>
+                Ironspike Whip item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageIronspikeWhip.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageIronspikeWhip" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageIronspikeWhip.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageIronspikeWhip.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageKircheisShard">
+            <summary>
+                Kircheis Shard item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKircheisShard.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageKircheisShard" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKircheisShard.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKircheisShard.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageNoonquiver">
+            <summary>
+                Noonquiver item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageNoonquiver.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageNoonquiver" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageNoonquiver.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageNoonquiver.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageGuinsoosRageblade">
+            <summary>
+                Guinsoo's Rageblade item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGuinsoosRageblade.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageGuinsoosRageblade" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGuinsoosRageblade.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageRageknife">
+            <summary>
+                Rageknife item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRageknife.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageRageknife" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRageknife.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageRecurveBow">
+            <summary>
+                Recurve Bow item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRecurveBow.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageRecurveBow" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRecurveBow.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageBladeoftheRuinedKing">
+            <summary>
+                Blade of the Ruined King item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageBladeoftheRuinedKing.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageBladeoftheRuinedKing" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageBladeoftheRuinedKing.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDeadMansPlate">
+            <summary>
+                Dead Man's Plate item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDeadMansPlate.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDeadMansPlate" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDeadMansPlate.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageEssenceReaver">
+            <summary>
+                Essence Reaver item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEssenceReaver.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageEssenceReaver" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEssenceReaver.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEssenceReaver.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageMuramana">
+            <summary>
+                Muramana item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageMuramana.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageMuramana" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageMuramana.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageMuramana.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageMuramana.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageLichBane">
+            <summary>
+                Lich Bane item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageLichBane.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageLichBane" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageLichBane.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageLichBane.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageNashorsTooth">
+            <summary>
+                Nashor's Tooth item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageNashorsTooth.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageNashorsTooth" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageNashorsTooth.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageRapidFirecannon">
+            <summary>
+                Rapid Firecannon item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRapidFirecannon.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageRapidFirecannon" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRapidFirecannon.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageRapidFirecannon.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDivineSunderer">
+            <summary>
+                Divine Sunderer item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDivineSunderer.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDivineSunderer" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDivineSunderer.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDivineSunderer.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDuskbladeofDraktharr">
+            <summary>
+                Duskblade of Draktharr item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDuskbladeofDraktharr.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDuskbladeofDraktharr" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDuskbladeofDraktharr.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDuskbladeofDraktharr.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageFrostfireGauntlet">
+            <summary>
+                Frostfire Gauntlet item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageFrostfireGauntlet.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageFrostfireGauntlet" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageFrostfireGauntlet.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageFrostfireGauntlet.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageGaleforce">
+            <summary>
+                Galeforce item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGaleforce.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageGaleforce" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGaleforce.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGaleforce.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageGoredrinker">
+            <summary>
+                Goredrinker item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGoredrinker.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageGoredrinker" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGoredrinker.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageGoredrinker.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageHextechRocketbelt">
+            <summary>
+                Hextech Rocketbelt item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageHextechRocketbelt.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageHextechRocketbelt" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageHextechRocketbelt.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageHextechRocketbelt.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageKrakenSlayer">
+            <summary>
+                Kraken Slayer item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKrakenSlayer.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageKrakenSlayer" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKrakenSlayer.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageKrakenSlayer.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageProwlersClaw">
+            <summary>
+                Prowler's Claw item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageProwlersClaw.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageProwlersClaw" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageProwlersClaw.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageProwlersClaw.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageEverfrost">
+            <summary>
+                Everfrost item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEverfrost.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageEverfrost" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEverfrost.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageEverfrost.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageTrinityForce">
+            <summary>
+                Trinity Force item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTrinityForce.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageTrinityForce" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTrinityForce.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTrinityForce.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageStridebreaker">
+            <summary>
+                Stridebreaker item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStridebreaker.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageStridebreaker" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStridebreaker.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStridebreaker.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageWitsEnd">
+            <summary>
+                Wit's End item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageWitsEnd.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageWitsEnd" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageWitsEnd.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageTitanicHydra">
+            <summary>
+                Titanic Hydra item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTitanicHydra.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageTitanicHydra" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTitanicHydra.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageStormrazor">
+            <summary>
+                Stormrazor item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStormrazor.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageStormrazor" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStormrazor.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageStormrazor.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageSheen">
+            <summary>
+                Sheen item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSheen.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageSheen" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSheen.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageSheen.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageTearoftheGoddess">
+            <summary>
+                Tear of the Goddess item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTearoftheGoddess.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageTearoftheGoddess" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTearoftheGoddess.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageTearoftheGoddess.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDoransShield">
+            <summary>
+                Doran's Shield item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransShield.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDoransShield" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransShield.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransShield.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.DamageDoransRing">
+            <summary>
+                Doran's Ring item damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransRing.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Items.DamageDoransRing" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransRing.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.DamageDoransRing.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.IDamageItem">
+            <summary>
+                The damage item interface.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Damages.Items.IDamageItem.DamageType">
+            <summary>
+                Gets the damage type.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Damages.Items.IDamageItem.ItemId">
+            <summary>
+                Gets the item id.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.IDamageItem.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <summary>
+                Calculates the raw damage.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <returns>
+                The <see cref="T:System.Double" />.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.IDamageItem.GetPassiveDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <summary>
+                Calculates the passive raw damage.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <returns>
+                The <see cref="T:System.Double" />.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Items.IDamageItem.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <summary>
+                Determines if the item damage is active.
+            </summary>
+            <param name="source">
+                The source.
+            </param>
+            <param name="target">
+                The target.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.IDamageItemMetadata">
+            <summary>
+                The damage item metadata.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Damages.Items.IDamageItemMetadata.Item">
+            <summary>
+                Gets the item.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Items.ItemDamageType">
+            <summary>
+                The item damage type.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.ItemDamageType.Default">
+            <summary>
+                The default type.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Damages.Items.ItemDamageType.Passive">
+            <summary>
+                The passive type.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageAatroxPassive">
@@ -911,23 +2019,6 @@
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageIvernPassive.GetDamageType">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageJhinPassiveB">
-            <summary>
-                Jhin's Damage Passive.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageJhinPassiveB.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageJhinPassiveB.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageJhinPassiveB.OverwriteAttackDamage">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageJhinPassiveB.GetDamageType">
-            <inheritdoc />
-        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageKaisaPassive">
             <summary>
                 Kaisa's Damage Passive.
@@ -1266,6 +2357,23 @@
             <inheritdoc />
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZacPassive.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageZeriPassive">
+            <summary>
+                Zeri's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZeriPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZeriPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZeriPassive.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZeriPassive.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageZoePassiveA">
@@ -2643,23 +3751,6 @@
             <inheritdoc />
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageNamiMarkPassive.GetDamageType">
-            <inheritdoc />
-        </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageKrakenSlayerPassive">
-            <summary>
-                Kraken Slayer Thrid Attack Damage.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageKrakenSlayerPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageKrakenSlayerPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageKrakenSlayerPassive.OverwriteAttackDamage">
-            <inheritdoc />
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageKrakenSlayerPassive.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.IPassiveDamage">
@@ -6025,56 +7116,56 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKennenW1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixE">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixE">
             <summary>
-                Spell Damage, KhaZix E.
+                Spell Damage, Khazix E.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixE.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixE.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixE" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixE" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ">
             <summary>
-                Spell Damage, KhaZix Q.
+                Spell Damage, Khazix Q.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ1">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ1">
             <summary>
-                Spell Damage, KhaZix Q (Stage 1).
+                Spell Damage, Khazix Q (Stage 1).
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ1.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ1.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ1" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ1" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixQ1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixQ1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixW">
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixW">
             <summary>
-                Spell Damage, KhaZix W.
+                Spell Damage, Khazix W.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixW.#ctor">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixW.#ctor">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixW" /> class.
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageKhazixW" /> class.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhaZixW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageKhazixW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageKindredE">
@@ -10276,6 +11367,45 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageYorickQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriR">
+            <summary>
+                Spell Damage, Zeri R.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriR.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriR" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriQ">
+            <summary>
+                Spell Damage, Zeri Q.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriQ.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriQ" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriW">
+            <summary>
+                Spell Damage, Zeri W.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriW.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageZeriW" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageZeriW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageZoeE">
             <summary>
                 Spell Damage, Zoe E.
@@ -10581,6 +11711,238 @@
         <member name="F:EnsoulSharp.SDK.SummonerSpell.Mark">
             <summary>
                 The Mark
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.EvadeLibrary">
+            <summary>
+               The Evade Library Class.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeLibrary.AllSpells">
+            <summary>
+               Gets or sets all skillshots.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.EvadeLibrary.AddEvade(System.String)">
+            <summary>
+                Add Evade into Library.
+            </summary>
+            <param name="evadeName">The Evade Name.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.EvadeLibrary.IsExist(System.String)">
+            <summary>
+                Judge evade is init.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.EvadeSkillshotType">
+            <summary>
+               Evade Skillshot Type.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.None">
+            <summary>
+                The None spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Line">
+            <summary>
+                The Line spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Circle">
+            <summary>
+                The Circle spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Cone">
+            <summary>
+                The Cone spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Arc">
+            <summary>
+               The Arc spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Ring">
+            <summary>
+               The Ring spell.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeSkillshotType.Rectangle">
+            <summary>
+               The Rectangle spell.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.ISkillshot">
+            <summary>
+                Evade Skillshot interface.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.StartTime">
+            <summary>
+               Gets or sets the skillshot start time.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.EndTime">
+            <summary>
+               Get the skillshot end time.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.StartPosition">
+            <summary>
+               Get the skillshot start position.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.EndPosition">
+            <summary>
+               Get the skillshot end position.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.CurrentPosition">
+            <summary>
+               Get the skillshot current position.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshot.ISkillshotData">
+            <summary>
+               Get the skillshot Basic Data.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.ISkillshot.IsInSide(SharpDX.Vector2,System.Single,System.Boolean)">
+            <summary>
+               The Position is in Skillshot.
+            </summary>
+            <param name="position">The position.</param>
+            <param name="radius">The Radius.</param>
+            <param name="checkCollision">Check spell Collision.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.ISkillshot.GetSpellHitTime(SharpDX.Vector2)">
+            <summary>
+               Get Position hit skillshot time.
+            </summary>
+            <param name="position">The position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.ISkillshot.WillHit(EnsoulSharp.AIHeroClient,SharpDX.Vector2,System.Single)">
+            <summary>
+               The position will hit spell with delay.
+            </summary>
+            <param name="source">The Source.</param>
+            <param name="position">The position.</param>
+            <param name="delay">The delay.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.ISkillshotData">
+            <summary>
+               Evade SkillshotData interface.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.DangerLevel">
+            <summary>
+               Get the skillshot DangerLevel.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.Delay">
+            <summary>
+               Get the skillshot delay.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.Radius">
+            <summary>
+               Get the skillshot radius.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.Range">
+            <summary>
+               Get the skillshot range.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.ChampionName">
+            <summary>
+               Get the skillshot from champion name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.SpellName">
+            <summary>
+               Get the skillshot spell name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.ExtraSpellName">
+            <summary>
+               Get the skillshot extra spell name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.MissileName">
+            <summary>
+               Get the skillshot missile name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.ExtraMissileName">
+            <summary>
+               Get the skillshot extra missile name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.Type">
+            <summary>
+               Get the skillshot type.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.Slot">
+            <summary>
+               Get the skillshot slot.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ISkillshotData.CollisionObjects">
+            <summary>
+               Get the skillshot collision type.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType">
+            <summary>
+               The Skillshot Collision object type.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.AllHeros">
+            <summary>
+               The Heros.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.EnemyHeros">
+            <summary>
+               The Enemy Heros.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.AllyHeros">
+            <summary>
+               The Ally Heros.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.AllMinions">
+            <summary>
+               The Minions.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.EnemyMinions">
+            <summary>
+               The Enemy Minions.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.AllyMinions">
+            <summary>
+               The Ally Minions.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.YasuoWall">
+            <summary>
+               The Yasuo Windwall.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.SkillshotCollisionObjectType.Wall">
+            <summary>
+               The Wall or Buliding.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.AIHeroClientExtensions">
@@ -13410,6 +14772,27 @@
             <param name="customdisplayname">The customdisplayname.</param>
             <param name="col">The color.</param>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.PermaShow.AddPermashow(EnsoulSharp.SDK.MenuUI.MenuItem,System.String,System.Nullable{SharpDX.Color})">
+            <summary>
+               Adds a menuitem to Permashow.
+            </summary>
+            <param name="menuItem">The MenuItem.</param>
+            <param name="customDisplayName">The Custom Display Name.</param>
+            <param name="color">The Color.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.PermaShow.RemovePermashow(EnsoulSharp.SDK.MenuUI.MenuItem)">
+            <summary>
+                Remove MenuItem Permashow.
+            </summary>
+            <param name="menuItem">The MenuItem.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.PermaShow.ChangePermashowDisplayName(EnsoulSharp.SDK.MenuUI.MenuItem,System.String)">
+            <summary>
+                Change MenuItem Permashow Display Name.
+            </summary>
+            <param name="menuItem">The MenuItem.</param>
+            <param name="displayName">The Display Name.</param>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.KeyBindType">
             <summary>
                 Key Bind Type for Menu.
@@ -13452,7 +14835,7 @@
         </member>
         <member name="F:EnsoulSharp.SDK.MenuUI.MenuValueType.Slider">
             <summary>
-                The Slider Value.
+                The Slider value.
             </summary>
         </member>
         <member name="F:EnsoulSharp.SDK.MenuUI.MenuValueType.SliderButton">
@@ -13460,9 +14843,14 @@
                 The Slider Button value.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.MenuUI.MenuValueType.Separator">
+            <summary>
+                The Separator value.
+            </summary>
+        </member>
         <member name="F:EnsoulSharp.SDK.MenuUI.MenuValueType.None">
             <summary>
-                The None Value.
+                The None value.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuList">
@@ -15241,6 +16629,12 @@
             </typeparam>
             <returns>The value that is attached to this component.</returns>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.AMenuComponent.SetFontColor(SharpDX.Color)">
+            <summary>
+               Set the Custom font color.
+            </summary>
+            <param name="color"></param>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.Menu">
             <summary>
                 Menu User Interface.
@@ -15342,6 +16736,17 @@
             </returns>
             <exception cref="T:System.Exception">Cannot get the Value of a Menu</exception>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.Remove(EnsoulSharp.SDK.MenuUI.AMenuComponent)">
+            <summary>
+                Removes a menu component from this menu.
+            </summary>
+            <param name="component">
+                <see cref="T:EnsoulSharp.SDK.MenuUI.AMenuComponent" /> component instance
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuItem">
             <summary>
                 Menu Item
@@ -15368,7 +16773,7 @@
                 Gets or sets the MenuItem tooltip.
             </summary>
         </member>
-        <member name="F:EnsoulSharp.SDK.MenuUI.MenuItem.TooltipColor">
+        <member name="P:EnsoulSharp.SDK.MenuUI.MenuItem.TooltipColor">
             <summary>
                 Gets or sets the MenuItem tooltip color.
             </summary>
@@ -16514,6 +17919,32 @@
                 Fire BeforeMove Event
             </summary>
         </member>
+        <member name="T:EnsoulSharp.SDK.IncomingDamagePrediction">
+            <summary>
+                This class allows you to calculate the health of units after a set time. Only works on hero and need to judge by yourself.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.IncomingDamagePrediction.MissileList">
+            <summary>
+               Returns the incoming Missile List.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.IncomingDamagePrediction.ActiveDamages">
+            <summary>
+              Returns the incoming normal damages.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IncomingDamagePrediction.WillHit(EnsoulSharp.AIHeroClient,SharpDX.Vector3,SharpDX.Vector3,System.Single,System.Single)">
+            <summary>
+                Judge target will hit skillshot.
+            </summary>
+            <param name="target">The target.</param>
+            <param name="startPosition">The startPosition.</param>
+            <param name="endPosition">The endPosition.</param>
+            <param name="lineWidth">The line width.</param>
+            <param name="castRadius">The cast Radius.</param>
+            <returns></returns>
+        </member>
         <member name="T:EnsoulSharp.SDK.AoEPrediction">
             <summary>
                 Calculates area of effect prediction.
@@ -16696,6 +18127,22 @@
             <param name="checkCollision">if set to <c>true</c>, checks collision.</param>
             <returns>SpellPrediction.PredictionOutput.</returns>
         </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.RectangleRender">
+            <summary>
+                Class draw rectangle on the screen.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.RectangleRender.Draw(SharpDX.Vector2,System.Single,System.Single,System.Single,SharpDX.Color,SharpDX.Color)">
+            <summary>
+                Draws the rectangle.
+            </summary>
+            <param name="position">The position.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="borderWidth">The borderWidth.</param>
+            <param name="color">The color.</param>
+            <param name="borderColor">The borderColor.</param>
+        </member>
         <member name="T:EnsoulSharp.SDK.Rendering.CircleRender">
             <summary>
                 Class draw circle on the screen.
@@ -16710,6 +18157,28 @@
             <param name="color">The color.</param>
             <param name="width">The width.</param>
             <param name="zDeep">if set to <c>true</c> the circle will be drawn with depth buffering.</param>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.DamageRender">
+            <summary>
+                Class draw damage on the HealthBar.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.DamageRender.GetDamageDelegate">
+            <summary>
+               Get full Damage Delegate.
+            </summary>
+            <param name="hero"></param>
+            <returns></returns>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.DamageRender.Enabled">
+            <summary>
+               Returns if need to draw DamageIndicator.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.DamageRender.GetDamage">
+            <summary>
+               Gets or sets the GetDamage Delegate.
+            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.Rendering.LineRender">
             <summary>
@@ -16910,6 +18379,11 @@
                 Get the Sprite Center.
             </summary>
         </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Complement">
+            <summary>
+                Complements this instance.
+            </summary>
+        </member>
         <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Crop(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
             <summary>
                 Crops the sprite.
@@ -16926,6 +18400,22 @@
             </summary>
             <param name="rect">The rectangle.</param>
             <param name="scale">if set to <c>true</c>, crops with the scale.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Fade">
+            <summary>
+                Fades this instance. (Saturation is 1/2)
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.GrayScale">
+            <summary>
+                Makes the sprite black and white.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.SetSaturation(System.Single)">
+            <summary>
+                Sets the saturation.
+            </summary>
+            <param name="saturiation">The saturiation.</param>
         </member>
         <member name="T:EnsoulSharp.SDK.Rendering.TextRender">
             <summary>
@@ -16988,11 +18478,6 @@
         <member name="F:EnsoulSharp.SDK.Rendering.TextRender.FontCache.CacheFont">
             <summary>
                 The font.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.TextRender.FontCache.IsRendering">
-            <summary>
-                The line is Rendering.
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.Rendering.TextRender.FontCache.Description">
@@ -17866,6 +19351,310 @@
             <returns>
                 The <see cref="T:EnsoulSharp.AIHeroClient" />.
             </returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs">
+            <summary>
+            Provides extended data for the MouseClickExt and MouseMoveExt events. 
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.FromRawData(System.Int32,System.IntPtr)">
+            <summary>
+            Creates <see cref="T:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs"/> from Windows Message parameters.
+            </summary>
+            <param name="wParam">The first Windows Message parameter.</param>
+            <param name="lParam">The second Windows Message parameter.</param>
+            <returns>A new MouseEventExtArgs object.</returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Point,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs"/> class. 
+            </summary>
+            <param name="buttons">One of the MouseButtons values indicating which mouse button was pressed.</param>
+            <param name="clicks">The number of times a mouse button was pressed.</param>
+            <param name="point">The x and y -coordinate of a mouse click, in pixels.</param>
+            <param name="delta">A signed count of the number of detents the wheel has rotated.</param>
+            <param name="isMouseKeyDown">True if event singnals mouse button down.</param>
+            <param name="isMouseKeyUp">True if event singnals mouse button up.</param>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.Handled">
+            <summary>
+            Set this property to <b>true</b> inside your event handler to prevent further processing of the event in other applications.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.IsMouseKeyDown">
+            <summary>
+            True if event singnals mouse button down.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.IsMouseKeyUp">
+            <summary>
+            True if event singnals mouse button up.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.MouseHookListener">
+            <summary>
+            This class monitors all mouse activities and provides appropriate events.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.MouseStruct">
+            <summary>
+            The <see cref="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.MouseStruct"/> structure contains information about a mouse input event.
+            </summary>
+            <remarks>
+            See full documentation at http://globalmousekeyhook.codeplex.com/wikipage?title=MouseStruct
+            </remarks>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.MouseStruct.Point">
+            <summary>
+            Specifies a Point structure that contains the X- and Y-coordinates of the cursor, in screen coordinates. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.MouseStruct.MouseData">
+            <summary>
+            Specifies information associated with the message.
+            </summary>
+            <remarks>
+            The possible values are:
+            <list type="bullet">
+            <item>
+            <description>0 - No Information</description>
+            </item>
+            <item>
+            <description>1 - X-Button1 Click</description>
+            </item>
+            <item>
+            <description>2 - X-Button2 Click</description>
+            </item>
+            <item>
+            <description>120 - Mouse Scroll Away from User</description>
+            </item>
+            <item>
+            <description>-120 - Mouse Scroll Toward User</description>
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.HookCallback">
+            <summary>
+            The CallWndProc hook procedure is an application-defined or library-defined callback 
+            function used with the SetWindowsHookEx function. The HOOKPROC type defines a pointer 
+            to this callback function. CallWndProc is a placeholder for the application-defined 
+            or library-defined function name.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParam">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParam">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/callwndproc.asp
+            </remarks>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Hooker">
+            <summary>
+            Provides base implementation of methods for subscription and unsubscription to application and/or global mouse and keyboard hooks.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Hooker.CallNextHookEx(System.Int32,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            The CallNextHookEx function passes the hook information to the next hook procedure in the current hook chain. 
+            A hook procedure can call this function either before or after processing the hook information. 
+            </summary>
+            <param name="idHook">Ignored.</param>
+            <param name="nCode">[in] Specifies the hook code passed to the current hook procedure.</param>
+            <param name="wParam">[in] Specifies the wParam value passed to the current hook procedure.</param>
+            <param name="lParam">[in] Specifies the lParam value passed to the current hook procedure.</param>
+            <returns>This value is returned by the next hook procedure in the chain.</returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Hooker.SetWindowsHookEx(System.Int32,EnsoulSharp.SDK.Utility.MouseActivity.WinApi.HookCallback,System.IntPtr,System.Int32)">
+            <summary>
+            The SetWindowsHookEx function installs an application-defined hook procedure into a hook chain. 
+            You would install a hook procedure to monitor the system for certain types of events. These events 
+            are associated either with a specific thread or with all threads in the same desktop as the calling thread. 
+            </summary>
+            <param name="idHook">
+            [in] Specifies the type of hook procedure to be installed. This parameter can be one of the following values.
+            </param>
+            <param name="lpfn">
+            [in] Pointer to the hook procedure. If the dwThreadId parameter is zero or specifies the identifier of a 
+            thread created by a different process, the lpfn parameter must point to a hook procedure in a dynamic-link 
+            library (DLL). Otherwise, lpfn can point to a hook procedure in the code associated with the current process.
+            </param>
+            <param name="hMod">
+            [in] Handle to the DLL containing the hook procedure pointed to by the lpfn parameter. 
+            The hMod parameter must be set to NULL if the dwThreadId parameter specifies a thread created by 
+            the current process and if the hook procedure is within the code associated with the current process. 
+            </param>
+            <param name="dwThreadId">
+            [in] Specifies the identifier of the thread with which the hook procedure is to be associated. 
+            If this parameter is zero, the hook procedure is associated with all existing threads running in the 
+            same desktop as the calling thread. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is the handle to the hook procedure.
+            If the function fails, the return value is NULL. To get extended error information, call GetLastError.
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Hooker.UnhookWindowsHookEx(System.Int32)">
+            <summary>
+            The UnhookWindowsHookEx function removes a hook procedure installed in a hook chain by the SetWindowsHookEx function. 
+            </summary>
+            <param name="idHook">
+            [in] Handle to the hook to be removed. This parameter is a hook handle obtained by a previous call to SetWindowsHookEx. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero. To get extended error information, call GetLastError.
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MOUSEMOVE">
+            <summary>
+            The WM_MOUSEMOVE message is posted to a window when the cursor moves. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_LBUTTONDOWN">
+            <summary>
+            The WM_LBUTTONDOWN message is posted when the user presses the left mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_RBUTTONDOWN">
+            <summary>
+            The WM_RBUTTONDOWN message is posted when the user presses the right mouse button
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MBUTTONDOWN">
+            <summary>
+            The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_LBUTTONUP">
+            <summary>
+            The WM_LBUTTONUP message is posted when the user releases the left mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_RBUTTONUP">
+            <summary>
+            The WM_RBUTTONUP message is posted when the user releases the right mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MBUTTONUP">
+            <summary>
+            The WM_MBUTTONUP message is posted when the user releases the middle mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_LBUTTONDBLCLK">
+            <summary>
+            The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_RBUTTONDBLCLK">
+            <summary>
+            The WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MBUTTONDBLCLK">
+            <summary>
+            The WM_RBUTTONDOWN message is posted when the user presses the right mouse button 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MOUSEWHEEL">
+            <summary>
+            The WM_MOUSEWHEEL message is posted when the user presses the mouse wheel. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_XBUTTONDOWN">
+            <summary>
+            The WM_XBUTTONDOWN message is posted when the user presses the first or second X mouse
+            button. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_XBUTTONUP">
+            <summary>
+            The WM_XBUTTONUP message is posted when the user releases the first or second X  mouse
+            button.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_XBUTTONDBLCLK">
+            <summary>
+            The WM_XBUTTONDBLCLK message is posted when the user double-clicks the first or second
+            X mouse button.
+            </summary>
+            <remarks>Only windows that have the CS_DBLCLKS style can receive WM_XBUTTONDBLCLK messages.</remarks>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
+            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
+            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
+            or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
+            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
+            presses another key. It also occurs when no window currently has the keyboard focus; 
+            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
+            receives the message can distinguish between these two contexts by checking the context 
+            code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
+            releases a key that was pressed while the ALT key was held down. It also occurs when no 
+            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
+            to the active window. The window that receives the message can distinguish between 
+            these two contexts by checking the context code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Point">
+            <summary>
+            The Point structure defines the X- and Y- coordinates of a point. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/rectangl_0tiq.asp
+            </remarks>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Point.X">
+            <summary>
+            Specifies the X-coordinate of the point. 
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Point.Y">
+            <summary>
+            Specifies the Y-coordinate of the point. 
+            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.Utility.GamePacket">
             <summary>
@@ -19801,7 +21590,7 @@
                 Class that helps in calculating collision.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Collisions.#cctor">
+        <member name="M:EnsoulSharp.SDK.Collisions.Attach">
             <summary>
                 Initializes static members of the <see cref="T:EnsoulSharp.SDK.Collisions" /> class.
             </summary>
@@ -19875,6 +21664,74 @@
                 Simulated Prediction
             </summary>
         </member>
+        <member name="T:EnsoulSharp.SDK.PredictedDamage">
+            <summary>
+                Represetns predicted damage.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.SourceNetworkId">
+            <summary>
+                Get the source NetworkId.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.TargetNetworkId">
+            <summary>
+                Get the target NetworkId.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.StartTick">
+            <summary>
+                Get the start tick.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.ProjectileSpeed">
+            <summary>
+                Get the projectile speed.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.AnimationTime">
+            <summary>
+                The animation time.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.TargetBoundingRadius">
+            <summary>
+                Get the target BoundingRadius.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.Damage">
+            <summary>
+                Get the damage.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.Delay">
+            <summary>
+                Get the delay.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.Source">
+            <summary>
+               Get the source.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.Target">
+            <summary>
+               Get the target.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.IsSkillshot">
+            <summary>
+               Get current damage is from skillshot.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictedDamage.Processed">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="T:EnsoulSharp.SDK.PredictedDamage" /> is processed.
+            </summary>
+            <value>
+                <c>true</c> if processed; otherwise, <c>false</c>.
+            </value>
+        </member>
         <member name="T:EnsoulSharp.SDK.PredictionInput">
             <summary>
                 Contains information necessary to calculate the prediction.
@@ -19910,6 +21767,11 @@
         <member name="F:EnsoulSharp.SDK.PredictionInput.Delay">
             <summary>
                 Gets or sets the skill-shot delay in seconds.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.PredictionInput.MaxCollisionCount">
+            <summary>
+                Gets or sets the skill-shot max collision count. (ONLY if Collision = true)
             </summary>
         </member>
         <member name="F:EnsoulSharp.SDK.PredictionInput.Radius">
@@ -19964,6 +21826,11 @@
                 The output after calculating the prediction.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.PredictionOutput.Idle">
+            <summary>
+               The Prediction calculate result message.
+            </summary>
+        </member>
         <member name="F:EnsoulSharp.SDK.PredictionOutput.CollisionObjects">
             <summary>
                 The list of the units that the skillshot will collide with.
@@ -19989,6 +21856,11 @@
                 The number of targets the skillshot will hit (only if aoe was enabled).
             </summary>
             <value>The aoe targets hit count.</value>
+        </member>
+        <member name="P:EnsoulSharp.SDK.PredictionOutput.OriginHitchance">
+            <summary>
+                The Hitchance return Before Collision check Origin Value.
+            </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.PredictionOutput.CastPosition">
             <summary>
@@ -20137,6 +22009,11 @@
         <member name="P:EnsoulSharp.SDK.Spell.Collision">
             <summary>
                 Gets or sets a value indicating whether collision.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Spell.MaxCollisionCount">
+            <summary>
+                Gets or sets a value Max Collision Count.
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.Spell.CooldownTime">
@@ -21333,6 +23210,11 @@
                 The <c>shen</c> type.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.Teleport.TeleportType.YuumiWAlly">
+            <summary>
+                The <c>yuuumi w ally</c> type.
+            </summary>
+        </member>
         <member name="F:EnsoulSharp.SDK.Teleport.TeleportType.Unknown">
             <summary>
                 The unknown type.
@@ -21710,6 +23592,11 @@
         <member name="P:EnsoulSharp.SDK.GameObjects.EnemyInhibitors">
             <summary>
                 Gets the enemy inhibitors.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameObjects.AzirSoldiers">
+            <summary>
+                Gets the Azir Soldier.
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.GameObjects.EffectEmitters">
@@ -22715,6 +24602,11 @@
         <member name="F:EnsoulSharp.SDK.OrbwalkerMode.LastHit">
             <summary>
                 Last Hit Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerMode.Flee">
+            <summary>
+               Flee Mode
             </summary>
         </member>
         <member name="F:EnsoulSharp.SDK.OrbwalkerMode.None">
@@ -23917,6 +25809,11 @@
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.Properties.Resources.tr_TR">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Properties.Resources.vi_VN">
             <summary>
               Looks up a localized resource of type System.Byte[].
             </summary>
