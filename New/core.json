@@ -1071,6 +1071,21 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "95",
+      "changes": [
+        "updated for RIOT and CN patch 12.4",
+        "added: AIBaseClient.ServerPosition",
+        "added: Game.OnDisplayChat -> control Game.Print and game output",
+        "added: Game.Print -> triggerEvent arg",
+        "fixed: mark GameObject.PreviousPosition as obsolete -> to get server pos pls use AIBaseClient.ServerPosition instead",
+        "removed: AIBaseClient.Velocity -> it's actual the delta movement between next step so almost useless"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
