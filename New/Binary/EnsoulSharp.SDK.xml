@@ -1781,6 +1781,23 @@
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageGwenPassive.GetDamageType">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageRenataPassive">
+            <summary>
+                Renata Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataPassive.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataPassive.GetDamageType">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageSamiraPassive">
             <summary>
                 Samira's Damage Passive.
@@ -3651,6 +3668,23 @@
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageZiggsPassive.GetDamageType">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageRenataMarkPassive">
+            <summary>
+                Renata Mark Buff Passive Damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataMarkPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataMarkPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataMarkPassive.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageRenataMarkPassive.GetDamageType">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageXayahMarkPassive">
             <summary>
                 Xayah W Passive Damage.
@@ -3974,6 +4008,32 @@
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageRammusR1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageRenataE">
+            <summary>
+                Spell Damage, Renata E.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageRenataE.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageRenataE" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageRenataE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageRenataQ">
+            <summary>
+                Spell Damage, Renata Q.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageRenataQ.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageRenataQ" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageRenataQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageRellR1">
