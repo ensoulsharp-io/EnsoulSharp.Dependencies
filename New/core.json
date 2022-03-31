@@ -1096,6 +1096,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "97",
+      "changes": [
+        "updated for RIOT patch 12.6",
+        "added: Hacks.AntiDisconnectFlags"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
