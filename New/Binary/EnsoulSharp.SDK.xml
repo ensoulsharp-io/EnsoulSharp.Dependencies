@@ -4244,19 +4244,6 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageAhriW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageAhriW1">
-            <summary>
-                Spell Damage, Ahri W (Stage 1).
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageAhriW1.#ctor">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageAhriW1" /> class.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageAhriW1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
-            <inheritdoc />
-        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageAkaliE1">
             <summary>
                 Spell Damage, Akali E.
