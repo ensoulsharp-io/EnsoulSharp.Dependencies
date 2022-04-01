@@ -1,7 +1,7 @@
 {
   "System": {
 	  "Reference\\EnsoulSharp.SDK.dll": {
-	    "MD5": "6BD67E344E5B96D377B848985FA2661C",
+	    "MD5": "7D387F05EEA23269D3DD212685103FC3",
 	    "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/EnsoulSharp.SDK.dll",
 	    "Version": "1.0.0.0"
     },
