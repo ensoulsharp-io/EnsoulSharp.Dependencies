@@ -1119,6 +1119,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "99",
+      "changes": [
+        "fixed: riot ver inject/runtime crash",
+        "fixed: cn ver data mismatch"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
