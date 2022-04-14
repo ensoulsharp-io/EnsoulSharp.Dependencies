@@ -1107,6 +1107,18 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "98",
+      "changes": [
+        "updated for RIOT patch 12.7",
+        "added: AIBaseClient.OnVisibleEnter",
+        "added: AIBaseClient.OnVisibleLeave"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
