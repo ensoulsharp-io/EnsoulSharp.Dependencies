@@ -29,9 +29,19 @@
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/SharpDX.dll",
       "Version": "4.2.0.0"
     },
+    "Reference\\SharpDX.DXGI.dll": {
+      "MD5": "D2EDDE626C241549EAB636AA87FB5D38",
+      "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/SharpDX.DXGI.dll",
+      "Version": "4.2.0.0"
+    },
     "Reference\\SharpDX.Direct3D9.dll": {
       "MD5": "52F43683B23D23EE15E3A6423D1B5793",
       "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/SharpDX.Direct3D9.dll",
+      "Version": "4.2.0.0"
+    },
+    "Reference\\SharpDX.Direct3D11.dll": {
+      "MD5": "07137E5CC4D5ECC95CA267C9DCE042D4",
+      "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/SharpDX.Direct3D11.dll",
       "Version": "4.2.0.0"
     },
     "Reference\\SharpDX.Mathematics.dll": {
