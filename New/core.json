@@ -1130,6 +1130,30 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "100",
+      "changes": [
+        "updated for RIOT patch 12.8",
+        "added: MapId.Unknown -> now Game.MapId will default return unknown while error occur",
+        "added: AntiDisconnectFlags.None",
+        "added: Drawing.OnD3D11Present",
+        "added: Drawing.OnD3D11PreResizeBuffers",
+        "added: Drawing.OnD3D11PostResizeBuffers",
+        "added: Drawing.Platform",
+        "added: Drawing.Direct3DDevice11",
+        "added: Drawing.Driect3DDevice11Context",
+        "added: Drawing.SwapChain",
+        "modified: Drawing.DrawLine now support dx11",
+        "modified: Drawing.DrawText now support dx11",
+        "modified: Drawing.GetTextExtent now support dx11",
+        "renamed: Drawing.Direct3DDevice -> Drawing.Direct3DDevice9",
+        "renamed: ItemData.SellBackPercentage -> ItemData.SellBackModifier"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
