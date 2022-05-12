@@ -1154,6 +1154,16 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "101",
+      "changes": [
+        "updated for RIOT and CN patch 12.9"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
