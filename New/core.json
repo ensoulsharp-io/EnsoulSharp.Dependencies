@@ -1164,6 +1164,19 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "102",
+      "changes": [
+        "updated for RIOT and CN patch 12.10",
+        "added: Drawing.DrawCircle -> work for 2d + 3d & support dx9 + dx11",
+        "renamed: Drawing.DrawCircle -> Drawing.DrawCircleIndicator",
+        "removed: AIBaseClient._PercentCooldownMod"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
