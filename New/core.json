@@ -1188,6 +1188,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "104",
+      "changes": [
+        "updated for RIOT and CN patch 12.11",
+        "added: Drawing.DrawCircle without segment arg -> work for 2d + 3d & support dx9 + dx11"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
