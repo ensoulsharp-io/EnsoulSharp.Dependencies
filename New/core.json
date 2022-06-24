@@ -1199,6 +1199,22 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "105",
+      "changes": [
+        "updated for RIOT and CN patch 12.12",
+        "added: AIHeroClient.Perks",
+        "added: GameNotifyEventArgs.PacketData",
+        "added: Game.ZoomDesired",
+        "added: Game.ZoomMin",
+        "added: Game.ZoomMax",
+        "fixed: AIBaseClient.OnPlayAnimation lost lots anim"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
