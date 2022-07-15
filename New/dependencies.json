@@ -1,7 +1,7 @@
 {
   "System": {
 	  "Reference\\EnsoulSharp.SDK.dll": {
-	    "MD5": "D259B0A6C2ADBBF917FC1E16E9410DFE",
+	    "MD5": "79CEA4168D0EF18A431A5CCF0F530EA0",
 	    "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Binary/EnsoulSharp.SDK.dll",
 	    "Version": "1.0.0.0"
     },
@@ -51,54 +51,37 @@
     }
   },
   "Core": {
-    "D79AB8DEB8D190778D2E479869B41FCC": {
+    "D161D9A74E40E441705C85B63928612A": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "C17DF7AC79C88F74519832B1F5E61108",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/EnsoulSharp.Core.dll"
+          "MD5": "4610A6E54F5DE5C49D1CCAFC7A09B3E2",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "CF96416157FB4372354671DCFC94235B",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/EnsoulSharp.dll",
+          "MD5": "0EC69E79F56FAC5F96BF601688AFC37D",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "EB1C6EAF9BEFCA46B4435A6EA64BAE3D",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/EnsoulSharp.Injector.dll"
+          "MD5": "F21AEF3DF1FEAFF2D9E2CCA7D8B20274",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/EnsoulSharp.Injector.dll"
         }
       }
     },
-    "C1517A4717256F557305E189881C8F5F": {
+    "1FD0B7267A3497EC2D118DE65A3BC42D": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "78F03B85253EFA0D21AC72AB935DB1D0",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/Riot/EnsoulSharp.Core.dll"
+          "MD5": "B06727D5320642C1F9C6D25E43AAE298",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "2C467FE5AAE2BE3299A1D9DC4B821068",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/Riot/EnsoulSharp.dll",
+          "MD5": "A65BEDD4BFA7AFE9867CC7A707172BD1",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/Riot/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "C6DE6515D1455D0DDD3509A1F277F87A",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.12/Riot/EnsoulSharp.Injector.dll"
-        }
-      }
-    },
-	"38F09BF8FBE3BA880C7E07786A1793F0": {
-      "Files": {
-        "System\\EnsoulSharp.Core.dll": {
-          "MD5": "FCB9C365561D3AB63C39525742CE5F5D",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.11/Riot/EnsoulSharp.Core.dll"
-        },
-        "Reference\\EnsoulSharp.dll": {
-          "MD5": "DAF1F2A4CDE8F29765F3154EC68B19E8",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.11/Riot/EnsoulSharp.dll",
-          "Version": "1.0.0.0"
-        },
-        "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "165CCF19CEED49F9393DD1F6F7F71F42",
-          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.11/Riot/EnsoulSharp.Injector.dll"
+          "MD5": "511DB0C4ECA4C7EB2A6EBB02F4D7C372",
+          "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.13/Riot/EnsoulSharp.Injector.dll"
         }
       }
     }
