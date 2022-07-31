@@ -1063,6 +1063,16 @@
 	Gets the toggle state of the spell.
 </summary>
         </member>
+        <member name="P:EnsoulSharp.SpellDataInst.AmmoRechargeTime">
+            <summary>
+	Gets the total ammo recharge time.
+</summary>
+        </member>
+        <member name="P:EnsoulSharp.SpellDataInst.NextAmmoRechargeTime">
+            <summary>
+	Gets the time for next ammo recharge.
+</summary>
+        </member>
         <member name="P:EnsoulSharp.SpellDataInst.Ammo">
             <summary>
 	Gets the current ammo of the spell.

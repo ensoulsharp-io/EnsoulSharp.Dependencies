@@ -1235,6 +1235,19 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "108",
+      "changes": [
+        "added: SpellDataInst.NextAmmoRechargeTime for AsheE etc",
+        "added: SpellDataInst.AmmoRechargeTime for AsheE etc",
+        "fixed: AIBaseClient.OnPlayAnimation lost lots anim",
+        "fixed: NavMesh class sucks"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
