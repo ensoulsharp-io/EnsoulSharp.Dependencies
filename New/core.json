@@ -1263,7 +1263,7 @@
     {
       "build": "110",
       "changes": [
-        "updated for RIOT and CN patch 12.15"
+        "updated for RIOT and CN patch 12.16"
       ],
       "md5": [
         "0",
