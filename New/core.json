@@ -1269,6 +1269,19 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "111",
+      "changes": [
+        "updated for RIOT and CN patch 12.17",
+        "added: MenuGUI.IsChatShow",
+        "fixed: SpellDataInst.NextAmmoRechargeTime",
+        "modified: core anti dc limit rate improved"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
