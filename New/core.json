@@ -1282,6 +1282,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "112",
+      "changes": [
+        "updated for RIOT and CN patch 12.18",
+        "modified: core anti dc limit rate improved again"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
