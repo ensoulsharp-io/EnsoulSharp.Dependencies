@@ -1293,6 +1293,21 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "113",
+      "changes": [
+        "updated for RIOT patch 12.19",
+        "added: AttackableUnit.DeathTime",
+        "added: AIBaseCommon.DeathDuration",
+        "added: Drawing.OnFlushDraw",
+        "modified: Drawing.OnFlushEndScene now ignore Hacks.DisableDrawings",
+        "obsolete: Drawing.OnFlushEndScene doesn't work on Direct3D11"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
