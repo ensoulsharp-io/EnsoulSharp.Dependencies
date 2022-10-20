@@ -76,16 +76,16 @@
     "605E254FE41B7C280D86D62A6DD452F3": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "620785066B6BBF498662CBB3166E6331",
+          "MD5": "1F23DC6473471FF075D4F0323E814FED",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.20/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
-          "MD5": "58F5F8C4F23A0CBD8C89EFD51603DDB8",
+          "MD5": "3C8BD3A0D98F6403C59DD75F3F9BBC39",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.20/Riot/EnsoulSharp.dll",
           "Version": "1.0.0.0"
         },
         "System\\EnsoulSharp.Injector.dll": {
-          "MD5": "97AC1247018236A3E06D761A99BB5333",
+          "MD5": "8EA508C0EDF9DBCE8DC2CAEE7ED9D0DE",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/12.20/Riot/EnsoulSharp.Injector.dll"
         }
       }
