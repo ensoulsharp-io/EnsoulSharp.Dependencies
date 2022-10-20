@@ -1308,6 +1308,17 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "114",
+      "changes": [
+        "updated for RIOT and CN patch 12.20",
+        "fixed: GameEventId spell & index mismatch"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
