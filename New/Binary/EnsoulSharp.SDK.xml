@@ -46,32 +46,47 @@
                To Cache some Game Function and Objects.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.HumainzerSpellCast">
+            <summary>
+                Enabled Humanizer Spell Cast (for unlock AntiDisconnect).
+            </summary>
+        </member>
         <member name="F:EnsoulSharp.SDK.GameCache.WindowsValue">
             <summary>
                Game Windows Value Cache.
             </summary>
         </member>
-        <member name="F:EnsoulSharp.SDK.GameCache.ItemCache">
+        <member name="F:EnsoulSharp.SDK.GameCache.AllHeroCache">
             <summary>
-               All Heros Have Item Cahce.
+               All Heros Cahce.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameCache.ScreenCursor">
+            <summary>
+               Get Cursor Position from Screen.
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.GameCache.#ctor">
             <inheritdoc cref="T:EnsoulSharp.SDK.GameCache" />
         </member>
-        <member name="T:EnsoulSharp.SDK.GameCache.HeroItemCache">
+        <member name="T:EnsoulSharp.SDK.GameCache.HeroCache">
             <summary>
-                Hero Item Cache.
+                Hero Cache.
             </summary>
         </member>
-        <member name="F:EnsoulSharp.SDK.GameCache.HeroItemCache.Hero">
+        <member name="F:EnsoulSharp.SDK.GameCache.HeroCache.Hero">
             <summary>
                The Hero.
             </summary>
         </member>
-        <member name="F:EnsoulSharp.SDK.GameCache.HeroItemCache.HasItems">
+        <member name="F:EnsoulSharp.SDK.GameCache.HeroCache.HasItems">
             <summary>
                Get Hero All Items.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.GameCache.HeroCache.Perks">
+            <summary>
+               Get Hero Perks.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.GameCache.GameWindowsValue">
@@ -1560,9 +1575,26 @@
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageAlistarPassive.GetDamageType">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveB">
+            <summary>
+                Aphelios's Damage Passive (Crescendum Buff).
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveB.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveB.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveB.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveB.GetDamageType">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveA">
             <summary>
-                Aphelios's Damage Passive (Buff).
+                Aphelios's Damage Passive (Calibrum Buff).
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageApheliosPassiveA.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
@@ -1643,6 +1675,40 @@
             <inheritdoc />
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBardPassive.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageBelvethPassive">
+            <summary>
+                Belveth's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBelvethPassive.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBelvethPassive.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBelvethPassive.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBelvethPassive.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageBlitzcrankPassiveA">
+            <summary>
+                Blitzcrank's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBlitzcrankPassiveA.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBlitzcrankPassiveA.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBlitzcrankPassiveA.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageBlitzcrankPassiveA.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageCamillePassiveB">
@@ -1813,6 +1879,40 @@
             <inheritdoc />
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageSamiraPassive.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA2">
+            <summary>
+                Udyr's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA2.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA2.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA2.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA2.GetDamageType">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA">
+            <summary>
+                Udyr's Damage Passive.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA.GetDamage(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA.IsActive(EnsoulSharp.AIHeroClient,EnsoulSharp.AIBaseClient)">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA.OverwriteAttackDamage">
+            <inheritdoc />
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Passives.DamageUdyrPassiveA.GetDamageType">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Passives.DamageVexPassive">
@@ -3880,6 +3980,71 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageAkshanQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethE">
+            <summary>
+                Spell Damage, Belveth E.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethE.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethE" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethQ">
+            <summary>
+                Spell Damage, Belveth Q.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethQ.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethQ" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethR">
+            <summary>
+                Spell Damage, Belveth R.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethR.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethR" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethW">
+            <summary>
+                Spell Damage, Belveth W.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethW.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageBelvethW" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBelvethW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageBlitzcrankW">
+            <summary>
+                Spell Damage, Blitzcrank W.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBlitzcrankW.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageBlitzcrankW" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageBlitzcrankW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageDrMundoW">
             <summary>
                 Spell Damage, DrMundo W.
@@ -3995,6 +4160,45 @@
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageGwenR1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahE">
+            <summary>
+                Spell Damage, Nilah E.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahE.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahE" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahQ">
+            <summary>
+                Spell Damage, Nilah Q.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahQ.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahQ" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahR">
+            <summary>
+                Spell Damage, Nilah R.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahR.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageNilahR" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageNilahR.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageRammusR1">
@@ -9880,6 +10084,19 @@
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageSorakaQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageSyndraW1">
+            <summary>
+                Spell Damage, Syndra W (Stage 1).
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageSyndraW1.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageSyndraW1" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageSyndraW1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahE">
             <summary>
                 Spell Damage, Taliyah E.
@@ -9891,6 +10108,19 @@
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahE.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahQ1">
+            <summary>
+                Spell Damage, Taliyah Q (Stage 1).
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahQ1.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahQ1" /> class.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahQ1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahQ">
@@ -9917,19 +10147,6 @@
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahE1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
-            <inheritdoc />
-        </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahW">
-            <summary>
-                Spell Damage, Taliyah W.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahW.#ctor">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahW" /> class.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageTaliyahW.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageSylasE">
@@ -10502,19 +10719,6 @@
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageUdyrQ.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
-            <inheritdoc />
-        </member>
-        <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageUdyrR1">
-            <summary>
-                Spell Damage, Udyr R (Stage 1).
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageUdyrR1.#ctor">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Damages.Spells.DamageUdyrR1" /> class.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Damages.Spells.DamageUdyrR1.GetDamage(EnsoulSharp.AIBaseClient,EnsoulSharp.AIBaseClient,System.Int32)">
             <inheritdoc />
         </member>
         <member name="T:EnsoulSharp.SDK.Damages.Spells.DamageUdyrR">
@@ -11770,6 +11974,16 @@
                Gets or sets all skillshots.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeLibrary.ExistSpells">
+            <summary>
+               Gets or sets all exist skillshots (in evade menu).
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Evade.EvadeLibrary.EvadeFunction">
+            <summary>
+               Gets or sets all exist evade function.
+            </summary>
+        </member>
         <member name="M:EnsoulSharp.SDK.Evade.EvadeLibrary.AddEvade(System.String)">
             <summary>
                 Add Evade into Library.
@@ -11781,6 +11995,13 @@
                 Judge evade is init.
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.EvadeLibrary.AddExistSkillshot(System.String,EnsoulSharp.SDK.Evade.ExistSkillshot)">
+            <summary>
+                Add exist skillshot data into menu cache.
+            </summary>
+            <param name="evadeName"></param>
+            <param name="skillshot"></param>
         </member>
         <member name="T:EnsoulSharp.SDK.Evade.EvadeSkillshotType">
             <summary>
@@ -11821,6 +12042,45 @@
             <summary>
                The Rectangle spell.
             </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Evade.IEvadeManager">
+            <summary>
+                Evade Manager interface.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.IEvadeManager.Evading">
+            <summary>
+               Gets or sets player is evading.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.IEvadeManager.EvadePosition">
+            <summary>
+               Gets or sets player current evade position.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.IEvadeManager.IsDangerPosition(EnsoulSharp.AIHeroClient,SharpDX.Vector2,System.Single)">
+            <summary>
+               Gets the pos is in danger. (all judge from current evade setting). 
+            </summary>
+            <param name="source">The sources.</param>
+            <param name="pos">The pos.</param>
+            <param name="radius">The hit radius.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.IEvadeManager.IsDangerPath(EnsoulSharp.AIHeroClient,SharpDX.Vector2)">
+            <summary>
+               Gets the path is in danger. (all judge from current evade setting). 
+            </summary>
+            <param name="source">The sources.</param>
+            <param name="endPosition">The end position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Evade.IEvadeManager.IsDangerPath(EnsoulSharp.AIHeroClient,System.Collections.Generic.List{SharpDX.Vector2})">
+            <summary>
+               Gets the path is in danger. (all judge from current evade setting). 
+            </summary>
+            <param name="source">The sources.</param>
+            <param name="path">The path.</param>
+            <returns></returns>
         </member>
         <member name="T:EnsoulSharp.SDK.Evade.ISkillshot">
             <summary>
@@ -11992,10 +12252,53 @@
                The Wall or Buliding.
             </summary>
         </member>
+        <member name="T:EnsoulSharp.SDK.Evade.ExistSkillshot">
+            <summary>
+                Evade Skillshot exist in Menu cache.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.ChampionName">
+            <summary>
+               Gets the skillshot from champion name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.SpellName">
+            <summary>
+               Gets the skillshot spell name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.DisplayName">
+            <summary>
+               Gets the skillshot display name.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.Type">
+            <summary>
+               Gets the skillshot type.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.Slot">
+            <summary>
+               Gets the skillshot slot.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Evade.ExistSkillshot.CollisionObjects">
+            <summary>
+               Gets the skillshot collision type.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.AIHeroClientExtensions">
             <summary>
                 The generic of aiheroclient extensions
             </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.AIHeroClientExtensions.HavePerk(EnsoulSharp.AIHeroClient,EnsoulSharp.SDK.PerksId)">
+            <summary>
+               Returns true if source has this Perk.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="perkId">The Perk Id.</param>
+            <returns></returns>
         </member>
         <member name="M:EnsoulSharp.SDK.AIHeroClientExtensions.CanUseItem(EnsoulSharp.AIHeroClient,System.String)">
             <summary>
@@ -13051,6 +13354,11 @@
             <param name="vector">The Vector2.</param>
             <returns></returns>
         </member>
+        <member name="T:EnsoulSharp.SDK.PerksId">
+            <summary>
+              Return All Perks.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.AllowAllAssemblyVersionsDeserializationBinder">
             <summary>
                 Allow all assembly versions deserialization binder.
@@ -13069,6 +13377,155 @@
             <returns>
                 The type which has been bind.
             </returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.MenuUI.NotificationItem">
+            <summary>
+               The Notification Item.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.#ctor(System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.MenuUI.NotificationItem" /> class.
+            </summary>
+            <param name="header">
+                The header
+            </param>
+            <param name="body">
+                The body
+            </param>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.ActiveIconColor">
+            <summary>
+                Gets or sets the active icon color.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.Body">
+            <summary>
+                Gets or sets the body.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.BodyTextColor">
+            <summary>
+                Gets or sets the body text color.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.Header">
+            <summary>
+                Gets or sets the header.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.HeaderHeight">
+            <summary>
+                Gets the header height.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.HeaderTextColor">
+            <summary>
+                Gets or sets the header text color.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.Icon">
+            <summary>
+                Gets or sets the icon.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.IconColor">
+            <summary>
+                Gets or sets the icon color.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.IconFlash">
+            <summary>
+                Gets or sets a value indicating whether icon flash.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.IconOffset">
+            <summary>
+                Gets or sets the icon offset.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.IsOpen">
+            <summary>
+                Gets or sets a value indicating whether the notification is open.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.IsVisible">
+            <summary>
+                Gets or sets a value indicating whether the notification is visible.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.LinesList">
+            <summary>
+                Gets or sets the string lines list.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.SecondIconColor">
+            <summary>
+                Gets or sets the second icon color.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.MenuUI.NotificationItem.Width">
+            <summary>
+                Gets the width.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.FormatText(System.String,System.Boolean)">
+            <summary>
+                Formats the given text into lines.
+            </summary>
+            <param name="value">
+                The value.
+            </param>
+            <param name="htmlSupport">
+                Indicates whether to support HTML tags.
+            </param>
+            <returns>
+                The formatted list.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.GetReservedHeight">
+            <summary>
+                Gets the notification reserved height.
+            </summary>
+            <returns>
+                The reserved height in float units.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.GetReservedWidth">
+            <summary>
+                Gets the notification reserved width.
+            </summary>
+            <returns>
+                The reserved width in float units.
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.OnDraw(SharpDX.Vector2)">
+            <summary>
+                OnDraw event, specifies a drawing callback which is after IDirect3DDevice9::BeginScene and before
+                IDirect3DDevice9::EndScene.
+            </summary>
+            <param name="basePosition">
+                The base position
+            </param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.OnUpdate">
+            <summary>
+                OnUpdate event, occurring after a game tick.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationItem.OnWndProc(SharpDX.Vector2,EnsoulSharp.SDK.MenuUI.WindowsKeys,System.Boolean)">
+            <summary>
+                <c>OnWndProc</c> event, occurs on a windows process message to the thread.
+            </summary>
+            <param name="basePosition">
+                The base position
+            </param>
+            <param name="windowsKeys">
+                The windows keys
+            </param>
+            <param name="isEdit">
+                Indicates whether it's an edit message.
+            </param>
         </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuHitChance">
             <summary>
@@ -14482,252 +14939,6 @@
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuWrapper.#ctor">
             <inheritdoc cref="T:EnsoulSharp.SDK.MenuUI.MenuWrapper" />
         </member>
-        <member name="T:EnsoulSharp.SDK.MenuUI.ANotification">
-            <summary>
-                Abstract notification class, used as base template.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.ANotification.GetReservedHeight">
-            <summary>
-                Get the notification reserved height.
-            </summary>
-            <returns>
-                The reserved height in float units.
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.ANotification.GetReservedWidth">
-            <summary>
-                Get the notification reserved width.
-            </summary>
-            <returns>The reserved width in float units.</returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.ANotification.OnDraw(SharpDX.Vector2)">
-            <summary>
-                OnDraw event, specifies a drawing callback which is after IDirect3DDevice9::BeginScene and before
-                IDirect3DDevice9::EndScene.
-            </summary>
-            <param name="basePosition">
-                The base position
-            </param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.ANotification.OnUpdate">
-            <summary>
-                OnUpdate event, occurring after a game tick.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.ANotification.OnWndProc(SharpDX.Vector2,EnsoulSharp.SDK.MenuUI.WindowsKeys,System.Boolean)">
-            <summary>
-                <c>OnWndProc</c> event, occurs on a windows process message to the thread.
-            </summary>
-            <param name="basePosition">
-                The base position
-            </param>
-            <param name="windowsKeys">
-                The windows keys
-            </param>
-            <param name="isEdit">
-                Indicates whether it's an edit message.
-            </param>
-        </member>
-        <member name="T:EnsoulSharp.SDK.MenuUI.Notification">
-            <summary>
-                The notification.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.#ctor(System.String,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.MenuUI.Notification" /> class.
-            </summary>
-            <param name="header">
-                The header
-            </param>
-            <param name="body">
-                The body
-            </param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.#ctor(System.String,System.String,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.MenuUI.Notification" /> class.
-            </summary>
-            <param name="header">
-                The header
-            </param>
-            <param name="body">
-                The body
-            </param>
-            <param name="footer">
-                The footer
-            </param>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.ActiveIconColor">
-            <summary>
-                Gets or sets the active icon color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.Body">
-            <summary>
-                Gets or sets the body.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.BodyTextColor">
-            <summary>
-                Gets or sets the body text color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.ExtraFooterPadding">
-            <summary>
-                Gets or sets the extra footer padding.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.Footer">
-            <summary>
-                Gets or sets the footer.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.FooterHeight">
-            <summary>
-                Gets the footer height.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.FooterTextColor">
-            <summary>
-                Gets or sets the footer text color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.Header">
-            <summary>
-                Gets or sets the header.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.HeaderHeight">
-            <summary>
-                Gets the header height.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.HeaderTextColor">
-            <summary>
-                Gets or sets the header text color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.Icon">
-            <summary>
-                Gets or sets the icon.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.IconColor">
-            <summary>
-                Gets or sets the icon color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.IconFlash">
-            <summary>
-                Gets or sets a value indicating whether icon flash.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.IconOffset">
-            <summary>
-                Gets or sets the icon offset.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.IsOpen">
-            <summary>
-                Gets or sets a value indicating whether the notification is open.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.IsVisible">
-            <summary>
-                Gets or sets a value indicating whether the notification is visible.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.LinesList">
-            <summary>
-                Gets or sets the string lines list.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.SecondIconColor">
-            <summary>
-                Gets or sets the second icon color.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.MenuUI.Notification.Width">
-            <summary>
-                Gets the width.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.FormatText(System.String,System.Boolean)">
-            <summary>
-                Formats the given text into lines.
-            </summary>
-            <param name="value">
-                The value.
-            </param>
-            <param name="htmlSupport">
-                Indicates whether to support HTML tags.
-            </param>
-            <returns>
-                The formatted list.
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.GetReservedHeight">
-            <summary>
-                Gets the notification reserved height.
-            </summary>
-            <returns>
-                The reserved height in float units.
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.GetReservedWidth">
-            <summary>
-                Gets the notification reserved width.
-            </summary>
-            <returns>
-                The reserved width in float units.
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.OnDraw(SharpDX.Vector2)">
-            <summary>
-                OnDraw event, specifies a drawing callback which is after IDirect3DDevice9::BeginScene and before
-                IDirect3DDevice9::EndScene.
-            </summary>
-            <param name="basePosition">
-                The base position
-            </param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.OnUpdate">
-            <summary>
-                OnUpdate event, occurring after a game tick.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notification.OnWndProc(SharpDX.Vector2,EnsoulSharp.SDK.MenuUI.WindowsKeys,System.Boolean)">
-            <summary>
-                <c>OnWndProc</c> event, occurs on a windows process message to the thread.
-            </summary>
-            <param name="basePosition">
-                The base position
-            </param>
-            <param name="windowsKeys">
-                The windows keys
-            </param>
-            <param name="isEdit">
-                Indicates whether it's an edit message.
-            </param>
-        </member>
-        <member name="T:EnsoulSharp.SDK.MenuUI.NotificationIcons">
-            <summary>
-                The notification icons.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.NotificationIcons.GetIcon(EnsoulSharp.SDK.MenuUI.NotificationIconType)">
-            <summary>
-                Retrieves the icon texture from the existing notification icons.
-            </summary>
-            <param name="iconType">
-                The icon type
-            </param>
-            <returns>
-                The <see cref="T:SharpDX.Direct3D9.Texture" />.
-            </returns>
-        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.NotificationIconType">
             <summary>
                 The notification icon type.
@@ -14758,6 +14969,11 @@
                 Select Icon.
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.MenuUI.NotificationIconType.Arrow">
+            <summary>
+               Arrow Icon.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.Notifications">
             <summary>
                 The notifications main handler.
@@ -14773,7 +14989,7 @@
                 Gets or sets the position.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notifications.Add(EnsoulSharp.SDK.MenuUI.ANotification)">
+        <member name="M:EnsoulSharp.SDK.MenuUI.Notifications.Add(EnsoulSharp.SDK.MenuUI.NotificationItem)">
             <summary>
                 Adds a notification towards the list.
             </summary>
@@ -14789,7 +15005,7 @@
                 The menu.
             </param>
         </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Notifications.Remove(EnsoulSharp.SDK.MenuUI.Notification)">
+        <member name="M:EnsoulSharp.SDK.MenuUI.Notifications.Remove(EnsoulSharp.SDK.MenuUI.NotificationItem)">
             <summary>
                 Removes a notification from the list.
             </summary>
@@ -14806,18 +15022,6 @@
             <summary>
                 Initializes static members of the <see cref="T:EnsoulSharp.SDK.MenuUI.PermaShow" /> class.
             </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.PermaShow.Permashow(EnsoulSharp.SDK.MenuUI.MenuItem,System.Boolean,System.String,System.Nullable{SharpDX.Color})">
-            <summary>
-                Adds a menuitem to PermaShow, can be used without any arguements or with if you want to customize. The bool can be
-                set to false to remove the item from permashow.
-                When removing, you can simply set the bool parameter to false and everything else can be null. The default color is
-                White.
-            </summary>
-            <param name="item">The item.</param>
-            <param name="enabled">if set to <c>true</c> the instance will be enabled.</param>
-            <param name="customdisplayname">The customdisplayname.</param>
-            <param name="col">The color.</param>
         </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.PermaShow.AddPermashow(EnsoulSharp.SDK.MenuUI.MenuItem,System.String,System.Nullable{SharpDX.Color})">
             <summary>
@@ -14996,6 +15200,11 @@
             <value>
                 The selected value.
             </value>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuList.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuList.SetValue(System.Int32)">
             <summary>
@@ -16682,6 +16891,11 @@
             </summary>
             <param name="color"></param>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.AMenuComponent.RestoreDefault">
+            <summary>
+               Restores the default value for the component.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.Menu">
             <summary>
                 Menu User Interface.
@@ -16724,13 +16938,7 @@
             <param name="name">Child Menu Component name</param>
             <returns>Child Menu Component of this component.</returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.SetLogo(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache)">
-            <summary>
-                Set Menu Logo.
-            </summary>
-            <param name="spriteLogo">Sprite logo.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.SetLogo(EnsoulSharp.SDK.Render.Sprite)">
+        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.SetLogo(EnsoulSharp.SDK.Rendering.Caches.SpriteCache)">
             <summary>
                 Set Menu Logo.
             </summary>
@@ -16793,6 +17001,11 @@
             <returns>
                 The <see cref="T:System.Boolean" />.
             </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.Menu.RestoreDefault">
+            <summary>
+               Restores the default value for the menu and all components.
+            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuItem">
             <summary>
@@ -17017,6 +17230,11 @@
                 Gets or sets a value indicating whether the boolean value is true or false.
             </summary>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuBool.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
+        </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuBool.SetValue(System.Boolean)">
             <summary>
                 Sets a value indicating whether the boolean value is true or false.
@@ -17105,6 +17323,11 @@
                 Gets or sets a value indicating whether the item is being active.
             </summary>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuButton.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuColor">
             <summary>
                 The menu color.
@@ -17178,6 +17401,11 @@
         <member name="P:EnsoulSharp.SDK.MenuUI.MenuColor.InteractingRed">
             <summary>
                 Gets or sets a value indicating whether interacting red.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuColor.RestoreDefault">
+            <summary>
+               Restores the default value.
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuColor.SetValue(SharpDX.ColorBGRA)">
@@ -17278,6 +17506,11 @@
                 Gets or sets the KeyBind Type.
             </summary>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuKeyBind.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
+        </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuKeyBind.SetValue(System.Boolean)">
             <summary>
                 Sets a value indicating whether the key is active.
@@ -17322,6 +17555,11 @@
             <param name="displayName">
                 The display name of this menu component
             </param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuSeparator.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.MenuUI.MenuSlider">
             <summary>
@@ -17390,6 +17628,11 @@
         <member name="P:EnsoulSharp.SDK.MenuUI.MenuSlider.Value">
             <summary>
                 Gets or sets the Slider Current Value.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuSlider.RestoreDefault">
+            <summary>
+               Restores the default value.
             </summary>
         </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuSlider.SetValue(System.Int32)">
@@ -17503,6 +17746,11 @@
                 this is only bottom active and then it will show the value, if not, it will return -1
             </summary>
         </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.MenuSliderButton.RestoreDefault">
+            <summary>
+               Restores the default value.
+            </summary>
+        </member>
         <member name="M:EnsoulSharp.SDK.MenuUI.MenuSliderButton.SetValue(System.Int32)">
             <summary>
                 Sets the Slider Current Value.
@@ -17549,6 +17797,15 @@
             </summary>
             <param name="args">
                 <see cref="T:EnsoulSharp.GameWndEventArgs" /> event data
+            </param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.MenuUI.WindowsKeys.#ctor(EnsoulSharp.SDK.GameEvent.WindowndEventArgs)">
+            <summary>
+                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.MenuUI.WindowsKeys" /> class.
+                WindowsKeys constructor
+            </summary>
+            <param name="args">
+                <see cref="T:EnsoulSharp.SDK.GameEvent.WindowndEventArgs" /> event data
             </param>
         </member>
         <member name="P:EnsoulSharp.SDK.MenuUI.WindowsKeys.Char">
@@ -17966,6 +18223,186 @@
                 Fire BeforeMove Event
             </summary>
         </member>
+        <member name="T:EnsoulSharp.SDK.OrbwalkerModeFlag">
+            <summary>
+                Orbwalker Modes with flag.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.None">
+            <summary>
+                None Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.Combo">
+            <summary>
+                Combo Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.Harass">
+            <summary>
+                Hybrid Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.LaneClear">
+            <summary>
+                Lane Clear Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.LastHit">
+            <summary>
+                Last Hit Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.Flee">
+            <summary>
+               Flee Mode
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.OrbwalkerModeFlag.Custom">
+            <summary>
+               Custom Mode
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.HealthPrediction">
+            <summary>
+                This class allows you to calculate the health of units after a set time. Only works on minions and only taking into account the auto-attack damage.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.AddPrediction(System.String,EnsoulSharp.SDK.IHealthPrediction)">
+            <summary>
+                Add Custom HealthPrediction.
+            </summary>
+            <param name="name">HealthPrediction Name</param>
+            <param name="pred">HealthPrediction ctor</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.SetPrediction(System.String)">
+            <summary>
+                Set the Default HealthPrediction.
+            </summary>
+            <param name="name">Prediction Name</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetPrediction(System.String)">
+            <summary>
+                Return a Custom HealthPrediction with Name, if not exist, return null.
+            </summary>
+            <param name="name">HealthPrediction Name</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetSDKPrediction">
+            <summary>
+                Return SDK HealthPrediction.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetAggroTurret(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Return the Attacking turret.
+            </summary>
+            <param name="minion">
+                The minion.
+            </param>
+            <returns>
+                The <see cref="T:EnsoulSharp.AIBaseClient" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetPrediction(EnsoulSharp.AIBaseClient,System.Int32,System.Int32,EnsoulSharp.SDK.HealthPredictionType)">
+            <summary>
+                Returns the health prediction, either default or simulated
+            </summary>
+            <param name="unit"><see cref="T:EnsoulSharp.AIBaseClient" /> unit</param>
+            <param name="time">The time in milliseconds</param>
+            <param name="delay">An optional delay</param>
+            <param name="type"><see cref="T:EnsoulSharp.SDK.HealthPredictionType" /> type</param>
+            <returns>
+                The <see cref="T:System.Single" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.HasMinionAggro(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Determines whether the specified minion has minion aggro.
+            </summary>
+            <param name="minion">The minion.</param>
+            <returns>
+                The <see cref="T:System.Boolean" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.HasTurretAggro(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Determines whether the specified minion has turret aggro.
+            </summary>
+            <param name="minion">The minion</param>
+            <returns>
+                The <see cref="T:System.Boolean" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.HealthPrediction.TurretAggroStartTick(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Return the starttick of the attacking turret.
+            </summary>
+            <param name="minion">
+                The minion.
+            </param>
+            <returns>
+                The <see cref="T:System.Int32" />
+            </returns>
+        </member>
+        <member name="T:EnsoulSharp.SDK.IHealthPrediction">
+            <summary>
+                HealthPrediction interface
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IHealthPrediction.GetAggroTurret(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Return the Attacking turret.
+            </summary>
+            <param name="minion">
+                The minion.
+            </param>
+            <returns>
+                The <see cref="T:EnsoulSharp.AIBaseClient" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IHealthPrediction.GetPrediction(EnsoulSharp.AIBaseClient,System.Int32,System.Int32,EnsoulSharp.SDK.HealthPredictionType)">
+            <summary>
+                Returns the health prediction, either default or simulated
+            </summary>
+            <param name="unit"><see cref="T:EnsoulSharp.AIBaseClient" /> unit</param>
+            <param name="time">The time in milliseconds</param>
+            <param name="delay">An optional delay</param>
+            <param name="type"><see cref="T:EnsoulSharp.SDK.HealthPredictionType" /> type</param>
+            <returns>
+                The <see cref="T:System.Single" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IHealthPrediction.HasMinionAggro(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Determines whether the specified minion has minion aggro.
+            </summary>
+            <param name="minion">The minion.</param>
+            <returns>
+                The <see cref="T:System.Boolean" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IHealthPrediction.HasTurretAggro(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Determines whether the specified minion has turret aggro.
+            </summary>
+            <param name="minion">The minion</param>
+            <returns>
+                The <see cref="T:System.Boolean" />
+            </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.IHealthPrediction.TurretAggroStartTick(EnsoulSharp.AIMinionClient)">
+            <summary>
+                Return the starttick of the attacking turret.
+            </summary>
+            <param name="minion">
+                The minion.
+            </param>
+            <returns>
+                The <see cref="T:System.Int32" />
+            </returns>
+        </member>
         <member name="T:EnsoulSharp.SDK.IncomingDamagePrediction">
             <summary>
                 This class allows you to calculate the health of units after a set time. Only works on hero and need to judge by yourself.
@@ -18174,6 +18611,222 @@
             <param name="checkCollision">if set to <c>true</c>, checks collision.</param>
             <returns>SpellPrediction.PredictionOutput.</returns>
         </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.BrushCache">
+            <summary>
+                Gets the D3D11 SolidColorBrush Cache.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.BrushCache.Get(SharpDX.Color)">
+            <summary>
+                Gets the SolidColorBrush from Color.
+            </summary>
+            <param name="color">The Color.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.BrushCache.OnDispose">
+            <summary>
+               Dispose.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.FontCache">
+            <summary>
+                Class The Font Cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.FontDescription">
+            <summary>
+               The font Description.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.FontCache.MeasureText(System.String,EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontFlags)">
+            <summary>
+                Measure Font Text.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="fontDrawFlags">The Font DrawFlags.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.FontCache.MeasureText(SharpDX.Direct3D9.Sprite,System.String,EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontFlags)">
+            <summary>
+                Measure Font Text.
+            </summary>
+            <param name="sprite">The Sprite.</param>
+            <param name="text">The text.</param>
+            <param name="fontDrawFlags">The Font DrawFlags.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.FontCache.Dispose">
+            <summary>
+               Dispose D3D9 Font.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription">
+            <summary>
+               Compatible with FontDescription from SharpDX9
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.Height">
+            <summary>
+               The font Height.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.Width">
+            <summary>
+               The font Width.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.Weight">
+            <summary>
+               The font Weight.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.MipLevels">
+            <summary>
+               The font MipLevels.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.Italic">
+            <summary>
+               The font Italic.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.CharacterSet">
+            <summary>
+               The font CharacterSet.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.OutputPrecision">
+            <summary>
+               The font OutputPrecision.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.Quality">
+            <summary>
+               The font Quality.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.PitchAndFamily">
+            <summary>
+               The font PitchAndFamily.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription.FaceName">
+            <summary>
+               The font FaceName.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontWeight">
+            <summary>
+                Compatible with FontWeight from SharpDX9
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontFlags">
+            <summary>
+                Compatible with FontDrawFlags from SharpDX9
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.LineCache">
+            <summary>
+                Class line cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.LineCache.CacheWidth">
+            <summary>
+                The line width.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.LineCache.CacheGLLines">
+            <summary>
+                The line GGlines.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.LineCache.CacheAntialias">
+            <summary>
+                The line Antialias.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.LineCache.IsRendering">
+            <summary>
+                The line is Rendering.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.Rendering.Caches.SpriteCache">
+            <summary>
+                Class sprite cache.
+            </summary>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Rotation">
+            <summary>
+                The sprite rotation.
+            </summary>
+            <value>The rotation.</value>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Color">
+            <summary>
+                The sprite color.
+            </summary>
+            <value>The color.</value>
+        </member>
+        <member name="F:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Alpha">
+            <summary>
+                The sprite Alpha.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Scale">
+            <summary>
+                The sprite Scale.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Width">
+            <summary>
+                Get the Sprite Width.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Height">
+            <summary>
+                 Get the Sprite Height.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Center">
+            <summary>
+                Get the Sprite Center.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Complement">
+            <summary>
+                Complements this instance.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Crop(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                Crops the sprite.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="w">The width.</param>
+            <param name="h">The height.</param>
+            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Crop(SharpDX.Rectangle,System.Boolean)">
+            <summary>
+                Crops the sprite.
+            </summary>
+            <param name="rect">The rectangle.</param>
+            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.Fade">
+            <summary>
+                Fades this instance. (Saturation is 1/2)
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.GrayScale">
+            <summary>
+                Makes the sprite black and white.
+            </summary>
+        </member>
+        <member name="M:EnsoulSharp.SDK.Rendering.Caches.SpriteCache.SetSaturation(System.Single)">
+            <summary>
+                Sets the saturation (not work on Dx11 mode).
+            </summary>
+            <param name="saturiation">The saturiation.</param>
+        </member>
         <member name="T:EnsoulSharp.SDK.Rendering.RectangleRender">
             <summary>
                 Class draw rectangle on the screen.
@@ -18241,7 +18894,7 @@
             <param name="antialias">Returns the antialiasing switch value. TRUE means antialiasing is on, and FALSE means antialiasing is off.</param>
             <returns></returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.LineRender.LineCache,SharpDX.Vector2,SharpDX.Vector2,SharpDX.Color,System.Int32)">
+        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.Caches.LineCache,SharpDX.Vector2,SharpDX.Vector2,SharpDX.Color,System.Int32)">
             <summary>
                 Draw line.
             </summary>
@@ -18251,7 +18904,7 @@
             <param name="width">The line width.</param>
             <param name="color">The line color.</param>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.LineRender.LineCache,SharpDX.Vector2[],SharpDX.Color,System.Single)">
+        <member name="M:EnsoulSharp.SDK.Rendering.LineRender.Draw(EnsoulSharp.SDK.Rendering.Caches.LineCache,SharpDX.Vector2[],SharpDX.Color,System.Single)">
             <summary>
                 Draw line.
             </summary>
@@ -18259,36 +18912,6 @@
             <param name="positions">The position.</param>
             <param name="width">The line width.</param>
             <param name="color">The line color.</param>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Rendering.LineRender.LineCache">
-            <summary>
-                Class line cache.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheLine">
-            <summary>
-                The line.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheWidth">
-            <summary>
-                The line width.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheGLLines">
-            <summary>
-                The line GGlines.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.CacheAntialias">
-            <summary>
-                The line Antialias.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.LineRender.LineCache.IsRendering">
-            <summary>
-                The line is Rendering.
-            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.Rendering.SpriteRender">
             <summary>
@@ -18327,14 +18950,6 @@
             <param name="Scale">The Sprite Scale.</param>
             <returns></returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(SharpDX.Direct3D9.BaseTexture,SharpDX.Vector2)">
-            <summary>
-                Create the sprite cache.
-            </summary>
-            <param name="texture">The BaseTexture.</param>
-            <param name="Scale">The Sprite Scale.</param>
-            <returns></returns>
-        </member>
         <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.CreateSprite(System.IO.Stream,SharpDX.Vector2)">
             <summary>
                 Create the sprite cache.
@@ -18359,14 +18974,14 @@
             <param name="Scale">The Sprite Scale.</param>
             <returns></returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache,SharpDX.Vector2)">
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.Caches.SpriteCache,SharpDX.Vector2)">
             <summary>
                 Draw sprite.
             </summary>
             <param name="spriteCache">The spriteCache.</param>
             <param name="position">The Draw position.</param>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache,System.Single,System.Single)">
+        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.Draw(EnsoulSharp.SDK.Rendering.Caches.SpriteCache,System.Single,System.Single)">
             <summary>
                 Draw sprite.
             </summary>
@@ -18374,109 +18989,18 @@
             <param name="x">The x.</param>
             <param name="y">The y.</param>
         </member>
-        <member name="T:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache">
-            <summary>
-                Class sprite cache.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.CacheBitmap">
-            <summary>
-                The Bitmap.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.CacheTexture">
-            <summary>
-                The Texture.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Rotation">
-            <summary>
-                The sprite rotation.
-            </summary>
-            <value>The rotation.</value>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Color">
-            <summary>
-                The sprite color.
-            </summary>
-            <value>The color.</value>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Alpha">
-            <summary>
-                The sprite Alpha.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Scale">
-            <summary>
-                The sprite Scale.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Width">
-            <summary>
-                Get the Sprite Width.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Height">
-            <summary>
-                 Get the Sprite Height.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Center">
-            <summary>
-                Get the Sprite Center.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Complement">
-            <summary>
-                Complements this instance.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Crop(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-                Crops the sprite.
-            </summary>
-            <param name="x">The x.</param>
-            <param name="y">The y.</param>
-            <param name="w">The width.</param>
-            <param name="h">The height.</param>
-            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Crop(SharpDX.Rectangle,System.Boolean)">
-            <summary>
-                Crops the sprite.
-            </summary>
-            <param name="rect">The rectangle.</param>
-            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.Fade">
-            <summary>
-                Fades this instance. (Saturation is 1/2)
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.GrayScale">
-            <summary>
-                Makes the sprite black and white.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.SpriteRender.SpriteCache.SetSaturation(System.Single)">
-            <summary>
-                Sets the saturation.
-            </summary>
-            <param name="saturiation">The saturiation.</param>
-        </member>
         <member name="T:EnsoulSharp.SDK.Rendering.TextRender">
             <summary>
                 Class draw text on the screen.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(SharpDX.Direct3D9.FontDescription)">
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontDescription)">
             <summary>
                 Create the FontCache.
             </summary>
             <param name="fontDescription">The FontDescription.</param>
-            <returns></returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(System.Int32,SharpDX.Direct3D9.FontWeight,System.String)">
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.CreateFont(System.Int32,EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontWeight,System.String)">
             <summary>
                 Create the FontCache.
             </summary>
@@ -18485,7 +19009,7 @@
             <param name="faceName">The Font FaceName.</param>
             <returns></returns>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,SharpDX.Vector2,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.Caches.FontCache,System.String,SharpDX.Vector2,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
             <summary>
                 Draw font.
             </summary>
@@ -18495,7 +19019,7 @@
             <param name="sprite">The font sprite.</param>
             <param name="color">The font color.</param>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,System.Int32,System.Int32,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.Caches.FontCache,System.String,System.Int32,System.Int32,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
             <summary>
                 Draw font.
             </summary>
@@ -18506,7 +19030,7 @@
             <param name="sprite">The font sprite.</param>
             <param name="color">The font color.</param>
         </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.TextRender.FontCache,System.String,SharpDX.Rectangle,SharpDX.Direct3D9.FontDrawFlags,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
+        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.Draw(EnsoulSharp.SDK.Rendering.Caches.FontCache,System.String,SharpDX.Rectangle,EnsoulSharp.SDK.Rendering.Caches.FontCache.DrawFontFlags,SharpDX.Color,SharpDX.Direct3D9.Sprite)">
             <summary>
                 Draw font.
             </summary>
@@ -18517,702 +19041,142 @@
             <param name="sprite">The font sprite.</param>
             <param name="color">The font color.</param>
         </member>
-        <member name="T:EnsoulSharp.SDK.Rendering.TextRender.FontCache">
-            <summary>
-                Class The Font Cache.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Rendering.TextRender.FontCache.CacheFont">
-            <summary>
-                The font.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Rendering.TextRender.FontCache.Description">
-            <summary>
-                The Font Description.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Rendering.TextRender.FontCache.MeasureText(SharpDX.Direct3D9.Sprite,System.String,SharpDX.Direct3D9.FontDrawFlags)">
-            <summary>
-                Measure Font Text.
-            </summary>
-            <param name="sprite">The Sprite.</param>
-            <param name="text">The text.</param>
-            <param name="fontDrawFlags">The Font DrawFlags.</param>
-            <returns></returns>
-        </member>
         <member name="T:EnsoulSharp.SDK.Render">
             <summary>
-                The render class allows you to draw stuff using SharpDX easier.
+                The render class allows you to draw stuff.
             </summary>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Device">
+        <member name="F:EnsoulSharp.SDK.Render.Platform">
             <summary>
-                Gets the device.
+                Gets the current drawing platform.
             </summary>
-            <value>The device.</value>
         </member>
-        <member name="T:EnsoulSharp.SDK.Render.Circle">
+        <member name="P:EnsoulSharp.SDK.Render.D3D9Device">
             <summary>
-                Draws circles.
+                Gets the d3d9 device.
             </summary>
+            <value>The d3d9 device.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.#ctor(EnsoulSharp.GameObject,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
+        <member name="P:EnsoulSharp.SDK.Render.D3D9Sprite">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Circle" /> class.
+                Gets the d3d9 sprite.
             </summary>
-            <param name="unit">The unit.</param>
-            <param name="radius">The radius.</param>
-            <param name="color">The color.</param>
-            <param name="width">The width.</param>
-            <param name="zDeep">if set to <c>true</c> [z deep].</param>
+            <value>The d3d9 sprite.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.#ctor(EnsoulSharp.GameObject,SharpDX.Vector3,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
+        <member name="P:EnsoulSharp.SDK.Render.D3D11Device">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Circle" /> class.
+                Gets the d3d11 device.
             </summary>
-            <param name="unit">The unit.</param>
-            <param name="offset">The offset.</param>
-            <param name="radius">The radius.</param>
-            <param name="color">The color.</param>
-            <param name="width">The width.</param>
-            <param name="zDeep">if set to <c>true</c> [z deep].</param>
+            <value>The d3d11 device.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.#ctor(SharpDX.Vector3,SharpDX.Vector3,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
+        <member name="P:EnsoulSharp.SDK.Render.D3D11RenderTarget">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Circle" /> class.
+                Gets the d2d1 renderTarget.
             </summary>
-            <param name="position">The position.</param>
-            <param name="offset">The offset.</param>
-            <param name="radius">The radius.</param>
-            <param name="color">The color.</param>
-            <param name="width">The width.</param>
-            <param name="zDeep">if set to <c>true</c> [z deep].</param>
+            <value>The d2d1 renderTarget.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.#ctor(SharpDX.Vector3,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
+        <member name="P:EnsoulSharp.SDK.Render.D2DFactory">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Circle" /> class.
+                Gets the d2d1 factory.
             </summary>
-            <param name="position">The position.</param>
-            <param name="radius">The radius.</param>
-            <param name="color">The color.</param>
-            <param name="width">The width.</param>
-            <param name="zDeep">if set to <c>true</c> [z deep].</param>
+            <value>The d2d1 factory.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Color">
+        <member name="P:EnsoulSharp.SDK.Render.Surface">
             <summary>
-                Gets or sets the color.
+                Gets the d2d1 surface.
             </summary>
-            <value>The color.</value>
+            <value>The d2d1 surface.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Offset">
+        <member name="P:EnsoulSharp.SDK.Render.BackBuffer">
             <summary>
-                Gets or sets the offset.
+                Gets the d2d1 backBuffer.
             </summary>
-            <value>The offset.</value>
+            <value>The d2d1 backBuffer.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Position">
+        <member name="P:EnsoulSharp.SDK.Render.DirectWriteFactory">
             <summary>
-                Gets or sets the position.
+                Gets the directwrite factory.
             </summary>
-            <value>The position.</value>
+            <value>The directwrite factory.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Radius">
+        <member name="T:EnsoulSharp.SDK.Render.OnDrawNativeDelegate">
             <summary>
-                Gets or sets the radius.
+              OnDrawing Delegate.
             </summary>
-            <value>The radius.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Unit">
+        <member name="E:EnsoulSharp.SDK.Render.OnDraw">
             <summary>
-                Gets or sets the unit.
+               This event is fired OnDraw.
             </summary>
-            <value>The unit.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.Width">
+        <member name="T:EnsoulSharp.SDK.Render.OnBeginSceneNativeDelegate">
             <summary>
-                Gets or sets the width.
+              OnBeginScene Delegate.
             </summary>
-            <value>The width.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Circle.ZDeep">
+        <member name="E:EnsoulSharp.SDK.Render.OnBeginScene">
             <summary>
-                Gets or sets a value indicating whether to enable depth buffering.
+               This event is fired OnBeginScene (not work on Dx11 mode).
             </summary>
-            <value><c>true</c> if depth buffering enabled; otherwise, <c>false</c>.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.DrawCircle(SharpDX.Vector3,System.Single,System.Drawing.Color,System.Int32,System.Boolean)">
+        <member name="T:EnsoulSharp.SDK.Render.OnEndSceneNativeDelegate">
             <summary>
-                Draws the circle.
+              OnEndScene Delegate.
             </summary>
-            <param name="position">The position.</param>
-            <param name="radius">The radius.</param>
-            <param name="color">The color.</param>
-            <param name="width">The width.</param>
-            <param name="zDeep">if set to <c>true</c> the circle will be drawn with depth buffering.</param>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Circle.Draw">
+        <member name="E:EnsoulSharp.SDK.Render.OnEndScene">
             <summary>
-                start Draw circle.
+               This event is fired OnEndScene.
             </summary>
         </member>
-        <member name="T:EnsoulSharp.SDK.Render.Line">
+        <member name="T:EnsoulSharp.SDK.Render.OnPresentNativeDelegate">
             <summary>
-                Draws lines.
+              OnPresent Delegate.
             </summary>
         </member>
-        <member name="T:EnsoulSharp.SDK.Render.Line.PositionDelegate">
+        <member name="E:EnsoulSharp.SDK.Render.OnPresent">
             <summary>
-                Delegate to get the position of the line.
+               This event is fired OnPresent.
             </summary>
-            <returns>Vector2.</returns>
         </member>
-        <member name="F:EnsoulSharp.SDK.Render.Line.Color">
+        <member name="T:EnsoulSharp.SDK.Render.OnPreResetNativeDelegate">
             <summary>
-                The color
+              OnPreOnPreResetsent Delegate.
             </summary>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Line.#ctor(SharpDX.Vector2,SharpDX.Vector2,System.Int32,SharpDX.ColorBGRA)">
+        <member name="E:EnsoulSharp.SDK.Render.OnPreReset">
             <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Line" /> class.
+               This event is fired OnPreReset.
             </summary>
-            <param name="start">The start.</param>
-            <param name="end">The end.</param>
-            <param name="width">The width.</param>
-            <param name="color">The color.</param>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Line.End">
+        <member name="T:EnsoulSharp.SDK.Render.OnPostResetNativeDelegate">
             <summary>
-                Gets or sets the end.
+              OnPostReset Delegate.
             </summary>
-            <value>The end.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Line.EndPositionUpdate">
+        <member name="E:EnsoulSharp.SDK.Render.OnPostReset">
             <summary>
-                Gets or sets the delegate that gets the end position.
+               This event is fired OnPostReset.
             </summary>
-            <value>The end position update.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Line.Start">
+        <member name="T:EnsoulSharp.SDK.Render.OnRenderMouseOversNativeDelegate">
             <summary>
-                Gets or sets the start.
+              OnRenderMouseOvers Delegate.
             </summary>
-            <value>The start.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Line.StartPositionUpdate">
+        <member name="E:EnsoulSharp.SDK.Render.OnRenderMouseOvers">
             <summary>
-                Gets or sets the delegate that sets the start position.
+               This event is fired OnRenderMouseOvers.
             </summary>
-            <value>The start position update.</value>
         </member>
-        <member name="P:EnsoulSharp.SDK.Render.Line.Width">
+        <member name="T:EnsoulSharp.SDK.Render.OnFlushDrawDelegate">
             <summary>
-                Gets or sets the width.
+              OnFlushDrawDelegate Delegate.
             </summary>
-            <value>The width.</value>
         </member>
-        <member name="M:EnsoulSharp.SDK.Render.Line.Draw">
+        <member name="E:EnsoulSharp.SDK.Render.OnFlushDraw">
             <summary>
-                Draw line.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Line.OnPreReset">
-            <summary>
-                Called before the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Line.OnPostReset">
-            <summary>
-                Called after the DirectX is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Line.Dispose">
-            <summary>
-                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Rectangle">
-            <summary>
-                Draws a Rectangle.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Rectangle.PositionDelegate">
-            <summary>
-                Delegate to get the position of the rectangle.
-            </summary>
-            <returns>Vector2.</returns>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Rectangle.Color">
-            <summary>
-                The color of the rectangle
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,SharpDX.ColorBGRA)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Rectangle" /> class.
-            </summary>
-            <param name="x">The x.</param>
-            <param name="y">The y.</param>
-            <param name="width">The width.</param>
-            <param name="height">The height.</param>
-            <param name="color">The color.</param>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Rectangle.PositionUpdate">
-            <summary>
-                Gets or sets the delegate that gets the position.
-            </summary>
-            <value>The position update.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Rectangle.Height">
-            <summary>
-                Gets or sets the height.
-            </summary>
-            <value>The height.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Rectangle.Width">
-            <summary>
-                Gets or sets the width.
-            </summary>
-            <value>The width.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Rectangle.X">
-            <summary>
-                Gets or sets the x.
-            </summary>
-            <value>The x.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Rectangle.Y">
-            <summary>
-                Gets or sets the y.
-            </summary>
-            <value>The y.</value>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Rectangle.Draw">
-            <summary>
-                Draw Rectangle.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Rectangle.OnPreReset">
-            <summary>
-                Called before the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Rectangle.OnPostReset">
-            <summary>
-                Called after the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Rectangle.Dispose">
-            <summary>
-                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Sprite">
-            <summary>
-                Draws a sprite image.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Sprite.OnResetting">
-            <summary>
-                Delegate for when the sprite is reset.
-            </summary>
-            <param name="sprite">The sprite.</param>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Sprite.PositionDelegate">
-            <summary>
-                Delegate that gets the position of the sprite.
-            </summary>
-            <returns>Vector2.</returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.#ctor(System.Drawing.Bitmap,SharpDX.Vector2)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Sprite" /> class.
-            </summary>
-            <param name="bitmap">The bitmap.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.#ctor(SharpDX.Direct3D9.BaseTexture,SharpDX.Vector2)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Sprite" /> class.
-            </summary>
-            <param name="texture">The texture.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.#ctor(System.IO.Stream,SharpDX.Vector2)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Sprite" /> class.
-            </summary>
-            <param name="stream">The stream.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.#ctor(System.Byte[],SharpDX.Vector2)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Sprite" /> class.
-            </summary>
-            <param name="bytesArray">The bytes array.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.#ctor(System.String,SharpDX.Vector2)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Sprite" /> class.
-            </summary>
-            <param name="fileLocation">The file location.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.PositionUpdate">
-            <summary>
-                Gets or sets the delegate that gets the position.
-            </summary>
-            <value>The position update.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Bitmap">
-            <summary>
-                Gets or sets the bitmap.
-            </summary>
-            <value>The bitmap.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Color">
-            <summary>
-                Gets or sets the color.
-            </summary>
-            <value>The color.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Height">
-            <summary>
-                Gets the height.
-            </summary>
-            <value>The height.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Position">
-            <summary>
-                Gets or sets the position.
-            </summary>
-            <value>The position.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Rotation">
-            <summary>
-                Gets or sets the rotation.
-            </summary>
-            <value>The rotation.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Scale">
-            <summary>
-                Gets or sets the scale.
-            </summary>
-            <value>The scale.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Size">
-            <summary>
-                Gets the size.
-            </summary>
-            <value>The size.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Width">
-            <summary>
-                Gets or Sets the width.
-            </summary>
-            <value>The width.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.X">
-            <summary>
-                Gets or sets the x.
-            </summary>
-            <value>The x.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Sprite.Y">
-            <summary>
-                Gets or sets the y.
-            </summary>
-            <value>The y.</value>
-        </member>
-        <member name="E:EnsoulSharp.SDK.Render.Sprite.OnReset">
-            <summary>
-                Occurs when the sprite is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Complement">
-            <summary>
-                Complements this instance.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Crop(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-                Crops the sprite.
-            </summary>
-            <param name="x">The x.</param>
-            <param name="y">The y.</param>
-            <param name="w">The width.</param>
-            <param name="h">The height.</param>
-            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Crop(SharpDX.Rectangle,System.Boolean)">
-            <summary>
-                Crops the sprite.
-            </summary>
-            <param name="rect">The rectangle.</param>
-            <param name="scale">if set to <c>true</c>, crops with the scale.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Fade">
-            <summary>
-                Fades this instance. (Saturation is 1/2)
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.GrayScale">
-            <summary>
-                Makes the sprite black and white.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.SetSaturation(System.Single)">
-            <summary>
-                Sets the saturation.
-            </summary>
-            <param name="saturiation">The saturiation.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Hide">
-            <summary>
-                Hides this instance.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Show">
-            <summary>
-                Shows this instance.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Reset">
-            <summary>
-                Resets this instance.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.UpdateTextureBitmap(System.Drawing.Bitmap,SharpDX.Vector2)">
-            <summary>
-                Updates the texture bitmap.
-            </summary>
-            <param name="newBitmap">The new bitmap.</param>
-            <param name="position">The position.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Draw">
-            <summary>
-                Draw Sprite
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.OnPreReset">
-            <summary>
-                Called before the DirectX device is reset..
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.OnPostReset">
-            <summary>
-                Called after the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Sprite.Dispose">
-            <summary>
-                Disposes this instance.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Text">
-            <summary>
-                Object used to draw text on the screen.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Text.PositionDelegate">
-            <summary>
-                Delegate that gets the position of the text.
-            </summary>
-            <returns>Vector2.</returns>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.Text.TextDelegate">
-            <summary>
-                Delegate that gets the text.
-            </summary>
-            <returns>System.String.</returns>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Text.Centered">
-            <summary>
-                <c>true</c> if the text should be centered at the position.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Text.Offset">
-            <summary>
-                The offset
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Text.OutLined">
-            <summary>
-                <c>true</c> if the text should have an outline.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Text.PositionUpdate">
-            <summary>
-                The delegate that updates the position of the text.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.Text.TextUpdate">
-            <summary>
-                The delegate that updates the text.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.#ctor(System.String,System.Int32,System.Int32,System.Int32,SharpDX.ColorBGRA,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Text" /> class.
-            </summary>
-            <param name="text">The text.</param>
-            <param name="x">The x.</param>
-            <param name="y">The y.</param>
-            <param name="size">The size.</param>
-            <param name="color">The color.</param>
-            <param name="fontName">Name of the font.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.#ctor(System.String,SharpDX.Vector2,System.Int32,SharpDX.ColorBGRA,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Text" /> class.
-            </summary>
-            <param name="text">The text.</param>
-            <param name="position">The position.</param>
-            <param name="size">The size.</param>
-            <param name="color">The color.</param>
-            <param name="fontName">Name of the font.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.#ctor(System.Int32,System.Int32,System.String,System.Int32,SharpDX.ColorBGRA,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Text" /> class.
-            </summary>
-            <param name="x">The x.</param>
-            <param name="y">The y.</param>
-            <param name="text">The text.</param>
-            <param name="size">The size.</param>
-            <param name="color">The color.</param>
-            <param name="fontName">Name of the font.</param>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.#ctor(SharpDX.Vector2,System.String,System.Int32,SharpDX.ColorBGRA,System.String)">
-            <summary>
-                Initializes a new instance of the <see cref="T:EnsoulSharp.SDK.Render.Text" /> class.
-            </summary>
-            <param name="position">The position.</param>
-            <param name="text">The text.</param>
-            <param name="size">The size.</param>
-            <param name="color">The color.</param>
-            <param name="fontName">Name of the font.</param>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.Color">
-            <summary>
-                Gets or sets the color.
-            </summary>
-            <value>The color.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.Height">
-            <summary>
-                Gets the height.
-            </summary>
-            <value>The height.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.TextString">
-            <summary>
-                Gets or sets the text.
-            </summary>
-            <value>The text.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.TextFontDescription">
-            <summary>
-                Gets or sets the text font description.
-            </summary>
-            <value>The text font description.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.Width">
-            <summary>
-                Gets the width.
-            </summary>
-            <value>The width.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.X">
-            <summary>
-                Gets or sets the x.
-            </summary>
-            <value>The x.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.Text.Y">
-            <summary>
-                Gets or sets the y.
-            </summary>
-            <value>The y.</value>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.Dispose">
-            <summary>
-                Dispose
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.Draw">
-            <summary>
-                Draw text.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.OnPreReset">
-            <summary>
-                Called before the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.Text.OnPostReset">
-            <summary>
-                Called after the DirectX device has been reset.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.RenderObject">
-            <summary>
-                A base class that renders objects.
-            </summary>
-        </member>
-        <member name="T:EnsoulSharp.SDK.Render.RenderObject.VisibleConditionDelegate">
-            <summary>
-                Delegate that gets if the object is visible.
-            </summary>
-            <param name="sender">The sender.</param>
-            <returns><c>true</c> if the object is visible, <c>false</c> otherwise.</returns>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.RenderObject.Layer">
-            <summary>
-                The layer
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Render.RenderObject.VisibleCondition">
-            <summary>
-                The visible condition delegate.
-            </summary>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.RenderObject.Visible">
-            <summary>
-                Gets or sets a value indicating whether this <see cref="T:EnsoulSharp.SDK.Render.RenderObject" /> is visible.
-            </summary>
-            <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:EnsoulSharp.SDK.Render.RenderObject.HasValidLayer">
-            <summary>
-                Determines whether this instace has a valid layer.
-            </summary>
-            <returns><c>true</c> if has a valid layer; otherwise, <c>false</c>.</returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.RenderObject.Dispose">
-            <summary>
-                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.RenderObject.Finalize">
-            <summary>
-               
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.RenderObject.Draw">
-            <summary>
-                Called when the render object is drawn.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.RenderObject.OnPreReset">
-            <summary>
-                Called before the DirectX device is reset.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.Render.RenderObject.OnPostReset">
-            <summary>
-                Called after the DirectX device is reset.
+               This event is fired after OnDraw and isn't controlled by Hacks.DisableDrawingsand Hacks.HideDrawingsFromCapture.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.ITargetSelector">
@@ -19438,6 +19402,11 @@
             True if event singnals mouse button up.
             </summary>
         </member>
+        <member name="P:EnsoulSharp.SDK.Utility.MouseActivity.MouseEventExtArgs.WheelScrolled">
+            <summary>
+            True if event contains information about wheel scroll.
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.MouseHookListener">
             <summary>
             This class monitors all mouse activities and provides appropriate events.
@@ -19579,11 +19548,6 @@
             http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
             </remarks>
         </member>
-        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_MOUSEMOVE">
-            <summary>
-            The WM_MOUSEMOVE message is posted to a window when the cursor moves. 
-            </summary>
-        </member>
         <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_LBUTTONDOWN">
             <summary>
             The WM_LBUTTONDOWN message is posted when the user presses the left mouse button 
@@ -19652,38 +19616,6 @@
             X mouse button.
             </summary>
             <remarks>Only windows that have the CS_DBLCLKS style can receive WM_XBUTTONDBLCLK messages.</remarks>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_KEYDOWN">
-            <summary>
-            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
-            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_KEYUP">
-            <summary>
-            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
-            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
-            or a keyboard key that is pressed when a window has the keyboard focus.
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_SYSKEYDOWN">
-            <summary>
-            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
-            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
-            presses another key. It also occurs when no window currently has the keyboard focus; 
-            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
-            receives the message can distinguish between these two contexts by checking the context 
-            code in the lParam parameter. 
-            </summary>
-        </member>
-        <member name="F:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Messages.WM_SYSKEYUP">
-            <summary>
-            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
-            releases a key that was pressed while the ALT key was held down. It also occurs when no 
-            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
-            to the active window. The window that receives the message can distinguish between 
-            these two contexts by checking the context code in the lParam parameter. 
-            </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.Utility.MouseActivity.WinApi.Point">
             <summary>
@@ -21711,6 +21643,11 @@
                 Simulated Prediction
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.HealthPredictionType.Special">
+            <summary>
+               Special Prediction
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.PredictedDamage">
             <summary>
                 Represetns predicted damage.
@@ -21971,6 +21908,11 @@
                 Failed Control
             </summary>
         </member>
+        <member name="F:EnsoulSharp.SDK.CastStates.HumanizerDisable">
+            <summary>
+                Humanizer Limit Disable
+            </summary>
+        </member>
         <member name="T:EnsoulSharp.SDK.Spell">
             <summary>
                 Spell Container
@@ -22101,6 +22043,11 @@
         <member name="P:EnsoulSharp.SDK.Spell.GetCustomDamageStage">
             <summary>
                 Custom Spell Damage Stage
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.Spell.HumanizerCast">
+            <summary>
+                Enabled Humanizer Cast (for unlock AntiDisconnect).
             </summary>
         </member>
         <member name="P:EnsoulSharp.SDK.Spell.MinHitChance">
@@ -22849,7 +22796,7 @@
         </member>
         <member name="T:EnsoulSharp.SDK.GameEvent">
             <summary>
-                Provides an event for when the game load or end.
+                Provides an event for when the game load or end or some event.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.GameEvent.OnGameEndDelegate">
@@ -22866,6 +22813,12 @@
             <summary>
                 Tick delegate
             </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.GameEvent.OnWindowsProcDelegate">
+            <summary>
+                OnWindowsProc Delegate
+            </summary>
+            <param name="args"></param>
         </member>
         <member name="P:EnsoulSharp.SDK.GameEvent.TickPreSecond">
             <summary>
@@ -22887,7 +22840,42 @@
         </member>
         <member name="E:EnsoulSharp.SDK.GameEvent.OnGameTick">
             <summary>
-                Tick Events
+                Tick Events.
+            </summary>
+        </member>
+        <member name="E:EnsoulSharp.SDK.GameEvent.OnGameWndProc">
+            <summary>
+                Game Windows Process Events.
+            </summary>
+        </member>
+        <member name="T:EnsoulSharp.SDK.GameEvent.WindowndEventArgs">
+            <summary>
+               Args for EnsoulSharp.Game window event.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameEvent.WindowndEventArgs.LParam">
+            <summary>
+               Gets the lparam.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameEvent.WindowndEventArgs.WParam">
+            <summary>
+               Gets the wparam.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameEvent.WindowndEventArgs.Msg">
+            <summary>
+               Gets the message.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameEvent.WindowndEventArgs.HWnd">
+            <summary>
+               Gets the window handle.
+            </summary>
+        </member>
+        <member name="P:EnsoulSharp.SDK.GameEvent.WindowndEventArgs.Process">
+            <summary>
+               Gets or sets a value indicating whether the event should process.
             </summary>
         </member>
         <member name="T:EnsoulSharp.SDK.AntiGapcloser">
@@ -24745,64 +24733,6 @@
             <param name="rangeCheckFrom">The position to check the range from.</param>
             <returns>List&lt;Vector2&gt;.</returns>
         </member>
-        <member name="T:EnsoulSharp.SDK.HealthPrediction">
-            <summary>
-                This class allows you to calculate the health of units after a set time. Only works on minions and only taking into
-                account the auto-attack damage.
-            </summary>
-        </member>
-        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetAggroTurret(EnsoulSharp.AIMinionClient)">
-            <summary>
-                Return the Attacking turret.
-            </summary>
-            <param name="minion">
-                The minion.
-            </param>
-            <returns>
-                The <see cref="T:EnsoulSharp.AIBaseClient" />
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.HealthPrediction.GetPrediction(EnsoulSharp.AIBaseClient,System.Int32,System.Int32,EnsoulSharp.SDK.HealthPredictionType)">
-            <summary>
-                Returns the health prediction, either default or simulated
-            </summary>
-            <param name="unit"><see cref="T:EnsoulSharp.AIBaseClient" /> unit</param>
-            <param name="time">The time in milliseconds</param>
-            <param name="delay">An optional delay</param>
-            <param name="type"><see cref="T:EnsoulSharp.SDK.HealthPredictionType" /> type</param>
-            <returns>
-                The <see cref="T:System.Single" />
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.HealthPrediction.HasMinionAggro(EnsoulSharp.AIMinionClient)">
-            <summary>
-                Determines whether the specified minion has minion aggro.
-            </summary>
-            <param name="minion">The minion.</param>
-            <returns>
-                The <see cref="T:System.Boolean" />
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.HealthPrediction.HasTurretAggro(EnsoulSharp.AIMinionClient)">
-            <summary>
-                Determines whether the specified minion has turret aggro.
-            </summary>
-            <param name="minion">The minion</param>
-            <returns>
-                The <see cref="T:System.Boolean" />
-            </returns>
-        </member>
-        <member name="M:EnsoulSharp.SDK.HealthPrediction.TurretAggroStartTick(EnsoulSharp.AIMinionClient)">
-            <summary>
-                Return the starttick of the attacking turret.
-            </summary>
-            <param name="minion">
-                The minion.
-            </param>
-            <returns>
-                The <see cref="T:System.Int32" />
-            </returns>
-        </member>
         <member name="T:EnsoulSharp.SDK.HitChance">
             <summary>
                 Represents the chance of hitting an enemy.
@@ -25455,6 +25385,17 @@
             <returns>
                 The System Color instance.
             </returns>
+        </member>
+        <member name="M:EnsoulSharp.SDK.SharpDXExtensions.ChangeColor(System.Drawing.Bitmap,SharpDX.ColorBGRA)">
+            <summary>
+                Converts the bitmap Color.
+            </summary>
+            <param name="bitmap">
+                The bitmap.
+            </param>
+            <param name="color">
+                The color.
+            </param>
         </member>
         <member name="T:EnsoulSharp.SDK.Vector3Extensions">
             <summary>
