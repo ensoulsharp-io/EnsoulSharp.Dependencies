@@ -1329,6 +1329,18 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "116",
+      "changes": [
+        "updated for RIOT patch 12.22",
+        "updated: ItemId",
+        "updated: PingCategory"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
