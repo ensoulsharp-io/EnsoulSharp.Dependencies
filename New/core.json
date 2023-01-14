@@ -1351,6 +1351,23 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "118",
+      "changes": [
+        "updated for RIOT and CN patch 13.1",
+        "added: NeutralMinionCampClient.ChaosRewards",
+        "added: NeutralMinionCampClient.OrderRewards",
+        "added: NeutralMinionCampClient.SoulName",
+        "added: NeutralMinionCampClient.SoulTeamOwner",
+        "fixed: DragonSRX.ElementsOne 2nd+ mismatch",
+        "fixed: DragonSRX.ElementsTwo 2nd+ mismatch",
+        "obsoleted: Hud.DragonSRX -> use NeutralMinionCampClient's members instead"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
