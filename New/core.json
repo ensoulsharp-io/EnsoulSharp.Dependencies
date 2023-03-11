@@ -1388,6 +1388,26 @@
         "0",
         "0"
       ]
+    },
+    {
+      "build": "121",
+      "changes": [
+        "updated for RIOT and patch 13.5",
+        "added: AIBaseClient.FlatDamageToBarracksMinionMod",
+        "added: AIBaseClient.PercentDamageToBarracksMinionMod",
+        "added: AIBaseClient.FlatDamageReductionFromBarracksMinionMod",
+        "added: AIBaseClient.PercentDamageReductionFromBarracksMinionMod",
+        "added: EffectEmitter.Attachment",
+        "added: EffectEmitter.TargetAttachment",
+        "fixed: AIBaseClient.OverrideCollisionRadius",
+        "fixed: AIBaseClient.OverrideCollisionHeight",
+        "fixed: AIBaseClient.PathfindingCollisionRadius",
+        "fixed: SpellDataInst.ToggleState"
+      ],
+      "md5": [
+        "0",
+        "0"
+      ]
     }
   ]
 }
