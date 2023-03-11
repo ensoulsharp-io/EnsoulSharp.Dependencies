@@ -76,7 +76,7 @@
     "4CD0B3199D422A8F34B3DEFD958540FD": {
       "Files": {
         "System\\EnsoulSharp.Core.dll": {
-          "MD5": "3CF13DE68CB5D546CAB1FADD8E7A92C4",
+          "MD5": "E2655074CFCC3F661D84783984328163",
           "Download": "https://github.com/ensoulsharp-io/EnsoulSharp.Dependencies/raw/master/New/Core/13.5/Riot/EnsoulSharp.Core.dll"
         },
         "Reference\\EnsoulSharp.dll": {
