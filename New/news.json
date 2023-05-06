@@ -531,6 +531,11 @@
       "Content": "EnsoulSharp has been updated for CN patch 13.8 and it works."
     },
     {
+      "PostDate": "2023-05-06T08:00:00Z",
+      "Header": "CN 13.9 updated",
+      "Content": "EnsoulSharp has been updated for CN patch 13.9 and it works."
+    },
+    {
       "PostDate": "2023-04-08T08:00:00Z",
       "Header": "RIOT & future CN support spsuend",
       "Content": "EnsoulSharp no longer work on RIOT and will suspend once CN update to x64."
